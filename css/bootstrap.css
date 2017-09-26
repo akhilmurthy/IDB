@@ -20,9 +20,6 @@ h1 {text-align:center}
 html body {
     background-color: rgba(26,27,29,1.00);
 }
-p {
-    margin: 100px;
-}
 
 @font-face { 
   font-family: "Overwatch"; src: url("http://us.battle.net/forums/static/fonts/bignoodletoo/bignoodletoo.woff") format('woff'); 
