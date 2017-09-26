@@ -13,7 +13,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  padding-top: 65px; 
+  padding-top: 45px; 
   margin: 0;
 }
 h1 {text-align:center}
@@ -4271,6 +4271,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-fixed-top {
   top: 0;
   border-width: 0 0 1px;
+  background: #000;
 }
 .navbar-fixed-bottom {
   bottom: 0;
