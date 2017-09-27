@@ -8,12 +8,21 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-family: sans-serif, 'Roboto Condensed', 'Open Sans', 'Overwatch';
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
+  padding-top: 45px; 
   margin: 0;
+}
+h1 {text-align:center}
+html body {
+    background-color: rgba(26,27,29,1.00);
+}
+
+@font-face { 
+  font-family: "Overwatch"; src: url("http://us.battle.net/forums/static/fonts/bignoodletoo/bignoodletoo.woff") format('woff'); 
 }
 article,
 aside,
@@ -96,8 +105,18 @@ figure {
   margin: 1em 40px;
 }
 hr {
+  border-color: #f99e1a;
+  background-color: #f99e1a;
+  color: #f99e1a;
   box-sizing: content-box;
   height: 0;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
 }
 pre {
   overflow: auto;
@@ -260,6 +279,7 @@ th {
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
+
 .glyphicon {
   position: relative;
   top: 1px;
@@ -1074,7 +1094,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, myFirstFont;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -1178,7 +1198,7 @@ h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color: #B4B8AD;
 }
 h1 small,
 h2 small,
@@ -1206,7 +1226,7 @@ h6 .small,
 .h6 .small {
   font-weight: normal;
   line-height: 1;
-  color: #777777;
+  color: #B4B8AD;
 }
 h1,
 .h1,
@@ -1350,7 +1370,7 @@ a.text-info:focus {
   color: #245269;
 }
 .text-warning {
-  color: #8a6d3b;
+  color: #ffffff;
 }
 a.text-warning:hover,
 a.text-warning:focus {
@@ -1523,7 +1543,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace, 'myFirstFont';
 }
 code {
   padding: 2px 4px;
@@ -3627,6 +3647,9 @@ tbody.collapse.in {
     right: auto;
   }
 }
+ul {
+  text-align: left;
+}
 .btn-group,
 .btn-group-vertical {
   position: relative;
@@ -4248,6 +4271,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-fixed-top {
   top: 0;
   border-width: 0 0 1px;
+  background: #000;
 }
 .navbar-fixed-bottom {
   bottom: 0;
@@ -4475,11 +4499,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
+  background-color: #000000;
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
-  color: #777777;
+  color: #000000;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {

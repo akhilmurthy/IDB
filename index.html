@@ -6,56 +6,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
     <!-- Bootstrap CSS -->
-       <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+        width: 70%;
+        margin: auto;
+    }
+  </style>
+
+    <!-- Custom Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+    <meta name="google-site-verification" content="5acKD3Zn65te2QHSXs7elnkd02p4y4RHM10cGshcDU4" />
   </head>
-  <body>
+
     <!-- Navigation Bar Setup -->
     <nav class="navbar navbar-dark bg-dark navbar-fixed-top">
       <div class = "container-fluid">
         <a href = "index.html" class = "navbar-header">
-          <img src = "media/OW_logo.png" style = "max-width: 25px; margin-top: 13px" hspace = "10">
+          <img src = "media/art/OW_logo.png" style = "max-width: 25px; margin-top: 13px" hspace = "10">
         </a>
         <div class = "navbar-header">
-          <a href = "index.html" class="navbar-brand"> OverwatchGlam
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+          <a href = "index.html" class="navbar-brand" style="font-family: 'Roboto Condensed'"><i> OVERWATCHGLAM</i>
           </a>
         </div>
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="heroes.html">Heroes</a>
+            <a href="heroes.html" style="font-family: 'Roboto Condensed'">HEROES</a>
+          <li>
+            <a href="players.html" style="font-family: 'Roboto Condensed'">TOP PLAYERS</a>
           </li>
           <li>
-            <a href="players.html">Top Players</a>
+            <a href="achievements.html" style="font-family: 'Roboto Condensed'">ACHIEVEMENTS</a>
           </li>
           <li>
-            <a href="achievements.html">Achievements</a>
+            <a href="events.html" style="font-family: 'Roboto Condensed'">EVENTS</a>
           </li>
           <li>
-            <a href="events.html">Events</a>
+            <a href="skins.html" style="font-family: 'Roboto Condensed'">SKINS</a>
           </li>
           <li>
-            <a href="skins.html">Skins</a>
+            <a href="items.html" style="font-family: 'Roboto Condensed'">ITEMS</a>
           </li>
           <li>
-            <a href="items.html">Items</a>
+            <a href="about.html" style="font-family: 'Roboto Condensed'">ABOUT</a>
           </li>
-        </ul>
+        </ul> 
       </div>
     </nav>
 
-    <!-- Overwatch Logo Background Image -->
-    <div class="row">
-      <div class = "col-md-12">
-        <div class = "media">
-          <img class = "img-responsive" src = "media/logo-burst-standard.jpg" alt = "Overwatch Logo" />
-        </div>
-      </div>
-    </div>
+<div id="carousel-example-generic" class="carousel slide">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+  </ol>
 
+    <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <!-- Slide 1-->
+            <div class="item active">
+                <img src="media/art/carousel1.jpg" alt="Slide 1" class="img-responsive"/>
+            </div>
+
+            <!-- Slide 2-->
+              <div class="item">
+                  <img src="media/art/carousel2.jpg" alt="Slide 2" class="img-responsive"/>
+              </div>
+
+            <!-- Slide 3-->
+              <div class="item">
+                  <img src="media/art/carousel3.jpg" alt="Slide 3" class="img-responsive"/>
+              </div>
+
+            <!-- Slide 4-->
+              <div class="item">
+                  <img src="media/art/carousel4.png" alt="Slide 4" class="img-responsive"/>
+              </div>
+            
+            <!-- Slide 5-->
+              <div class="item">
+                  <img src="media/art/carousel5.jpg" alt="Slide 5" class="img-responsive"/>
+              </div>
+            
+            <!-- Slide 6-->
+              <div class="item">
+                  <img src="media/art/carousel6.jpg" alt="Slide 6" class="img-responsive"/>
+              </div>
+            
+            <!-- Slide 7-->
+              <div class="item">
+                  <img src="media/art/carousel7.jpg" alt="Slide 7" class="img-responsive"/>
+              </div>
+            </div>
+
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="icon-next"></span>
+  </a>
+</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
 </html>
