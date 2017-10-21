@@ -1,28 +1,74 @@
-from flask import Blueprint, render_template, abort
-from jinja2 import TemplateNotFound
+from flask import Flask, render_template
 
-flaskrouter = Blueprint('flaskrouter', __name__)
+flaskrouter = Flask(__name__)
+
 
 @flaskrouter.route('/')
-def frindex():
-    try:
-        return render_template('index.html')
-    except TemplateNotFound:
-        abort(404)
+def index():
+    """
+    Home and root directory of our site
+    """
+    return render_template('index.html')
+
 
 @flaskrouter.route('/about')
-def frabout():
-    try:
-        return render_template('about.html')
-    except TemplateNotFound:
-        abort(404)
+def about():
+    """
+    The about page
+    """
+    return render_template('about.html')
 
-"""
-@flaskrouter.route('/')
-@flaskrouter.route('/<page>')
-def show(page):
-    try:
-        return render_template('pages/%s.html' % page)
-    except TemplateNotFound:
-        abort(404)
-"""
+
+@flaskrouter.route('/achievements')
+def achievements():
+    """
+    The different types of achievements page
+    """
+    return render_template('achievements.html')
+
+
+@flaskrouter.route('/events')
+def events():
+    """
+    The different in-game events page
+    """
+    return render_template('events.html')
+
+
+@flaskrouter.route('/heroes')
+def heroes():
+    """
+    The various playable heroes page
+    """
+    return render_template('heroes.html')
+
+
+@flaskrouter.route('/items')
+def items():
+    """
+    The page for in-game items 
+    """
+    return render_template('items.html')
+
+
+@flaskrouter.route('/players')
+def players():
+    """
+    A page for top-rated players
+    """
+    return render_template('players.html')
+
+
+@flaskrouter.route('/skins')
+def skins():
+    """
+    A page for in-game skins
+    """
+    return render_template('skins.html')
+
+if __name__ == '__main__':
+    """
+    This is only used when running locally. When running live, gunicorn runs
+    the flaskrouterlication.
+    """
+    flaskrouter.run(host='127.0.0.1', port=8080, debug=True)
