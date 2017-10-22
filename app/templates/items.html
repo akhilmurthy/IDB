@@ -1,44 +1,27 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-    <!-- Event title page -->
-      <h1 style = "font-family: 'Overwatch'"><p class="text-warning"><font size = "7">Items</font></p></h1><br><hr>
 
-      <!-- Event Grid -->
-      <div class="row">
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <a href = "subpages/items/ana_sp1.html">
-          <img class="img-thumbnail" src="media/sprays/ana_sp1.png" alt="Ana Cute" width=200 height =200>
-          <h3 style="font-family: 'Overwatch'" class="text-warning">Ana - Cute</h3>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <a href = "subpages/items/bastion_sp1.html">
-          <img class="img-thumbnail" src="media/sprays/bastion_sp1.png" alt="bastion-spray" width=200 height =200>
-          <h3 style="font-family: 'Overwatch'" class="text-warning">Bastion - Cute 
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <a href = "subpages/items/dva_sp1.html">
-          <img class="img-thumbnail" src="media/sprays/dva_sp1.png" alt="dva-spray" width=200 height =200>
-          <h3 style="font-family: 'Overwatch'" class="text-warning">D.Va - Cute</h3>
-        </div>
+<!-- Bootstrap CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
 
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <a href = "subpages/items/sg_sp1.html">
-          <img class="img-thumbnail" src="media/sprays/sg_sp1.png" alt="sg-spray" width=200 height =200>
-          <h3 style="font-family: 'Overwatch'" class="text-warning">Summer Games 2016</h3>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <a href = "subpages/items/ht_sp1.html">
-          <img class="img-thumbnail" src="media/sprays/ht_sp1.png" alt="ht-spray" width=200 height =200>
-          <h3 style="font-family: 'Overwatch'" class="text-warning">Boo!</h3>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <a href = "subpages/items/ww_sp1.html">
-          <img class="img-thumbnail" src="media/sprays/ww_sp1.png" alt="ww-spray" width=200 height =200>
-          <h3 style="font-family: 'Overwatch'" class="text-warning">Winter Wonderland</h3>
-        </div>
-      </div>
-    </div>    
+<!-- Custom Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<!-- Items Main page -->
+  <h1 style = "font-family: 'Overwatch'"><p class="text-warning"><font size = "7">Items</font></p></h1><br><hr>
+
+<!-- Items Grid -->
+  <div class="row">
+    {% for item in output %}
+    <div class="col-lg-4 col-sm-6 text-center mb-4">
+      <a href = "subpages/items/{{item.id}}">
+      <img class="img-thumbnail" src="media/sprays/{{item.url}}" alt=" " width="250" height="250">
+      <h3 style="font-family: 'Overwatch'" class="text-warning">{{item.name}}</h3>
+    </div>
+    {% endfor %}
+  </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

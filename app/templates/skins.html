@@ -1,52 +1,30 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-    <!-- Skintitle page -->
-      <h1 style = "font-family: 'Overwatch'"><p class="text-warning"><font size = "7">Skins of Overwatch</font></p></h1><br><hr>
 
-      <!-- Skins Grid -->
-      <div class="row">
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <a href = "subpages/skins/ht_ana1.html">
-          <img class="img-thumbnail" src="media/skins/ana-skin.png" alt="Ana" width="90%" height="90%">
-          </a>
-		  <h3 style="font-family: 'Overwatch'" class="text-warning"><font size = "6">Wadjet Ana</font></h3>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <a href = "subpages/skins/ht_bastion1.html">
-          <img class="img-thumbnail" src="media/skins/bastion-skin.png" alt="Bastion" width="90%" height="90%">
-          </a>
-          <h3 style="font-family: 'Overwatch'" class="text-warning"><font size = "6">Overgrown Bastion</font></h3>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <a href = "subpages/skins/sg_dva1.html">
-          <img class="img-thumbnail" src="media/skins/dva-skin.png" alt="D.va" width="90%" height="90%">
-          </a>
-          <h3 style="font-family: 'Overwatch'" class="text-warning"><font size = "6">Officer D.va</font></h3>
-        </div>
-		<div class="col-lg-4 col-sm-6 text-center mb-4">
-          <a href = "subpages/skins/event_ana.html">
-          <img class="img-thumbnail" src="media/skins/eventskins/ht_ana1.png" alt="ana" width="90%" height="90%">
-          </a>
-          <h3 style="font-family: 'Overwatch'" class="text-warning"><font size = "6">Ghoul</font></h3>
-        </div>
-		<div class="col-lg-4 col-sm-6 text-center mb-4">
-          <a href = "subpages/skins/event_bastion.html">
-          <img class="img-thumbnail" src="media/skins/eventskins/ht_bastion1.png" alt="bastion" width="90%" height="90%">
-          </a>
-          <h3 style="font-family: 'Overwatch'" class="text-warning"><font size = "6">Tombstone</font></h3>
-        </div>
-		<div class="col-lg-4 col-sm-6 text-center mb-4">
-          <a href = "subpages/skins/event_dva.html">
-          <img class="img-thumbnail" src="media/skins/eventskins/sg_dva1.jpg" alt="D.va" width="90%" height="90%">
-          </a>
-          <h3 style="font-family: 'Overwatch'" class="text-warning"><font size = "6">Taegeukgi</font></h3>
-        </div>
-      </div>
-    </div>    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<!-- Bootstrap CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<!-- Skintitle page -->
+  <h1 style = "font-family: 'Overwatch'"><p class="text-warning"><font size = "7">Skins of Overwatch</font></p></h1><br><hr>
+
+  <!-- Skins Grid -->
+  <div class="row">
+    {% for item in output %}
+    <div class="col-lg-4 col-sm-6 text-center mb-4">
+      <a href = "subpages/skins/{{item.id}}">
+      <img class="img-thumbnail" src="media/skins/{{item.url}}" alt=" " width="250" height="250"></a>
+      <h3 style="font-family: 'Overwatch'" class="text-warning"><font size = "6">{{item.name}}</font></h3>
+    </div>
+    {% endfor %}
+  </div>    
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 {% endblock %}
