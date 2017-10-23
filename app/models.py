@@ -106,7 +106,7 @@ class Event(db.Model):
 
 
 
-class Skin(db.Models):
+class Skin(db.Model):
 
 	__tablename__ = 'skins'
 
@@ -125,7 +125,7 @@ class Skin(db.Models):
 		self.Cost = Cost
 		self.Quality = Quality
 
-class Item(db.Models):
+class Item(db.Model):
 
 	__tablename__= 'items'
 
