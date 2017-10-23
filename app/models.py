@@ -137,4 +137,3 @@ class Items(db.Models):
 	def __init__(self, ItemName, Type):
 		self.ItemName = ItemName
 		self.Type = Type
-
