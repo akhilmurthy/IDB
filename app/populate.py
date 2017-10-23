@@ -23,22 +23,24 @@ def scrapeHeroes():
 		name = data['name']
 		description = data['description']
 
-		abilities_list = data['abilties']
+		abilities_list = data['abilities']
 
-		b = false
+		b = False
 
 		name_str = ''
 		ulti = ''
-		for i in abilties_list:
+		for i in abilities_list:
 			if i['is_ultimate']:
 				ulti = i['name']
 			else:
 				if not b:
 					name_str += i['name'] 
-					b = true
+					b = True
 				else:
 					name_str += ', '
-					name_str += i['name'] 
+					name_str += i['name']
+
+		# print(str(Hero_id) + " " + name + "\n" + description + "\n"+ name_str + "\n"+ ulti ) 
 
 
 
@@ -60,10 +62,12 @@ def scrapeAchievements():
 		data_bytes = thejson.read().decode('utf-8')
 		data = json.loads(data_bytes)
 
+		achievement_id = data['id']
 		name = data['name']
 		description = data['description']
 
 	#all the url, info to create each json
+		# print(str(achievement_id) + " "+ name + "\n"+ description)
 
 def scrapeEvents():
 
@@ -74,6 +78,7 @@ def scrapeEvents():
 		data_bytes = thejson.read().decode('utf-8')
 		data = json.loads(data_bytes)
 
+		event_id = data['id']
 		name = data['name']
 		start = data['start_date']
 		end = data['end_date']
@@ -128,10 +133,10 @@ def scrapeTopPlayers():
 
 
 def main():
-	#scrapeHeroes()
-	#scrapeAchievements()
+	# scrapeHeroes()
+	scrapeAchievements()
 	#scrapeEvents()
 	#scrapeSkinsItems()
-	scrapeTopPlayers()
+	#scrapeTopPlayers()
 
 if __name__ == "__main__": main()
