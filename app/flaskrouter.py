@@ -2,7 +2,6 @@ from flask import Flask, render_template
 
 flaskrouter = Flask(__name__)
 
-
 @flaskrouter.route('/')
 def index():
     """
@@ -67,8 +66,4 @@ def skins():
     return render_template('skins.html')
 
 if __name__ == '__main__':
-    """
-    This is only used when running locally. When running live, gunicorn runs
-    the flaskrouterlication.
-    """
-    flaskrouter.run(host='127.0.0.1', port=8080, debug=True)
+   flaskrouter.run()
