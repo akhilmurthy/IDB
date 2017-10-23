@@ -12,7 +12,23 @@ db = SQLAlchemy(app)
 
 
 
-# Join Tables (???) for many to many relationships 
+# Join Tables (???) for many to many relationships
+
+hero_topPlayer = db.Table('hero_topPlayer',
+	db.Column('hero_id',db.Integer, db.ForeignKey('Hero.HeroID')),
+	db.Column('topPlayer_id', db.Integer, db.ForeignKey('TopPlayer.TopPlayerID')))
+
+achievement_topPlayer = db.Table('achievement_topPlayer',
+	db.Column('achievement_id',db.Integer, db.ForeignKey('Achievement.AchievementID')),
+	db.Column('topPlayer_id', db.Integer, db.ForeignKey('TopPlayer.TopPlayerID')))
+
+skin_topPlayer = db.Table('skin_topPlayer',
+	db.Column('skin_id',db.Integer, db.ForeignKey('Skin.SkinID')),
+	db.Column('topPlayer_id', db.Integer, db.ForeignKey('TopPlayer.TopPlayerID')))
+
+hero_item = db.Table('hero_item',
+	db.Column('hero_id',db.Integer, db.ForeignKey('Hero.HeroID')),
+	db.Column('item_id', db.Integer, db.ForeignKey('Item.ItemID')))
 
 
 #build classes for each model
