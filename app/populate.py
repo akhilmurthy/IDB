@@ -22,8 +22,9 @@ def scrapeHeroes():
 		Hero_id = data['id']
 		name = data['name']
 		description = data['description']
-
+		role_name = data['role']['name']
 		abilities_list = data['abilities']
+
 
 		b = False
 
@@ -41,17 +42,11 @@ def scrapeHeroes():
 					name_str += i['name']
 
 		# print(str(Hero_id) + " " + name + "\n" + description + "\n"+ name_str + "\n"+ ulti ) 
-		hero = Heroes(Hero_id, name, description, abilities, ulti)
+		hero = Heroes(Hero_id, name, description, role, abilities, ulti)
 
 
 
 		#Need to insert these into the Database
-		
-
-
-#def getPlay  erInfo():
-
-	#all the url, info to create each json
 
 def scrapeAchievements():
 
@@ -101,6 +96,7 @@ def scrapeSkinsItems():
 		data = json.loads(data_bytes)
 
 		reward_type = data['type']['name']
+
 		if  reward_type == 'skin':
 			skin_name = data['name']
 			if data ['cost'] != None:
@@ -110,13 +106,13 @@ def scrapeSkinsItems():
 			quality = data['quality']['name']
 
 			skin = Skins(h, skin_name, skin_cost, quality)
-
 		else:
-			item = reward_type
-			item_name = data['name']
-			item_type = data['type']['name']
-			
-			item = Items(h, item_name, item_type)
+			if reward_type == 'spray' or reward_type == 'player icon':
+				item = reward_type
+				item_name = data['name']
+				item_type = data['type']['name']
+				item = Items(h, item_name, item_type)
+
 
 
 
@@ -137,6 +133,7 @@ def scrapeTopPlayers():
 		level = data['us']['stats']['competitive']['overall_stats']['level']
 		skill_rank = data['us']['stats']['competitive']['overall_stats']['comprank']
 
+		topPlayer = TopPlayers(h, name, win_rate, tier, level, skill_rank )
 		# print(name)
 		# print(win_rate)
 		# print(tier)
