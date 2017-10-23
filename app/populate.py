@@ -2,9 +2,9 @@ import urllib.request
 import json
 import ssl
 import time
-#from flask import Flask
+from flask import Flask
 #from flask_sqlalchemy import SQLAlchemy
-#from models import db, Heroes, TopPlayers, Achievements, Events, Skins, Items
+from models import db, Heroes, TopPlayers, Achievements, Events, Skins, Items
 
 
 baseurl = 'https://overwatch-api.net/api/v1'
@@ -41,7 +41,7 @@ def scrapeHeroes():
 					name_str += i['name']
 
 		# print(str(Hero_id) + " " + name + "\n" + description + "\n"+ name_str + "\n"+ ulti ) 
-
+		hero = Heroes(Hero_id, name, description, abilities, ulti)
 
 
 
@@ -66,8 +66,11 @@ def scrapeAchievements():
 		name = data['name']
 		description = data['description']
 
+		# 
+
 	#all the url, info to create each json
 		# print(str(achievement_id) + " "+ name + "\n"+ description)
+		achieve = Achievements(achievement_id, name, description)
 
 def scrapeEvents():
 
@@ -83,6 +86,8 @@ def scrapeEvents():
 		start = data['start_date']
 		end = data['end_date']
 
+		event = Events(event_id, name, start, end)
+
 	#all the url, info to create each json
 
 def scrapeSkinsItems():
@@ -97,9 +102,22 @@ def scrapeSkinsItems():
 
 		reward_type = data['type']['name']
 		if  reward_type == 'skin':
-			skin = reward_type
+			skin_name = data['name']
+			if data ['cost'] != None:
+				skin_cost = data['cost']['value'] + " credits"
+			else:
+				skin_cost = None
+			quality = data['quality']['name']
+
+			skin = Skins(h, skin_name, skin_cost, quality)
+
 		else:
 			item = reward_type
+			item_name = data['name']
+			item_type = data['type']['name']
+			
+			item = Items(h, item_name, item_type)
+
 
 
 

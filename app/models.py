@@ -17,7 +17,7 @@ db = SQLAlchemy(app)
 
 #build classes for each model
 
-class Heroes(db.Model):
+class Hero(db.Model):
 
 	__tablename__ = 'heroes'
 
@@ -28,18 +28,19 @@ class Heroes(db.Model):
 	Abilities = db.Column(db.String, unique = True, nullable = False)
 	Ulti = db.Column(db.String, unique = True, nullable = False)
 	
-	achievements = db.relationship('Achievements', backref = 'Heroes',lazy = 'dynamic')
-	skins = db.relationship('Skins', backref = 'Heroes',lazy = 'dynamic')
+	achievements = db.relationship('Achievement', backref = 'Hero',lazy = 'dynamic')
+	skins = db.relationship('Skin', backref = 'Hero',lazy = 'dynamic')
 
 
-	def __init__(self, HeroName, description, role, Abilities, Ulti):
+	def __init__(self, HeroID, HeroName, description, role, Abilities, Ulti):
+		self.HeroID = HeroID
 		self.HeroName = HeroName
 		self.description = description
 		self.role = role
 		self.Abilities = Abilities
 		Self.Ulti = Ulti
 
-class TopPlayers(db.Model):
+class TopPlayer(db.Model):
 
 	__tablename__ = 'topPlayers'
 
@@ -50,38 +51,40 @@ class TopPlayers(db.Model):
 	WinRate = db.Column(db.Float, nullable = False)
 	Level = db.Column(db.Integer, nullable = False)
 	
-	heroes = db.relationship('Heroes', backref = 'TopPlayers',lazy = 'dynamic')
-	achievements = db.relationship('Achievements', backref = 'TopPlayers',lazy = 'dynamic')
+	heroes = db.relationship('Hero', backref = 'TopPlayer',lazy = 'dynamic')
+	achievements = db.relationship('Achievement', backref = 'TopPlayer',lazy = 'dynamic')
 
-	def __init__(self, TopPlayerName, SkillRank, Tier, WinRate, Level):
+	def __init__(self, TopPlayerID, TopPlayerName, SkillRank, Tier, WinRate, Level):
+		self.TopPlayerID = TopPlayerID
 		self.TopPlayerName = TopPlayerName
 		self.SkillRank = SkillRank
 		self.Tier = Tier
 		Self.WinRate = WinRate
 		self.Level = Level
 
-class Achievements(db.Model):
+class Achievement(db.Model):
 
 	__tablename__ = 'achievements'
 
 	AchievementID = db.Column(db.Integer, primary_key = True)
 	AchievementName = db.Column(db.String, unique = True, nullable = False)
 	Description = db.Column(db.String, unique = True, nullable = False)
-	RewardType = db.Column(db.String, nullable = False)
-	RewardQuality = db.Column(db.String, nullable = False)
+	ItemID = db.Column(db.String)
+	SkinID = db.Column(db.String)
 
 	
-	items = db.relationship('Items', backref = 'Achievements',lazy = 'dynamic')
-	heroes = db.relationship('Heroes', backref = 'Achievements',lazy = 'dynamic')
+	items = db.relationship('Item', backref = 'Achievement',lazy = 'dynamic')
+	heroes = db.relationship('Hero', backref = 'Achievement',lazy = 'dynamic')
 
-	def __init__(self, AchievementName, Description, RewardType, RewardQuality):
+	def __init__(self, AchievementID, AchievementName, Description, ItemID= None, SkinID= None):
+		self.AchievementID = AchievementID
 		self.AchievementName = AchievementName
 		self.Description = Description
-		self.RewardType = RewardType
-		Self.RewardQuality = RewardQuality
+		self.ItemID = ItemID
+		self.SkinID = SkinID
 
 
-class Events(db.Model):
+class Event(db.Model):
 
 	__tablename__ = 'events'
 
@@ -91,10 +94,11 @@ class Events(db.Model):
 	EndDate = db.Column(db.String, unique = True, nullable = False)
 	
 	
-	skins = db.relationship('Skins', backref = 'Events',lazy = 'dynamic')
-	items = db.relationship('Items', backref = 'Events',lazy = 'dynamic')
+	skins = db.relationship('Skin', backref = 'Event',lazy = 'dynamic')
+	items = db.relationship('Item', backref = 'Event',lazy = 'dynamic')
 
-	def __init__(self, EventName, StartDate, EndDate):
+	def __init__(self, EventID, EventName, StartDate, EndDate):
+		self.EventID = EventID
 		self.EventName = EventName
 		self.StartDate = StartDate
 		self.EndDate = EndDate
@@ -102,37 +106,39 @@ class Events(db.Model):
 
 
 
-class Skins(db.Models):
+class Skin(db.Models):
 
 	__tablename__ = 'skins'
 
 	SkinID = db.Column(db.Integer, primary_key = True)
 	SkinName = db.Column(db.String, unique = True, nullable = False)
-	Cost = db.Column(db.Integer, nullable = False)
+	Cost = db.Column(db.Integer)
 	Quality = db.Column(db.String, nullable = False)
 	
-	heroes = db.relationship('Heroes', backref = 'Skins',lazy = 'dynamic')
-	event = db.relationship('Events	', backref = 'Skins',lazy = 'dynamic')
+	heroes = db.relationship('Hero', backref = 'Skin',lazy = 'dynamic')
+	event = db.relationship('Event	', backref = 'Skin',lazy = 'dynamic')
 
 
-	def __init__(self, SkinName, Cost, Quality):
+	def __init__(self, SkinID, SkinName, Cost, Quality):
+		self.SkinID = SkinID
 		self.SkinName = SkinName
 		self.Cost = Cost
 		self.Quality = Quality
 
-class Items(db.Models):
+class Item(db.Models):
 
 	__tablename__= 'items'
 
-	ItemsID = db.Column(db.Integer, primary_key = True)
+	ItemID = db.Column(db.Integer, primary_key = True)
 	ItemName = db.Column(db.String, unique = True, nullable = False)
 	Type = db.Column(db.String, nullable = False)
 	
 	
-	heroes = db.relationship('Heroes', backref = 'Items',lazy = 'dynamic')
-	achievements = db.relationship('Achievements', backref = 'Items',lazy = 'dynamic')
-	event = db.relationship('Events', backref = 'Items',lazy = 'dynamic')
+	heroes = db.relationship('Hero', backref = 'Item',lazy = 'dynamic')
+	achievements = db.relationship('Achievement', backref = 'Item',lazy = 'dynamic')
+	event = db.relationship('Event', backref = 'Item',lazy = 'dynamic')
 
-	def __init__(self, ItemName, Type):
+	def __init__(self, ItemID, ItemName, Type):
+		self.ItemID = ItemID
 		self.ItemName = ItemName
 		self.Type = Type
