@@ -12,23 +12,13 @@
     </div>
 
 <div class = "row" >
-    <h1 style = "font-family: 'Overwatch'"><p class="text-info"><font size = "7">D.va</font></p></h1>
-    <div style="text-align: center;"><img src="../../media/heroes/dva1.jpg" class = "img-responsive" alt="D.va"> </div>
+    <h1 style = "font-family: 'Overwatch'"><p class="text-info"><font size = "7">{{data.name}}</font></p></h1>
+    <div style="text-align: center;"><img src="../../media/heroes/{{data.url}}" class = "img-responsive" alt=" "> </div>
     <br>
   </div>
   <hr>
 
-  <div class="container">
-  <div class="row">
-    <div class="col">
-    </div>
-    <div class="col-6">
-    </div>
-    <div class="col">
-    </div>
-  </div>
-
-  <!-- Player's Stat -->
+<!-- Player's Stat -->
   <div class = "container-fluid">
     <h1 style = "font-family: 'Overwatch'"><p class="text-info"><font size = "7">Stats</font></p></h1>
     <p style = "font-family: 'Roboto Condensed'" class="text-warning"><font size = "5"><span style="color:orange; font-family: 'Overwatch'">Name: </span><span style="color:white; font-family: 'Overwatch'">{{data.name}}</span></font></p>
@@ -38,10 +28,13 @@
     <p style = "font-family: 'Roboto Condensed'" class="text-warning"><font size = "5"><span style="color:orange; font-family: 'Overwatch'">Role: </span> <span style="color:white; font-family: 'Overwatch'">{{data.role}}</span></font></p>
 
     <p style = "font-family: 'Roboto Condensed'" class="text-warning"><font size = "5"><span style="color:orange; font-family: 'Overwatch'">Abilities: </span><span style="color:white; font-family: 'Overwatch'">{{data.abilities}}</span></font></p>
-    
-    <p style = "font-family: 'Roboto Condensed'" class="text-warning"><font size = "5"><span style="color:orange; font-family: 'Overwatch'">Available Achievements:&nbsp; &nbsp;<span style="color:white; font-family: 'Overwatch'"><a href = "../achievements/58.html"><img src="../../media/achievements/58.png" alt="dva" width=50 height=50></a> (Game Over)</span></font></p>
-	<p style = "font-family: 'Roboto Condensed'" class="text-warning"><font size = "5"><span style="color:orange; font-family: 'Overwatch'">Available Skins: </span> <a href = "../skins/sg_dva1.html"><span style="color:white; font-family: 'Overwatch'">Officer D.va</a></font></span></p>
- </div>
+
+    <p style = "font-family: 'Roboto Condensed'" class="text-warning"><font size = "5"><span style="color:orange; font-family: 'Overwatch'">Available Achievements:&nbsp; &nbsp;{% for item in data.achieve %}
+      <span style="color:white; font-family: 'Overwatch'"><a href = "../achievements/{{item.id}}"><img src="../../media/achievements/{{data.item_id}}" alt=" " width=50 height=50></a> {{item.name}} </span></font></p>
+      {% endfor %}
+
+	   <p style = "font-family: 'Roboto Condensed'" class="text-warning"><font size = "5"><span style="color:orange; font-family: 'Overwatch'">Available Skins: {% for item in data.skin %}</span><a href = "../skins/{data.item_id}"><span style="color:white; font-family: 'Overwatch'">{{item.name}}</a></font></span></p>{% endfor %}
+  </div>
 
 <span style="color:orange"></span>
 
