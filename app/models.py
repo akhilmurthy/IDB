@@ -6,7 +6,7 @@ from flask_sqlalchemy import SQLAlchemy
 # connect SQLAlchemy and PostgreSQL, use Flask-Migrate (???)
 
 app =Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'   #TThe URI needs to be edited
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://postgres:groupPassword@35.193.209.24/overwatch2'   #TThe URI needs to be edited
 db = SQLAlchemy(app)
 
 
@@ -28,16 +28,15 @@ class Heroes(db.Model):
 	Abilities = db.Column(db.String, unique = True, nullable = False)
 	Ulti = db.Column(db.String, unique = True, nullable = False)
 	
-	achievements = db.Relationship('Achievements', backref = 'Heroes',lazy = dynamic)
-	skins = db.Relationship('Skins', backref = 'Heroes',lazy = dynamic)
+	achievements = db.relationship('Achievements', backref = 'Heroes',lazy = 'dynamic')
+	skins = db.relationship('Skins', backref = 'Heroes',lazy = 'dynamic')
 
 
-	def __init__(self, HeroName, description, role, A_Ability, B_Ability, Ulti):
+	def __init__(self, HeroName, description, role, Abilities, Ulti):
 		self.HeroName = HeroName
 		self.description = description
 		self.role = role
-		self.A_Ability = A_Ability
-		self.B_Ability = B_Ability
+		self.Abilities = Abilities
 		Self.Ulti = Ulti
 
 class TopPlayers(db.Model):
@@ -51,8 +50,8 @@ class TopPlayers(db.Model):
 	WinRate = db.Column(db.Float, nullable = False)
 	Level = db.Column(db.Integer, nullable = False)
 	
-	heroes = db.Relationship('Heroes', backref = 'TopPlayers',lazy = dynamic)
-	achievements = db.Relationship('Achievements', backref = 'TopPlayers',lazy = dynamic)
+	heroes = db.relationship('Heroes', backref = 'TopPlayers',lazy = 'dynamic')
+	achievements = db.relationship('Achievements', backref = 'TopPlayers',lazy = 'dynamic')
 
 	def __init__(self, TopPlayerName, SkillRank, Tier, WinRate, Level):
 		self.TopPlayerName = TopPlayerName
@@ -72,8 +71,8 @@ class Achievements(db.Model):
 	RewardQuality = db.Column(db.String, nullable = False)
 
 	
-	items = db.Relationship('Items', backref = 'Achievements',lazy = dynamic)
-	heroes = db.Relationship('Heroes', backref = 'Achievements',lazy = dynamic)
+	items = db.relationship('Items', backref = 'Achievements',lazy = 'dynamic')
+	heroes = db.relationship('Heroes', backref = 'Achievements',lazy = 'dynamic')
 
 	def __init__(self, AchievementName, Description, RewardType, RewardQuality):
 		self.AchievementName = AchievementName
@@ -92,8 +91,8 @@ class Events(db.Model):
 	EndDate = db.Column(db.String, unique = True, nullable = False)
 	
 	
-	skins = db.Relationship('Skins', backref = 'Events',lazy = dynamic)
-	items = db.Relationship('Items', backref = 'Events',lazy = dynamic)
+	skins = db.relationship('Skins', backref = 'Events',lazy = 'dynamic')
+	items = db.relationship('Items', backref = 'Events',lazy = 'dynamic')
 
 	def __init__(self, EventName, StartDate, EndDate):
 		self.EventName = EventName
@@ -112,8 +111,8 @@ class Skins(db.Models):
 	Cost = db.Column(db.Integer, nullable = False)
 	Quality = db.Column(db.String, nullable = False)
 	
-	heroes = db.Relationship('Heroes', backref = 'Skins',lazy = dynamic)
-	event = db.Relationship('Events	', backref = 'Skins',lazy = dynamic)
+	heroes = db.relationship('Heroes', backref = 'Skins',lazy = 'dynamic')
+	event = db.relationship('Events	', backref = 'Skins',lazy = 'dynamic')
 
 
 	def __init__(self, SkinName, Cost, Quality):
@@ -130,9 +129,9 @@ class Items(db.Models):
 	Type = db.Column(db.String, nullable = False)
 	
 	
-	heroes = db.Relationship('Heroes', backref = 'Items',lazy = dynamic)
-	achievements = db.Relationship('Achievements', backref = 'Items',lazy = dynamic)
-	event = db.Relationship('Events', backref = 'Items',lazy = dynamic)
+	heroes = db.relationship('Heroes', backref = 'Items',lazy = 'dynamic')
+	achievements = db.relationship('Achievements', backref = 'Items',lazy = 'dynamic')
+	event = db.relationship('Events', backref = 'Items',lazy = 'dynamic')
 
 	def __init__(self, ItemName, Type):
 		self.ItemName = ItemName
