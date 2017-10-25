@@ -4,11 +4,15 @@ import ssl
 import time
 from flask import Flask
 #from flask_sqlalchemy import SQLAlchemy
-from models import db, Heroes, TopPlayers, Achievements, Events, Skins, Items
+from models import db, Hero, TopPlayer, Achievement, Event, Skin, Item
+import psycopg2
 
 
 baseurl = 'https://overwatch-api.net/api/v1'
 context = ssl._create_unverified_context()
+
+# db.drop_all()
+db.create_all()
 
 def scrapeHeroes():
 #24 heroes
@@ -42,7 +46,9 @@ def scrapeHeroes():
 					name_str += i['name']
 
 		# print(str(Hero_id) + " " + name + "\n" + description + "\n"+ name_str + "\n"+ ulti ) 
-		hero = Heroes(Hero_id, name, description, role, abilities, ulti)
+		hero = Hero(Hero_id, name, description, role_name, name_str, ulti)
+		db.session.add(hero)
+		db.session.commit()
 
 
 
@@ -65,7 +71,8 @@ def scrapeAchievements():
 
 	#all the url, info to create each json
 		# print(str(achievement_id) + " "+ name + "\n"+ description)
-		achieve = Achievements(achievement_id, name, description)
+		achieve = Achievement(achievement_id, name, description)
+		return achieve
 
 def scrapeEvents():
 
@@ -81,7 +88,8 @@ def scrapeEvents():
 		start = data['start_date']
 		end = data['end_date']
 
-		event = Events(event_id, name, start, end)
+		event = Event(event_id, name, start, end)
+		return event
 
 	#all the url, info to create each json
 
@@ -148,7 +156,7 @@ def scrapeTopPlayers():
 
 
 def main():
-	# scrapeHeroes()
+	scrapeHeroes()
 	scrapeAchievements()
 	#scrapeEvents()
 	#scrapeSkinsItems()
