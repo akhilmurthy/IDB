@@ -5,10 +5,10 @@ from flask_sqlalchemy import SQLAlchemy
 
 # connect SQLAlchemy and PostgreSQL, use Flask-Migrate (???)
 
-app =Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://postgres:groupPassword@35.193.209.24/postgres'   #TThe URI needs to be edited
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-db = SQLAlchemy(app)
+#app =Flask(__name__)
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://postgres:groupPassword@35.193.209.24/postgres'   #TThe URI needs to be edited
+#app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db = SQLAlchemy()
 
 
 
