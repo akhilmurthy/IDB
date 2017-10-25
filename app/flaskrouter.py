@@ -1,6 +1,9 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, Blueprint, request, session, redirect, url_for
+import models as models
+from models import *
+from sqlalchemy import or_, and_
 
-flaskrouter = Flask(__name__)
+flaskrouter = Blueprint(flaskrouter, __name__)
 
 @flaskrouter.route('/')
 def index():
@@ -39,7 +42,8 @@ def heroes():
     """
     The various playable heroes page
     """
-    return render_template('heroes.html')
+    data = models.Hero.query.order_by(models.Hero.name.asc()).all()
+    return render_template('heroes.html', data=data, output=output)
 
 
 @flaskrouter.route('/items')
@@ -65,5 +69,3 @@ def skins():
     """
     return render_template('skins.html')
 
-if __name__ == '__main__':
-   flaskrouter.run()
