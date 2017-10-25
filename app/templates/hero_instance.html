@@ -4,19 +4,19 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/bootstrap.css') }}">
 
-<div class="container">
-    <div class="row">
-    <div class="col"></div>
-    <div class="col-6"></div>
-    <div class="col"></div>
-    </div>
-
 <div class = "row" >
     <h1 style = "font-family: 'Overwatch'"><p class="text-info"><font size = "7">{{data.name}}</font></p></h1>
     <div style="text-align: center;"><img src="../../media/heroes/{{data.url}}" class = "img-responsive" alt=" "> </div>
     <br>
   </div>
   <hr>
+
+<div class="container">
+    <div class="row">
+    <div class="col"></div>
+    <div class="col-6"></div>
+    <div class="col"></div>
+    </div>
 
 <!-- Player's Stat -->
   <div class = "container-fluid">
