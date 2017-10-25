@@ -11,7 +11,7 @@ import psycopg2
 baseurl = 'https://overwatch-api.net/api/v1'
 context = ssl._create_unverified_context()
 
-# db.drop_all()
+#db.drop_all()
 db.create_all()
 
 def scrapeHeroes():
@@ -56,23 +56,31 @@ def scrapeHeroes():
 
 def scrapeAchievements():
 
-	for h in range(1, 75):
+	for h in range(1, 74):
 		tempurl = baseurl + '/achievement/' + str(h)
 		req = urllib.request.Request(tempurl, headers={'User-Agent': 'Mozilla/5.0'})
-		thejson = urllib.request.urlopen(req, context=context)
-		data_bytes = thejson.read().decode('utf-8')
-		data = json.loads(data_bytes)
+		try:
+			thejson = urllib.request.urlopen(req, context=context)
+		except:
+			pass
+		else:
+			data_bytes = thejson.read().decode('utf-8')
+			data = json.loads(data_bytes)
 
-		achievement_id = data['id']
-		name = data['name']
-		description = data['description']
+			achievement_id = data['id']
+			name = data['name']
+			description = data['description']
+			reward = data['reward']['name']
+			reward_type = data['reward']['type']['name']
+			reward_quality = data['reward']['quality']['name']
 
 		# 
 
 	#all the url, info to create each json
 		# print(str(achievement_id) + " "+ name + "\n"+ description)
-		achieve = Achievement(achievement_id, name, description)
-		return achieve
+			achieve = Achievement(achievement_id, name, description, reward, reward_type, reward_quality)
+			db.session.add(achieve)
+			db.session.commit()
 
 def scrapeEvents():
 
@@ -83,13 +91,14 @@ def scrapeEvents():
 		data_bytes = thejson.read().decode('utf-8')
 		data = json.loads(data_bytes)
 
-		event_id = data['id']
+		
 		name = data['name']
 		start = data['start_date']
 		end = data['end_date']
 
-		event = Event(event_id, name, start, end)
-		return event
+		event = Event(h, name, start, end)
+		db.session.add(event)
+		db.session.commit()
 
 	#all the url, info to create each json
 
@@ -114,12 +123,16 @@ def scrapeSkinsItems():
 			quality = data['quality']['name']
 
 			skin = Skins(h, skin_name, skin_cost, quality)
+			db.session.add(skin)
+			db.session.commit()
 		else:
 			if reward_type == 'spray' or reward_type == 'player icon':
 				item = reward_type
 				item_name = data['name']
 				item_type = data['type']['name']
 				item = Items(h, item_name, item_type)
+				db.session.add(item)
+				db.session.commit()
 
 
 
@@ -141,8 +154,10 @@ def scrapeTopPlayers():
 		level = data['us']['stats']['competitive']['overall_stats']['level']
 		skill_rank = data['us']['stats']['competitive']['overall_stats']['comprank']
 
-		topPlayer = TopPlayers(h, name, win_rate, tier, level, skill_rank )
-		# print(name)
+		topPlayer = TopPlayer(h, name, win_rate, tier, level, skill_rank )
+
+		db.session.add(topPlayer)
+		db.session.commit()
 		# print(win_rate)
 		# print(tier)
 		# print(level)
@@ -156,7 +171,7 @@ def scrapeTopPlayers():
 
 
 def main():
-	scrapeHeroes()
+	#scrapeHeroes()
 	scrapeAchievements()
 	#scrapeEvents()
 	#scrapeSkinsItems()

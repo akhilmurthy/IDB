@@ -78,7 +78,7 @@ class TopPlayer(db.Model):
 		self.TopPlayerName = TopPlayerName
 		self.SkillRank = SkillRank
 		self.Tier = Tier
-		Self.WinRate = WinRate
+		self.WinRate = WinRate
 		self.Level = Level
 
 class Achievement(db.Model):
@@ -88,8 +88,9 @@ class Achievement(db.Model):
 	AchievementID = db.Column(db.Integer, primary_key = True)
 	AchievementName = db.Column(db.String, unique = True, nullable = False)
 	Description = db.Column(db.String, unique = True, nullable = False)
-	ItemID = db.Column(db.String)
-	SkinID = db.Column(db.String)
+	Reward_Name = db.Column(db.String)
+	Reward_Type = db.Column(db.String)
+	Reward_Quality = db.Column(db.String)
 
 	
 	# items = db.relationship('Item', backref = 'Achievement',lazy = 'dynamic')
@@ -97,12 +98,13 @@ class Achievement(db.Model):
 	heroes = db.relationship('Hero', back_populates='achievements')
 	topPlayers = db.relationship('TopPlayer', secondary = achievement_topPlayer, back_populates='achievements')
 
-	def __init__(self, AchievementID, AchievementName, Description, ItemID= None, SkinID= None):
+	def __init__(self, AchievementID, AchievementName, Description, Reward_Name, Reward_Type, Reward_Quality):
 		self.AchievementID = AchievementID
 		self.AchievementName = AchievementName
 		self.Description = Description
-		self.ItemID = ItemID
-		self.SkinID = SkinID
+		self.Reward_Name = Reward_Name
+		self.Reward_Type = Reward_Type
+		self.Reward_Quality = Reward_Quality
 
 
 class Event(db.Model):
