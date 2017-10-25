@@ -142,8 +142,8 @@ def scrapeSkinsItems():
 def scrapeTopPlayers():
 	battletags = ['SPREE-2984', 'HaventMetYou-2451', 'Hydration-1570', 'zombs-1642', 'Seraphic-21298', 'Jchuk99-1390', 'SumAwsomeKid-1356', 'YLLES-3238', 'SKRRSKRR-1878', 'NotE-1996']
 	#top 10 players to start with
-	for h in range(0, 10):
-		tempurl = "https://owapi.net/api/v3/u/" + battletags[h] + "/blob"
+	for h in range(1, 11):
+		tempurl = "https://owapi.net/api/v3/u/" + battletags[h-1] + "/blob"
 		req = urllib.request.Request(tempurl, headers={'User-Agent': 'Mozilla/5.0'})
 		thejson = urllib.request.urlopen(req, context=context)
 		data_bytes = thejson.read().decode('utf-8')
