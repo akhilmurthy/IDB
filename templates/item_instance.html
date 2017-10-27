@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='../static/css/bootstrap.css') }}">
+
+<div class="container">
+    <div class="row">
+    <div class="col"></div>
+    <div class="col-6"></div>
+    <div class="col"></div>
+    </div>
+  
+<!-- Introduction Row -->
+  <div class = "row" >
+    <div style="text-align: center;"><img src="../static/media/items/{{data.item_id}}.png" alt=" " width = 300 height = 300> </div>
+    <br>
+  </div>
+  <hr>
+<!-- Player's Stat -->
+  <div class = "row">
+    <h1 style = "font-family: 'Overwatch'"><p class="text-warning"><font size = "7">Item Info</font></p></h1>
+    <p style = "font-family: 'Roboto Condensed'" class="text-warning"><font size = "5"><span style="color:orange; font-family: 'Overwatch'">&nbsp;&nbsp;&nbsp;&nbsp;Name: </span> <span style="color:white; font-family: 'Overwatch'">{{data.item_name}}</span></font></p></h1>
+
+    <p style = "font-family: 'Roboto Condensed'" class="text-warning"><font size = "5"><span style="color:orange; font-family: 'Overwatch'"> &nbsp;&nbsp;&nbsp;&nbsp;Type: <span style="color:white; font-family: 'Overwatch'">{{data.item_type}}</a></font></span></p></h1>
+    <p style = "font-family: 'Roboto Condensed'" class="text-warning"><font size = "5"><span style="color:orange; font-family: 'Overwatch'"> &nbsp;&nbsp;&nbsp;&nbsp;Cost: <span style="color:white; font-family: 'Overwatch'">25</a></font></span></p></h1>
+
+    <p style = "font-family: 'Roboto Condensed'" class="text-warning"><font size = "5"><span style="color:orange; font-family: 'Overwatch'"> &nbsp;&nbsp;&nbsp;&nbsp;Hero: {% if data.hero_id != None %}</span>
+      <a href = "../heroes/{{data.hero_id}}"><span style="color:white; font-family: 'Overwatch'">{{data.heroes.hero_name}}</a>
+     
+      {% endif %}
+    </font></span></p>
+
+    <p style = "font-family: 'Roboto Condensed'" class="text-warning"><font size = "5"><span style="color:orange; font-family: 'Overwatch'"> &nbsp;&nbsp;&nbsp;&nbsp;Event: {% if data.event_id %}</span> 
+      <a href = "../events/{{data.event_id}}"><span style="color:white; font-family: 'Overwatch'">{{data.events.event_name}}</a>
+      {% else %}
+      <a href = "../events">No event associated with this spray</a>
+      {% endif %}
+    </font></span></p></h1>
+  </div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+{% endblock %}
