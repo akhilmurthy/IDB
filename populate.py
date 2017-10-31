@@ -23,9 +23,9 @@ def scrapeHeroes():
 		name = data['name']
 		description = data['description']
 
-		abilities_list = data['abilties']
+		abilities_list = data['abilities']
 
-		b = false
+		b = False
 
 		name_str = ''
 		ulti = ''
@@ -35,7 +35,7 @@ def scrapeHeroes():
 			else:
 				if not b:
 					name_str += i['name'] 
-					b = true
+					b = True
 				else:
 					name_str += ', '
 					name_str += i['name'] 
