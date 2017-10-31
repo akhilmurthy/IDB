@@ -1,12 +1,18 @@
-runtime: python27
-api_version: 1
-threadsafe: true
+
+runtime: python
+env: flex
+entrypoint: gunicorn -b :$PORT __init__:app
+
+runtime_config:
+    python_version: 3
 
 
-# [START handlers]
-handlers:
-- url: /static
- static_dir: static
-- url: /.*
- script: __init__.app
+beta_settings:
+    cloud_sql_instances: overwatchglam-181020:us-central1:overwatch2
+skip_files:
+- env
+- .git
+- __pycache__
+- .pyc
+
 # [END handlers]
