@@ -39,7 +39,7 @@ class MyHTMLParser(HTMLParser):
 
 
            #if valid == 1:
-           if valid == 1 and "terror" in filename:
+           if valid == 1 and "classic" in filename:
                print("---" + filename)
                req = urllib.request.Request(imageurl, headers={'User-Agent': 'Mozilla/5.0'})
                theimage = urllib.request.urlopen(req, context=context)
