@@ -6,6 +6,9 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from models import db, Hero, TopPlayer, Achievement, Event, Skin, Item
 import psycopg2
+import os
+
+from html.parser import HTMLParser
 
 
 baseurl = 'https://overwatch-api.net/api/v1'
@@ -147,12 +150,37 @@ def scrapeSkinsItems():
 				db.session.add(item)
 				db.session.commit()
 
+battletags = []
 
+class MyHTMLParser(HTMLParser):
+	#add to battletags
+    def handle_starttag(self, tag, attrs):
+        # Only parse the 'anchor' tag.
+        if tag == "a":
+           # Check the list of defined attributes.
+           profileurl = ""
 
+           for name, value in attrs:
+               # If href is defined, print it.
+               #print("-"+name)
+               if name == "href":
+                   if "us" in value:
+                       profileurl = value
+                       print("---" + profileurl)
+                       #cut up isolate profileurl
+                       battletags.append(profileurl)
+                       #popTopPlayers()
 
 
 def scrapeTopPlayers():
-	battletags = ['SPREE-2984', 'HaventMetYou-2451', 'Hydration-1570', 'zombs-1642', 'Seraphic-21298', 'Jchuk99-1390', 'SumAwsomeKid-1356', 'YLLES-3238', 'SKRRSKRR-1878', 'NotE-1996']
+	leaderboardurl = "https://masteroverwatch.com/leaderboards/pc/us/mode/ranked/category/skillrating"
+	req = urllib.request.Request(leaderboardurl, headers={'User-Agent': 'Mozilla/5.0'})
+	theimage = urllib.request.urlopen(req, context=context)
+	parser = MyHTMLParser()
+	parser.feed(str(theimage.read()))
+
+def popTopPlayers():
+	#battletags = ['SPREE-2984', 'HaventMetYou-2451', 'Hydration-1570', 'zombs-1642', 'Seraphic-21298', 'Jchuk99-1390', 'SumAwsomeKid-1356', 'YLLES-3238', 'SKRRSKRR-1878', 'NotE-1996']
 	#top 10 players to start with
 	for h in range(0, 10):
 		tempurl = "https://owapi.net/api/v3/u/" + battletags[h] + "/blob"
@@ -184,10 +212,10 @@ def scrapeTopPlayers():
 
 
 def main():
-	scrapeHeroes()
-	scrapeAchievements()
-	scrapeEvents()
-	scrapeSkinsItems()
-	# scrapeTopPlayers()
+	#scrapeHeroes()
+	#scrapeAchievements()
+	#scrapeEvents()
+	#scrapeSkinsItems()
+	scrapeTopPlayers()
 
 if __name__ == "__main__": main()
