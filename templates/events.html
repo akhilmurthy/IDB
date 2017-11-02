@@ -17,8 +17,8 @@
     {% for item in output %}
     <div class="col-lg-4 col-sm-6 text-center mb-4">
       <a href = "/events/{{item.event_id}}">
-      <img class="img-thumbnail" src="../static/media/events/{{item.event_id}}.jpg" alt=" " width="80%" height="80%">
-      <h3 style="font-family: 'Overwatch'" class="text-warning">{{item.event_name}} {{item.event_id}}</h3>
+      <img class="img-rounded" src="../static/media/events/{{item.event_id}}.jpg" alt=" " width="80%" height="80%">
+      <h3 style="font-family: 'Overwatch'" class="text-warning">{{item.event_name}}</h3>
     </div>
     {% endfor %}
   </div>

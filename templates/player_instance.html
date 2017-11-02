@@ -28,7 +28,21 @@
 	  <p style = "font-family: 'Roboto Condensed'" class="text-warning"><font size = "5"><span style="color:orange; font-family: 'Overwatch'">Tier:</span> <img  src="../static/media/players/icon/grandmaster-icon.png" alt="grandmaster" width=60 height =60> </font></p></h1>
 	  <p style = "font-family: 'Roboto Condensed'" class="text-warning"><font size = "5"><span style="color:orange; font-family: 'Overwatch'">Win Rate:</span> <span style="color:white; font-family: 'Overwatch'">{{data.win_rate}}</font></span></p></h1>
 	  <p style = "font-family: 'Roboto Condensed'" class="text-warning"><font size = "5"><span style="color:orange; font-family: 'Overwatch'">Level:</span> <span style="color:white; font-family: 'Overwatch'">{{data.level}}</span></font></p></h1>
-	</div>
+	
+<!-- Player's Achievements -->
+       <p style = "font-family: 'Roboto Condensed'" class="text-warning"><font size = "5"><span style="color:orange; font-family: 'Overwatch'">Available Achievements:&nbsp; &nbsp;
+       {% for item in data.achievements %}
+       <div class ="col-lg-4 col-sm-6 text-center mb-4">
+       <span style="color:white; font-family: 'Overwatch'">
+          <a href = "../achievements/{{item.achievement_id}}"><img src="../static/media/achievements/{{item.achievement_id}}.png" alt=" " width=50 height=50>
+                <h3 style="font-family: 'Overwatch'" class="text-warning">{{item.achievement_name}} </h3>
+             </a>
+            </span>
+       </font>
+      </div>
+        </p>
+      {% endfor %}  
+    </div>
   <hr>
 
 <!-- Most played hero -->
@@ -36,31 +50,11 @@
 	<div class="row">
 	  <div class="col-lg-4 col-sm-6 text-center mb-4">
 	    <a href = "/heroes/{{data.hero_id}}">
-      <img src="../../media/players/heroes/{{data.hero_id}}" alt=" "  width = 300 height = 300>
-      <div style="text-align: center;"><img class="" src="../static/media/heroes/{{data.hero_id}}.png" alt="" width="100%" height="100%"> </div></a>
+      <div style="text-align: center;"><img class="img-rounded" src="../static/media/heroes/{{data.hero_id}}.png" alt="" width="100%" height="100%"> </div></a>
     <br>
   </div>
 	  </div>
-	</div> 
-	<hr>
-
-<!-- Player's Achievements -->
-  <h1 style = "font-family: 'Overwatch'"><p class="text-info"><font size = "7">Achievements</font></p></h1>
-  <div class = "row">
-	  <div class="col-lg-4 col-sm-6 text-center mb-4">
-	    <a href = "../achievements/45.html">
-            <img src="../../media/achievements/45.png" alt="bastion_achievement" width = 100 height = 100 hspace = 50>
-		</a>
-        <h3 style="font-family: 'Overwatch'" class="text-warning">CHARGE!</h3>
-	  </div>
-	  <div class="col-lg-4 col-sm-6 text-center mb-4">
-	    <a href = "../achievements/58.html">
-            <img src="../../media/achievements/58.png" alt="dva_achievement" width = 100 height = 100 hspace = 50>
-		</a>
-        <h3 style="font-family: 'Overwatch'" class="text-warning">GAME OVER</h3>
-	  </div>
-  </div>
-
+  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

@@ -13,9 +13,9 @@
       {% for item in output %}
       <div class="col-lg-4 col-sm-6 text-center mb-4">
         <a href = "/heroes/{{item.hero_id}}">
-        <img class="img-thumbnail" src="../static/media/heroes/{{item.hero_id}}.png" alt="" width="80%" height="80%">
+        <img class="img-rounded" src="../static/media/heroes/{{item.hero_id}}.png" alt="" width="80%" height="80%">
         </a>
-         <h3 style="font-family: 'Overwatch'" class="text-warning"><font size = "6">{{item.hero_name}}{{item.hero_id}}</font></h3>
+         <h3 style="font-family: 'Overwatch'" class="text-warning"><font size = "6">{{item.hero_name}}</font></h3>
       </div>
       {% endfor %}
     </div>    
