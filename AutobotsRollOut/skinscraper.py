@@ -24,26 +24,27 @@ class MyHTMLParser(HTMLParser):
 
            for name, value in attrs:
                # If href is defined, print it.
-               print("-"+name)
+               #print("-"+name)
                if name == "src":
                    imageurl = value
                if name == "\\tdata-image-name":
                    filename = value
                    valid = 1
-                   print("Gotfilename")
+                   #print("Gotfilename")
 
-           print(imageurl)
+           #print(imageurl)
            imageurl = imageurl.replace("/scale-to-width-down/150", "")
-           print(imageurl)
+           #print(imageurl)
 
 
 
-           print("---"+filename)
-           if valid == 1:
+           #if valid == 1:
+           if valid == 1 and "terror" in filename:
+               print("---" + filename)
                req = urllib.request.Request(imageurl, headers={'User-Agent': 'Mozilla/5.0'})
                theimage = urllib.request.urlopen(req, context=context)
 
-               output = open("../../media/achievements/"+filename, 'wb')
+               output = open("../static/media/skins/"+filename, 'wb')
                output.write(theimage.read())
                output.close()
                        
