@@ -6,7 +6,7 @@
 
 <div class = "row" >
     <h1 style = "font-family: 'Overwatch'"><p class="text-info"><font size = "7">{{data.name}}</font></p></h1>
-    <div style="text-align: center;"><img class="" src="../static/media/heroes/{{data.hero_id}}.png" alt="" width="100%" height="100%"> </div>
+    <div style="text-align: center;"><img class="" src="../static/media/heroes/{{data.hero_id}}.png" alt="" width="90%" height="90%"> </div>
     <br>
   </div>
   <hr>
@@ -27,26 +27,33 @@
     <p style = "font-family: 'Roboto Condensed'" class="text-warning"><font size = "5"><span style="color:orange; font-family: 'Overwatch'">Role: </span> <span style="color:white; font-family: 'Overwatch'">{{data.role}}</span></font></p>
 
     <p style = "font-family: 'Roboto Condensed'" class="text-warning"><font size = "5"><span style="color:orange; font-family: 'Overwatch'">Abilities: </span><span style="color:white; font-family: 'Overwatch'">{{data.abilities}}</span></font></p>
-
+    <div class = "row">
     <p style = "font-family: 'Roboto Condensed'" class="text-warning"><font size = "5"><span style="color:orange; font-family: 'Overwatch'">Available Achievements:&nbsp; &nbsp;
-    {% for item in data.achieve %}
-              
-      <span style="color:white; font-family: 'Overwatch'">
-         <a href = "../achievements/{{item.id}}"><img src="../../media/achievements/{{data.item_id}}" alt=" " width=50 height=50></a> {{item.name}}
-           </span>
-      </font>
-      </p>
-      {% endfor %}
-
-	   <p style = "font-family: 'Roboto Condensed'" class="text-warning"><font size = "5"><span style="color:orange; font-family: 'Overwatch'">
+    {% for item in data.achievements %}
+       <div class ="col-lg-4 col-sm-6 text-center mb-4">
+       <span style="color:white; font-family: 'Overwatch'">
+          <a href = "../achievements/{{item.achievement_id}}"><img src="../static/media/achievements/{{item.achievement_id}}.png" alt=" " width=50 height=50>
+                <h3 style="font-family: 'Overwatch'" class="text-warning">{{item.achievement_name}} </h3>
+             </a>
+            </span>
+       </font>
+      </div>
+        </p>
+      {% endfor %}  
+    </div>
+   <p style = "font-family: 'Roboto Condensed'" class="text-warning"><font size = "5"><span style="color:orange; font-family: 'Overwatch'">
      Available Skins: 
      <div class = "row">
-           <div class ="col-lg-4 col-sm-6 text-center mb-4">
+           
      {% for item in data.skins %}
-       {% if item.skin_id < 1575 or item.skin_id >1586 %}
-     <a href = "../skins/{{item.skin_id}}"><span style="color:white; font-family: 'Overwatch'">
-        {{item.skin_name}}</a></font></span>
-    {% endif %}
+        <div class ="col-lg-4 col-sm-6 text-center mb-4">
+             <a href = "../skins/{{item.skin_id}}">
+                <span style="color:white; font-family: 'Overwatch'">
+                   <img class="img-rounded" src="../static/media/skins/{{item.skin_id}}.png" alt=" " width="150" height="150">
+                    <h3 style="font-family: 'Overwatch'" class="text-warning">{{item.skin_name}}</h3>
+                </span>
+             </a>
+        </div>
     {% endfor %}
     </div>
     </div>

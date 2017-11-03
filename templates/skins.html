@@ -15,13 +15,11 @@
   <!-- Skins Grid -->
   <div class="row">
     {% for item in output %}
-        {% if item.skin_id < 1575 or item.skin_id >1586 %}
     <div class="col-lg-4 col-sm-6 text-center mb-4">
       <a href = "/skins/{{item.skin_id}}">
-      <img class="img-thumbnail" src="../static/media/skins/{{item.skin_id}}.png" alt=" " width="250" height="250"></a>
-      <h3 style="font-family: 'Overwatch'" class="text-warning"><font size = "6">{{item.skin_name}} {{item.skin_id}}</font></h3>
+      <img class="img-rounded" src="../static/media/skins/{{item.skin_id}}.png" alt=" " width="250" height="250"></a>
+      <h3 style="font-family: 'Overwatch'" class="text-warning"><font size = "6">{{item.skin_name}}</font></h3>
     </div>
-         {% endif %}
     {% endfor %}
   </div>    
 <!-- Optional JavaScript -->
