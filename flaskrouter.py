@@ -41,12 +41,18 @@ def event(event_id):
 
 
 @flaskrouter.route('/heroes')
-def heroes():
+@flaskrouter.route('/heroes/page/<int:page>')
+def heroes(page=None):
     """
     The various playable heroes page
     """
-    output = db.session.query(Hero).all()
-    return render_template('heroes.html', output=output)
+    if page == None:
+      page = 1
+    data = db.session.query(Hero).all()
+    per_page = 6
+    output = data[per_page*(page-1):per_page*page]
+    pagination = Hero.query.paginate(per_page=per_page, page=page)
+    return render_template('heroes.html', output=output, pagination = pagination, page_num = page)
 
 @flaskrouter.route('/heroes/<int:hero_id>')
 def hero(hero_id):
