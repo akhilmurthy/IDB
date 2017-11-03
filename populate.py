@@ -157,27 +157,31 @@ class MyHTMLParser(HTMLParser):
     def handle_starttag(self, tag, attrs):
         # Only parse the 'anchor' tag.
         if tag == "a":
-           # Check the list of defined attributes.
-           profileurl = ""
+            # Check the list of defined attributes.
+            profileurl = ""
 
-           for name, value in attrs:
-               # If href is defined, print it.
-               #print("-"+name)
-               if name == "href":
-                   if "profile" in value:
-                       profileurl = value
-                       print("---" + profileurl)
-                       #cut up isolate profileurl
-                       battletags.append(profileurl)
-                       #popTopPlayers()
+            for name, value in attrs:
+                # If href is defined, print it.
+                #print("-"+name)
+                if name == "href":
+                    if "profile" in value:
+                        profileurl = value
+                        #print("---" + profileurl)
+                        #cut up isolate profileurl
+                        battletag = profileurl.rsplit("/", 1)[1]
+                        #print("----" + battletag)
+                        battletags.append(battletag)                     
 
-
-def scrapeTopPlayers():
-	leaderboardurl = "https://masteroverwatch.com/leaderboards/pc/us/mode/ranked/category/skillrating"
-	req = urllib.request.Request(leaderboardurl, headers={'User-Agent': 'Mozilla/5.0'})
-	theimage = urllib.request.urlopen(req, context=context)
-	parser = MyHTMLParser()
-	parser.feed(str(theimage.read()))
+def scrapeTopPlayers(pages):
+	for x in range(1, pages+1):
+		leaderboardurl = "https://overwatchtracker.com/leaderboards/pc/global/CompetitiveRank?country=United%20States&page=" + str(x) + "&mode=1"
+		req = urllib.request.Request(leaderboardurl, headers={'User-Agent': 'Mozilla/5.0'})
+		theimage = urllib.request.urlopen(req, context=context)
+		parser = MyHTMLParser()
+		parser.feed(str(theimage.read()))
+	#print(battletags)
+	#print(len(battletags))
+	popTopPlayers()
 
 def popTopPlayers():
 	#battletags = ['SPREE-2984', 'HaventMetYou-2451', 'Hydration-1570', 'zombs-1642', 'Seraphic-21298', 'Jchuk99-1390', 'SumAwsomeKid-1356', 'YLLES-3238', 'SKRRSKRR-1878', 'NotE-1996']
@@ -216,6 +220,6 @@ def main():
 	#scrapeAchievements()
 	#scrapeEvents()
 	#scrapeSkinsItems()
-	scrapeTopPlayers()
+	scrapeTopPlayers(2)
 
 if __name__ == "__main__": main()
