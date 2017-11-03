@@ -200,7 +200,8 @@ def popTopPlayers():
 		skill_rank = data['us']['stats']['competitive']['overall_stats']['comprank']
 
 		topPlayer = TopPlayer(h, name, win_rate, tier, level, skill_rank )
-
+		print("-%s %s %s %s %s %s", h, name, win_rate, tier, level, skill_rank)
+		
 		db.session.add(topPlayer)
 		db.session.commit()
 		# print(win_rate)
