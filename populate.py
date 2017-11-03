@@ -150,7 +150,7 @@ def scrapeSkinsItems():
 				db.session.add(item)
 				db.session.commit()
 
-battletags = []
+newbattletags = []
 
 class MyHTMLParser(HTMLParser):
 	#add to battletags
@@ -170,7 +170,7 @@ class MyHTMLParser(HTMLParser):
                         #cut up isolate profileurl
                         battletag = profileurl.rsplit("/", 1)[1]
                         #print("----" + battletag)
-                        battletags.append(battletag)                     
+                        newbattletags.append(battletag)                     
 
 def scrapeTopPlayers(pages):
 	for x in range(1, pages+1):
@@ -185,7 +185,10 @@ def scrapeTopPlayers(pages):
 
 def popTopPlayers():
 	#battletags = ['SPREE-2984', 'HaventMetYou-2451', 'Hydration-1570', 'zombs-1642', 'Seraphic-21298', 'Jchuk99-1390', 'SumAwsomeKid-1356', 'YLLES-3238', 'SKRRSKRR-1878', 'NotE-1996']
+	#battletags.extend(newbattletags)
+	battletags = newbattletags
 	#top 10 players to start with
+	print(battletags)
 	for h in range(0,len(battletags)):
 		tempurl = "https://owapi.net/api/v3/u/" + battletags[h] + "/blob"
 		req = urllib.request.Request(tempurl, headers={'User-Agent': 'Mozilla/5.0'})
@@ -200,8 +203,8 @@ def popTopPlayers():
 		skill_rank = data['us']['stats']['competitive']['overall_stats']['comprank']
 
 		topPlayer = TopPlayer(h, name, win_rate, tier, level, skill_rank )
-		print("-%s %s %s %s %s %s", h, name, win_rate, tier, level, skill_rank)
-		
+		print("-", h, name, win_rate, tier, level, skill_rank)
+
 		db.session.add(topPlayer)
 		db.session.commit()
 		# print(win_rate)
