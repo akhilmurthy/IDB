@@ -3,7 +3,8 @@
 {% block content %}
 
 <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="{{ url_for('static', filename='../static/css/bootstrap.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='../../../static/css/bootstrap.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='../../../static/css/button.css') }}">
 
 <!-- Custom Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
@@ -18,12 +19,25 @@
     {% if item.hero_id != None %}
     <div class="col-lg-4 col-sm-6 text-center mb-4">
       <a href = "/items/{{item.item_id}}">
-      <img class="img-thumbnail" src="../static/media/items/{{item.item_id}}.png" alt=" " width="250" height="250">
-      <h3 style="font-family: 'Overwatch'" class="text-warning"> {{item.item_name}}</h3>
+      <img class="img-rounded" src="../../../static/media/items/{{item.item_id}}.png" alt=" " width="150" height="150">
+      <h3 style="font-family: 'Overwatch'" class="text-warning"> {{item.item_name}}</h3></a>
     </div>
     {% endif %}
     {% endfor %}
   </div>
+  <div class = "wrapper">
+      <div class = "pagination">
+        {% for page in pagination.iter_pages() %}
+          {% if page %}
+               {% if page != page_num %}
+                   <button class=button onclick="window.location.href='{{ url_for('flaskrouter.items', page=page ) }}'"> {{ page }} </button> 
+               {% else %}
+                   <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.items', page=page ) }}'"> {{ page }} </button>  
+               {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

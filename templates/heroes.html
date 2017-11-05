@@ -1,8 +1,10 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<link rel="stylesheet" href="{{ url_for('static', filename='../static/css/bootstrap.css') }}">
-  <span class="border-bottom-0"></span>
+<link rel="stylesheet" href="{{ url_for('static', filename='../../../static/css/bootstrap.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='../../../static/css/button.css') }}">
+
+    <span class="border-bottom-0"></span>
 
   <!-- Hero title page -->
     <h1 style = "font-family: 'Overwatch'"><p class="text-warning"><font size = "7">Heroes of Overwatch</font></p></h1>
@@ -13,19 +15,21 @@
       {% for item in output %}
       <div class="col-lg-4 col-sm-6 text-center mb-4">
         <a href = "/heroes/{{item.hero_id}}">
-         {% if page_num %} <img class="img-rounded" src="../../../static/media/heroes/{{item.hero_id}}.png" alt="" width="80%" height="80%">
-         {% else %} <img class="img-rounded" src="../static/media/heroes/{{item.hero_id}}.png" alt="" width="80%" height="80%">
-         {% endif %}
+         <img class="img-rounded" src="../../../static/media/heroes/{{item.hero_id}}.png" alt="" width="80%" height="80%">
         </a>
          <h3 style="font-family: 'Overwatch'" class="text-warning"><font size = "6">{{item.hero_name}}</font></h3>
       </div>
       {% endfor %}
     </div>    
-    <div class = "row">
+    <div class = "wrapper">
       <div class = "pagination">
         {% for page in pagination.iter_pages() %}
           {% if page %}
-            <a href="{{ url_for('flaskrouter.heroes', page=page ) }}"> <font size = "6"> {{ page }} </font> </a>
+               {% if page != page_num %}
+                   <button class=button onclick="window.location.href='{{ url_for('flaskrouter.heroes', page=page ) }}'"> {{ page }} </button> 
+               {% else %}
+                   <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.heroes', page=page ) }}'"> {{ page }} </button>  
+               {% endif %}
           {% endif %}
         {% endfor %}
       </div>
