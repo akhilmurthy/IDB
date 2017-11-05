@@ -23,18 +23,37 @@ def about():
     return render_template('about.html')
 
 @flaskrouter.route('/heroes')
-@flaskrouter.route('/heroes/page/<int:page>')
-def heroes(page=None):
+@flaskrouter.route('/heroes?sort=<int:sort>?filtering=<string:filtering>')
+@flaskrouter.route('/heroes?sort=<int:sort>?page=<int:page>?filtering=<string:filtering>')
+def heroes(page=None, sort=None, filtering=None):
     """
     The various playable heroes page
     """
     if page == None:
       page = 1
-    data = db.session.query(Hero).all()
+    if sort == None:
+      sort = 0
+    if filtering == None:
+      filtering = "all"
+    if sort == 0:
+      if filtering == "all":
+  
+        data = db.session.query(Hero).order_by(models.Hero.hero_name.asc()).all()
+      else:
+        data = db.session.query(Hero).order_by(models.Hero.hero_name.asc()).filter(Hero.role == filtering)
+    else:
+      if filtering == "all":
+        data = db.session.query(Hero).order_by(models.Hero.hero_name.desc()).all()
+      else:
+        data = db.session.query(Hero).order_by(models.Hero.hero_name.desc()).filter(Hero.role == filtering)
     per_page = 6
     output = data[per_page*(page-1) : per_page*page]
-    pagination = Hero.query.paginate(per_page=per_page, page=page)
-    return render_template('heroes.html', output=output, pagination = pagination, page_num = page)
+    if filtering == "all":
+      pagination = Hero.query.paginate(per_page=per_page, page=page)
+    else:
+      pagination = Hero.query.filter(Hero.role == filtering).paginate(per_page=per_page, page=page)
+  
+    return render_template('heroes.html', output=output, pagination = pagination, page_num = page, sort=sort, filtering = filtering)
 
 @flaskrouter.route('/heroes/<int:hero_id>')
 def hero(hero_id):
