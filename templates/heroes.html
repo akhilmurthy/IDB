@@ -11,6 +11,50 @@
     <br>
     <hr>
     <!-- Heroes Grid -->
+    <div class = "wrapper">
+      <!-- sort by-->
+      <p class="text-warning"><font size = "6"> <span style="color:white; font-family: 'Overwatch'"> Sort by </span> </font></p>
+        {% if sort!= 0 %}
+          <button class=button onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=0, filtering=filtering) }}'"> <span style="color:white; font-family: 'Overwatch'"> Ascending </span></button>
+        {% else %} 
+          <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=0, filtering=filtering) }}'"> <span style="color:white; font-family: 'Overwatch'"> Ascending </span></button> 
+        {% endif %}
+        {% if sort!= 1 %}
+          <button class=button onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=1, filtering=filtering) }}'"> <span style="color:white; font-family: 'Overwatch'"> Decending </span></button>
+        {% else %} 
+          <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=1, filtering=filtering) }}'"> <span style="color:white; font-family: 'Overwatch'"> Decending </span></button> 
+        {% endif %} 
+
+      <!-- filter by-->
+      <p class="text-warning"><font size = "6"> <span style="color:white; font-family: 'Overwatch'"> filter by role</span> </font></p>
+        {% if filtering != None %}
+       <button class=button onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort) }}'"> <span style="color:white; font-family: 'Overwatch'"> All </span></button>
+        {% else %}
+       <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort) }}'"> <span style="color:white; font-family: 'Overwatch'"> All </span></button>
+        {% endif %}
+      {% if filtering != 'offense' %}
+       <button class=button onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='offense') }}'"> <span style="color:white; font-family: 'Overwatch'"> Offense </span></button>
+        {% else %}
+       <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='offense') }}'"> <span style="color:white; font-family: 'Overwatch'"> Offense </span></button>
+        {% endif %}
+      {% if filtering != 'defense' %}
+       <button class=button onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='defense') }}'"> <span style="color:white; font-family: 'Overwatch'"> Defense </span></button>
+        {% else %}
+       <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='defense') }}'"> <span style="color:white; font-family: 'Overwatch'"> Defense </span></button>
+        {% endif %}
+       {% if filtering != 'tank' %}
+       <button class=button onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='tank') }}'"> <span style="color:white; font-family: 'Overwatch'"> Tank </span></button>
+        {% else %}
+       <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='tank') }}'"> <span style="color:white; font-family: 'Overwatch'"> Tank </span></button>
+        {% endif %}
+        {% if filtering != 'support' %}
+       <button class=button onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='support') }}'"> <span style="color:white; font-family: 'Overwatch'"> Support </span></button>
+        {% else %}
+       <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='support') }}'"> <span style="color:white; font-family: 'Overwatch'"> Support </span></button>
+        {% endif %}
+    </div>
+    <br>
+    <hr>
     <div class="row">
       {% for item in output %}
       <div class="col-lg-4 col-sm-6 text-center mb-4">
@@ -26,9 +70,9 @@
         {% for page in pagination.iter_pages() %}
           {% if page %}
                {% if page != page_num %}
-                   <button class=button onclick="window.location.href='{{ url_for('flaskrouter.heroes', page=page ) }}'"> {{ page }} </button> 
+                   <button class=button onclick="window.location.href='{{ url_for('flaskrouter.heroes', page=page, sort=sort,filtering=filtering ) }}'"> {{ page }} </button> 
                {% else %}
-                   <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.heroes', page=page ) }}'"> {{ page }} </button>  
+                   <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.heroes', page=page, sort=sort,filtering=filtering ) }}'"> {{ page }} </button>  
                {% endif %}
           {% endif %}
         {% endfor %}
