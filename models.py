@@ -48,7 +48,7 @@ class TopPlayer(db.Model):
     top_player_id = db.Column(db.Integer, primary_key = True)
     top_player_name = db.Column(db.String, unique = True, nullable = False)
     skill_rank = db.Column(db.String, nullable = False)
-    tier = db.Column(db.String, nullable = False)
+    KAD = db.Column(db.Float, nullable = False)
     win_rate = db.Column(db.Float, nullable = False)
     level = db.Column(db.Integer, nullable = False)
     # heroes = db.relationship('Hero',secondary = hero_top_player, back_populates='top_players')
@@ -56,11 +56,11 @@ class TopPlayer(db.Model):
     hero_id = db.Column(db.Integer, db.ForeignKey('heroes.hero_id'))
     # achievements = db.relationship('Achievement',secondary = achievement_top_player, backref = 'TopPlayer',lazy = 'dynamic')
 
-    def __init__(self, TopPlayerID, TopPlayerName, SkillRank, Tier, WinRate, Level, heroID=None):
+    def __init__(self, TopPlayerID, TopPlayerName, SkillRank, KAD, WinRate, Level, heroID=None):
         self.top_player_id = TopPlayerID
         self.top_player_name = TopPlayerName
         self.skill_rank = SkillRank
-        self.tier = Tier
+        self.KAD = KAD
         self.win_rate = WinRate
         self.level = Level
         self.hero_id = heroID
