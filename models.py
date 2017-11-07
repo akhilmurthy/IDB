@@ -56,7 +56,7 @@ class TopPlayer(db.Model):
     hero_id = db.Column(db.Integer, db.ForeignKey('heroes.hero_id'))
     # achievements = db.relationship('Achievement',secondary = achievement_top_player, backref = 'TopPlayer',lazy = 'dynamic')
 
-    def __init__(self, TopPlayerID, TopPlayerName, SkillRank, kad, WinRate, Level, heroID=None):
+    def __init__(self, TopPlayerID, TopPlayerName, SkillRank, kad, WinRate, Level, heroID):
         self.top_player_id = TopPlayerID
         self.top_player_name = TopPlayerName
         self.skill_rank = SkillRank
