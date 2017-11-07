@@ -267,9 +267,14 @@ def scrapePlayer():
 			soup = bs4.BeautifulSoup(playerhtml, "html.parser")
 
 			win_rate = soup.find('div', {'data-stat':'Wl'}).text
+			win_rate = win_rate.replace("%", "")
 			KAD = soup.find('div', {'data-stat':'Kad'}).text
 			level = soup.find('div', {'data-stat':'Level'}).text
+			level = level.replace(",", "")
 			skill_rank = soup.find('div', {'data-stat':'CompetitiveRank'}).text
+			skill_rank = skill_rank.replace(" ", "")
+			skill_rank = skill_rank.replace(",", "")
+			#print(skill_rank)
 			primary_hero = ""
 			for hero in soup.findAll('div', {'class':'infobox'}):
 				#print(hero)
@@ -286,9 +291,9 @@ def scrapePlayer():
 			#print(primary_hero_id)
 			#print(f'+ {h+1} {name} {skill_rank} {KAD} {win_rate} {level} {primary_hero_id}')
 			
-			
+
 			newakhilstring = " ("
-			newakhilstring = newakhilstring + str.join(',', (str(h+1), str("\'" + name + "\'"), str("\'" + skill_rank + "\'"), str(KAD), str(win_rate), str(level), str(primary_hero_id)))
+			newakhilstring = newakhilstring + str.join(',', (str(h+1), str("\'" + name + "\'"), str(skill_rank), str(KAD), str(win_rate), str(level), str(primary_hero_id)))
 			newakhilstring = newakhilstring + "),"
 			#print(akhilstring)
 			'''
@@ -299,6 +304,7 @@ def scrapePlayer():
 			'''
 			akhilstring = akhilstring + newakhilstring
 		except:
+			print("skipped " + players[h])
 			pass
 	akhilstring = akhilstring + ");"
 	print(akhilstring)
