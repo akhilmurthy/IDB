@@ -47,7 +47,7 @@ class TopPlayer(db.Model):
 
     top_player_id = db.Column(db.Integer, primary_key = True)
     top_player_name = db.Column(db.String, unique = True, nullable = False)
-    skill_rank = db.Column(db.String, nullable = False)
+    skill_rank = db.Column(db.Integer, nullable = False)
     kad = db.Column(db.Float, nullable = False)
     win_rate = db.Column(db.Float, nullable = False)
     level = db.Column(db.Integer, nullable = False)
