@@ -1,0 +1,27 @@
+.button {
+    background-color: #FF8C00;
+    border: none;
+    color: white;
+    float: center;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}
+.button2 {
+    background-color: #A9A9A9;
+    border: none;
+    color: white;
+    float: center;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}
+.wrapper {
+    text-align: center;
+}

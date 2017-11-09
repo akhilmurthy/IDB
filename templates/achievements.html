@@ -15,6 +15,40 @@
   <br>
   <hr>
   <!-- achievements Grid -->
+  <div class = "wrapper">
+      <!-- sort by-->
+      <p class="text-warning"><font size = "6"> <span style="color:white; font-family: 'Overwatch'"> Sort by Name </span> </font></p>
+        {% if sort!= 0 %}
+          <button class=button onclick="window.location.href='{{ url_for('flaskrouter.achievements', sort=0, filtering=filtering) }}'"> <span style="color:white; font-family: 'Overwatch'"> Ascending </span></button>
+        {% else %} 
+          <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.achievements', sort=0, filtering=filtering) }}'"> <span style="color:white; font-family: 'Overwatch'"> Ascending </span></button> 
+        {% endif %}
+        {% if sort!= 1 %}
+          <button class=button onclick="window.location.href='{{ url_for('flaskrouter.achievements', sort=1, filtering=filtering) }}'"> <span style="color:white; font-family: 'Overwatch'"> Decending </span></button>
+        {% else %} 
+          <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.achievements', sort=1, filtering=filtering) }}'"> <span style="color:white; font-family: 'Overwatch'"> Decending </span></button> 
+        {% endif %} 
+      <!-- filter by -->
+      <p class="text-warning"><font size = "6"> <span style="color:white; font-family: 'Overwatch'"> filter by Hero Association</span> </font></p>
+        {% if filtering != None and filtering != 'all' %}
+       <button class=button onclick="window.location.href='{{ url_for('flaskrouter.achievements', sort=sort) }}'"> <span style="color:white; font-family: 'Overwatch'"> All </span></button>
+        {% else %}
+       <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.achievements', sort=sort) }}'"> <span style="color:white; font-family: 'Overwatch'"> All </span></button>
+        {% endif %}
+      {% if filtering != 'hero' %}
+       <button class=button onclick="window.location.href='{{ url_for('flaskrouter.achievements', sort=sort, filtering='hero') }}'"> <span style="color:white; font-family: 'Overwatch'"> Hero Association </span></button>
+        {% else %}
+       <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.achievements', sort=sort, filtering='hero') }}'"> <span style="color:white; font-family: 'Overwatch'"> Hero Association </span></button>
+        {% endif %}
+      {% if filtering != 'no' %}
+       <button class=button onclick="window.location.href='{{ url_for('flaskrouter.achievements', sort=sort, filtering='no') }}'"> <span style="color:white; font-family: 'Overwatch'"> No Hero Association </span></button>
+        {% else %}
+       <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.achievements', sort=sort, filtering='no') }}'"> <span style="color:white; font-family: 'Overwatch'"> No Hero Association </span></button>
+        {% endif %}
+
+    </div>
+    <br>
+    <hr>
   <div class="row">
     {% for item in output %}
     <div class="col-lg-4 col-sm-6 text-center mb-4">
@@ -29,9 +63,9 @@
         {% for page in pagination.iter_pages() %}
           {% if page %}
                {% if page != page_num %}
-                   <button class=button onclick="window.location.href='{{ url_for('flaskrouter.achievements', page=page ) }}'"> {{ page }} </button> 
+                   <button class=button onclick="window.location.href='{{ url_for('flaskrouter.achievements', page=page, sort=sort,filtering=filtering) }}'"> {{ page }} </button> 
                {% else %}
-                   <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.achievements', page=page ) }}'"> {{ page }} </button>  
+                   <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.achievements', page=page, sort=sort,filtering=filtering) }}'"> {{ page }} </button>  
                {% endif %}
           {% endif %}
         {% endfor %}

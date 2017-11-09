@@ -24,34 +24,44 @@
         {% else %} 
           <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=1, filtering=filtering) }}'"> <span style="color:white; font-family: 'Overwatch'"> Decending </span></button> 
         {% endif %} 
-
-      <!-- filter by-->
+      <!-- filter by -->
       <p class="text-warning"><font size = "6"> <span style="color:white; font-family: 'Overwatch'"> filter by role</span> </font></p>
-        {% if filtering != None %}
-       <button class=button onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort) }}'"> <span style="color:white; font-family: 'Overwatch'"> All </span></button>
+        {% if filtering != None and filtering != 'all' %}
+         <button class=button onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort) }}'"> 
+           <span style="color:white; font-family: 'Overwatch'"> All </span></button>
         {% else %}
-       <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort) }}'"> <span style="color:white; font-family: 'Overwatch'"> All </span></button>
+         <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort) }}'"> 
+           <span style="color:white; font-family: 'Overwatch'"> All </span></button>
         {% endif %}
-      {% if filtering != 'offense' %}
-       <button class=button onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='offense') }}'"> <span style="color:white; font-family: 'Overwatch'"> Offense </span></button>
+        {% if filtering != 'offense' %}
+         <button class=button onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='offense') }}'">
+           <span style="color:white; font-family: 'Overwatch'"> Offense </span></button>
         {% else %}
-       <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='offense') }}'"> <span style="color:white; font-family: 'Overwatch'"> Offense </span></button>
+         <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='offense') }}'">
+           <span style="color:white; font-family: 'Overwatch'"> Offense </span></button>
         {% endif %}
-      {% if filtering != 'defense' %}
-       <button class=button onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='defense') }}'"> <span style="color:white; font-family: 'Overwatch'"> Defense </span></button>
+        {% if filtering != 'defense' %}
+         <button class=button onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='defense') }}'"> 
+           <span style="color:white; font-family: 'Overwatch'"> Defense </span></button>
         {% else %}
-       <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='defense') }}'"> <span style="color:white; font-family: 'Overwatch'"> Defense </span></button>
+         <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='defense') }}'">
+           <span style="color:white; font-family: 'Overwatch'"> Defense </span></button>
         {% endif %}
-       {% if filtering != 'tank' %}
-       <button class=button onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='tank') }}'"> <span style="color:white; font-family: 'Overwatch'"> Tank </span></button>
+        {% if filtering != 'tank' %}
+         <button class=button onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='tank') }}'"> 
+           <span style="color:white; font-family: 'Overwatch'"> Tank </span></button>
         {% else %}
-       <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='tank') }}'"> <span style="color:white; font-family: 'Overwatch'"> Tank </span></button>
+         <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='tank') }}'">
+           <span style="color:white; font-family: 'Overwatch'"> Tank </span></button>
         {% endif %}
         {% if filtering != 'support' %}
-       <button class=button onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='support') }}'"> <span style="color:white; font-family: 'Overwatch'"> Support </span></button>
+         <button class=button onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='support') }}'"> 
+           <span style="color:white; font-family: 'Overwatch'"> Support </span></button>
         {% else %}
-       <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='support') }}'"> <span style="color:white; font-family: 'Overwatch'"> Support </span></button>
+         <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.heroes', sort=sort, filtering='support') }}'"> 
+           <span style="color:white; font-family: 'Overwatch'"> Support </span></button>
         {% endif %}
+
     </div>
     <br>
     <hr>
