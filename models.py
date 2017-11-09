@@ -48,7 +48,6 @@ class TopPlayer(db.Model):
     top_player_id = db.Column(db.Integer, primary_key = True)
     top_player_name = db.Column(db.String, unique = True, nullable = False)
     skill_rank = db.Column(db.Integer, nullable = False)
-    kad = db.Column(db.Float, nullable = False)
     win_rate = db.Column(db.Float, nullable = False)
     level = db.Column(db.Integer, nullable = False)
     # heroes = db.relationship('Hero',secondary = hero_top_player, back_populates='top_players')
@@ -60,7 +59,6 @@ class TopPlayer(db.Model):
         self.top_player_id = TopPlayerID
         self.top_player_name = TopPlayerName
         self.skill_rank = SkillRank
-        self.kad = kad
         self.win_rate = WinRate
         self.level = Level
         self.hero_id = heroID
