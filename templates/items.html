@@ -17,7 +17,7 @@
 <!-- Items Grid -->
   <div class="wrapper">
     <!-- sort by name -->
-    <p class="text-warning"><font size = "6"> <span style="color:white; font-family: 'Overwatch'"> Sort by Skin name</span> </font></p>
+    <p class="text-warning"><font size = "6"> <span style="color:white; font-family: 'Overwatch'"> Sort by Item name</span> </font></p>
     {% if sort!= 0 %}
       <button class=button onclick="window.location.href='{{ url_for('flaskrouter.items', sort=0, filtering=filtering) }}'"> <span style="color:white; font-family: 'Overwatch'"> Ascending </span></button>
     {% else %} 
@@ -29,7 +29,7 @@
       <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.items', sort=1, filtering=filtering) }}'"> <span style="color:white; font-family: 'Overwatch'"> Decending </span></button> 
     {% endif %} 
     
-    <p class="text-warning"><font size = "6"> <span style="color:white; font-family: 'Overwatch'"> filter by Hero</span></font></p>
+    <p class="text-warning"><font size = "6"> <span style="color:white; font-family: 'Overwatch'"> filter by Available Hero</span></font></p>
     <div class="dropdown">
       <button onclick="myFunction()" class="dropbtn">
         {% if filtering == 25 %}
@@ -67,16 +67,24 @@
     {% endfor %}
   </div>
   <div class = "wrapper">
-      <div class = "pagination">
+      <div class = "pagination"> 
+        {% if pagination.has_prev %}
+        <button class=button onclick="window.location.href='{{ url_for('flaskrouter.items', page=page_num-1, sort=sort,filtering=filtering ) }}'"> prev </button> 
+        {% endif %}
         {% for page in pagination.iter_pages() %}
           {% if page %}
+            {% if page >= page_num-5 and page <= page_num+5 %}
                {% if page != page_num %}
                    <button class=button onclick="window.location.href='{{ url_for('flaskrouter.items', page=page, sort=sort,filtering=filtering ) }}'"> {{ page }} </button> 
                {% else %}
                    <button class=button2 onclick="window.location.href='{{ url_for('flaskrouter.items', page=page, sort=sort,filtering=filtering ) }}'"> {{ page }} </button>  
                {% endif %}
+            {% endif %}
           {% endif %}
         {% endfor %}
+       {% if pagination.has_next %}
+        <button class=button onclick="window.location.href='{{ url_for('flaskrouter.items', page=page_num+1, sort=sort,filtering=filtering ) }}'"> next </button>
+       {% endif %}
       </div>
     </div>
     <!-- Optional JavaScript -->
