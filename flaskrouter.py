@@ -1,4 +1,4 @@
-from flask import Flask, render_template, Blueprint, request, session, redirect, url_for
+from flask import Flask, render_template, Blueprint, request, session, redirect, url_for, jsonify, abort
 import models as models
 from models import *
 from sqlalchemy import or_, and_
@@ -53,6 +53,13 @@ def heroes(page=None, sort=None, filtering=None):
       pagination = Hero.query.filter(Hero.role == filtering).paginate(per_page=per_page, page=page)
   
     return render_template('heroes.html', output=output, pagination = pagination, page_num = page, sort=sort, filtering = filtering)
+
+@flaskrouter.route('/api/heroes', methods = ['GET'])
+def get_heroes():
+    return jsonify({'heroes': db.session.query(Hero).all()})
+@flaskrouter.route('/api/heroes/<int:hero_id>', methods = ['GET'])
+def get_hero(hero_id):
+    return jsonify({'hero': models.Hero.query.get(hero_id)})
 
 @flaskrouter.route('/heroes/<int:hero_id>')
 def hero(hero_id):
