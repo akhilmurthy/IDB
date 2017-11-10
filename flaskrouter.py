@@ -7,6 +7,66 @@ from sqlalchemy import or_, and_
 
 flaskrouter = Blueprint("flaskrouter", __name__)
 
+
+
+def api(data):
+    if not data:
+        return jsonify([])
+    return jsonify(data.json())
+def apis(data, start, end):
+    result=[]
+    for i in range(start,end):
+        temp = data.get(i)
+        if temp != None:
+            result.append(data.get(i).json())
+    return jsonify(result)
+@flaskrouter.route('/api/heroes/<int:hero_id>')
+@flaskrouter.route('/api/heroes')
+def api_heroes(hero_id=None):
+    if hero_id != None:
+        return api(models.Hero.query.get(hero_id))
+    else:
+        return apis(models.Hero.query,1,25)
+@flaskrouter.route('/api/players/<int:player_id>')
+@flaskrouter.route('/api/players')
+def api_players(player_id=None):
+    if player_id != None:
+        return api(models.TopPlayer.query.get(player_id))
+    else:
+        return apis(models.TopPlayer.query, 1,194)
+@flaskrouter.route('/api/achievements/<int:achievement_id>')
+@flaskrouter.route('/api/achievements')
+def api_achievements(achievement_id=None):
+    if achievement_id != None:
+        return api(models.Achievement.query.get(achievement_id))
+    else:
+        return apis(models.Achievement.query,1,74)
+
+@flaskrouter.route('/api/events/<int:event_id>')
+@flaskrouter.route('/api/events')
+def api_events(event_id=None):
+    if events_id != None:
+        return api(models.Event.query.get(event_id))
+    else:
+        return apis(models.Event.query, 4)
+
+@flaskrouter.route('/api/skins/<int:skin_id>')
+@flaskrouter.route('/api/skins')
+def api_skins(skin_id=None):
+    if skin_id != None:
+        return api(models.Skin.query.get(skin_id))
+    else:
+        return apis(models.Skin.query, 1223,1856)
+
+@flaskrouter.route('/api/items/<int:item_id>')
+@flaskrouter.route('/api/items')
+def api_items(item_id=None):
+    if item_id != None:
+        return api(models.Item.query.get(item_id))
+    else:
+        return apis(models.Item.query, 1,1871)
+
+
 @flaskrouter.route('/')
 def index():
     """
@@ -273,5 +333,50 @@ def player(top_player_id):
     return render_template('player_instance.html', data=data)
 
 
+@flaskrouter.route('/search')
+@flaskrouter.route('/search?search_str=<string:search_str>')
+def search(search_str = "", current_view = 'Hero'):
+    hero_data = db.session.query(Hero).all()
+    player_data = db.session.query(TopPlayer).all()
+    achievement_data = db.session.query(Achievement).all()
+    event_data = db.session.query(Event).all()
+    skin_data = db.session.query(Skin).all()
+    item_data = db.session.query(Item).all()
+    hero_res = []
+    player_res = []
+    achievement_res = []
+    event_res = []
+    skin_res = []
+    item_res = []
+    """
+    for u in hero_data:
+        # print (u.hero_name)
+        if (search_str in u.hero_name) or (search_str in u.description) or (search_str in u.role) or (search_str in u.abilities) or (search_str in u.ulti):
+            hero_res.append(u)
+    for v in player_data:
+        if (search_str in v.top_player_name) or (search_str in v.skill_rank) or (search_str in v.tier):
+            player_res.append(v)
+    for x in achievement_data:
+        if (search_str in x.achievement_name) or (search_str in x.description) or (search_str in x.reward_name) or (search_str in x.reward_type) or (search_str in x.reward_quality):
+            achievement_res.append(x)
+    for y in event_data:
+        if (search_str in y.event_name) or (search_str in y.start_date) or (search_str in y.end_date):
+            event_res.append(y)
+    for z in skin_res:
+        if (search_str in z.skin_name) or (search_str in z.quality):
+            skin_res.append(z)
+    for a in item_res:
+        if (search_str in a.item_name) or (search_str in a.item_type):
+            item_res.append(a)"""
+    print ("<<<<<<<<<<<TEST>>>>>>>>>>>>", search_str)
+    return render_template('search.html', hero_res = hero_res, player_res = player_res, achievement_res = achievement_res, event_res = event_res, skin_res = skin_res, item_res = item_res, search_str = search_str, current_view = current_view)
 
+
+@flaskrouter.route('/api/heroes', methods = ['GET'])
+def get_heroes():
+    return jsonify({'heroes': db.session.query(Hero).all()})
+
+@flaskrouter.route('/api/heroes/<int:hero_id>', methods = ['GET'])
+def get_hero(hero_id):
+    return jsonify({'hero': models.Hero.query.get(hero_id)})
 
