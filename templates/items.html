@@ -57,13 +57,16 @@
   <hr>
   <div class="row">
     {% for item in output %}
-    {% if item.hero_id != None %}
     <div class="col-lg-4 col-sm-6 text-center mb-4">
       <a href = "/items/{{item.item_id}}">
+      {% if item.hero_id != None %}
       <img class="img-rounded" src="../../../static/media/items/{{item.item_id}}.png" alt=" " width="150" height="150">
+      {% else %} <img class="img-rounded" src="../../../static/media/items/0.png" alt=" " width="150" height="150">
+      
+      {% endif %}
+    
       <h3 style="font-family: 'Overwatch'" class="text-warning"> {{item.item_name}}</h3></a>
-    </div>
-    {% endif %}
+     </div>
     {% endfor %}
   </div>
   <div class = "wrapper">

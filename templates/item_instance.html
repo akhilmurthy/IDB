@@ -13,7 +13,11 @@
   
 <!-- Introduction Row -->
   <div class = "row" >
+    {% if data.hero_id != None %}
     <div style="text-align: center;"><img src="../static/media/items/{{data.item_id}}.png" alt=" " width = 300 height = 300> </div>
+    {% else %} <div style="text-align: center;"><img src="../static/media/items/0.png" alt=" " width = 300 height = 300> </div>
+   
+    {% endif %}
     <br>
   </div>
   <hr>
@@ -27,7 +31,7 @@
 
     <p style = "font-family: 'Roboto Condensed'" class="text-warning"><font size = "5"><span style="color:orange; font-family: 'Overwatch'"> &nbsp;&nbsp;&nbsp;&nbsp;Hero: {% if data.hero_id != None %}</span>
       <a href = "../heroes/{{data.hero_id}}"><span style="color:white; font-family: 'Overwatch'">{{data.heroes.hero_name}}</a>
-     
+      {% else %} <span style="color:white; font-family: 'Overwatch'"> No specific hero is available for this Item </span>
       {% endif %}
     </font></span></p>
 
