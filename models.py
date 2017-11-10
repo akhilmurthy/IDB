@@ -2,7 +2,6 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 
-
 db = SQLAlchemy()
 
 
@@ -40,6 +39,8 @@ class Hero(db.Model):
         self.role = role
         self.abilities = Abilities
         self.ulti = Ulti
+    def json(self):
+        return {'hero_id': self.hero_id,'hero_name': self.hero_name, 'description': self.description, 'role': self.role, 'abilities': self.abilities} 
 
 class TopPlayer(db.Model):
 
@@ -47,7 +48,8 @@ class TopPlayer(db.Model):
 
     top_player_id = db.Column(db.Integer, primary_key = True)
     top_player_name = db.Column(db.String, unique = True, nullable = False)
-    skill_rank = db.Column(db.Integer, nullable = False)
+    skill_rank = db.Column(db.String, nullable = False)
+    tier = db.Column(db.String, nullable = False)
     win_rate = db.Column(db.Float, nullable = False)
     level = db.Column(db.Integer, nullable = False)
     # heroes = db.relationship('Hero',secondary = hero_top_player, back_populates='top_players')
@@ -55,13 +57,17 @@ class TopPlayer(db.Model):
     hero_id = db.Column(db.Integer, db.ForeignKey('heroes.hero_id'))
     # achievements = db.relationship('Achievement',secondary = achievement_top_player, backref = 'TopPlayer',lazy = 'dynamic')
 
-    def __init__(self, TopPlayerID, TopPlayerName, SkillRank, WinRate, Level, heroID):
+    def __init__(self, TopPlayerID, TopPlayerName, SkillRank, Tier, WinRate, Level, heroID=None):
         self.top_player_id = TopPlayerID
         self.top_player_name = TopPlayerName
         self.skill_rank = SkillRank
+        self.tier = Tier
         self.win_rate = WinRate
         self.level = Level
         self.hero_id = heroID
+    def json(self):
+        return {'top_player_id': self.top_player_id,'top_player_name': self.top_player_name, 'skill_rank': self.skill_rank, 'tier': self.tier, 'win_rate': self.win_rate, 'level': self.level, 'most_played_hero_id': self.hero_id} 
+
 
 class Achievement(db.Model):
 
@@ -89,6 +95,9 @@ class Achievement(db.Model):
         self.reward_type = Reward_Type
         self.reward_quality = Reward_Quality
         self.hero_id = foreign
+    def json(self):
+        return {'achievement_id': self.achievement_id,'achievement_name': self.achievement_name, 'description': self.description, 'reward_name': self.reward_name, 'reward_type': self.reward_type, 'reward_quailty': self.reward_quality, 'available hero_id': self.hero_id} 
+
 
 
 class Event(db.Model):
@@ -107,6 +116,10 @@ class Event(db.Model):
         self.event_name = EventName
         self.start_date = StartDate
         self.end_date = EndDate
+    def json(self):
+        return {'event_id': self.event_id,'event_name': self.event_name, 'start_date': self.start_date, 'end_date': self.end_date} 
+
+
 
 
 class Skin(db.Model):
@@ -130,6 +143,10 @@ class Skin(db.Model):
         self.quality = Quality
         self.hero_id = heroID
         self.event_id = eventID
+   
+    def json(self):
+        return {'skin_id': self.skin_id,'skin_name': self.skin_name, 'cost': self.cost, 'quality'
+: self.quality, 'Available hero_id': self.hero_id, 'Available event_id':self.event_id} 
 
 class Item(db.Model):
 
@@ -155,3 +172,6 @@ class Item(db.Model):
         self.item_type = Type
         self.hero_id = heroID
         self.event_id = eventID
+    def json(self):
+        return {'item_id': self.item_id,'item_name': self.item_name, 'item_type': self.item_type, 'Available event_id'
+: self.event_id, 'Available hero_id': self.hero_id} 
