@@ -22,6 +22,7 @@ def apis(data, start, end):
     return jsonify(result)
 @flaskrouter.route('/api/heroes/<int:hero_id>')
 @flaskrouter.route('/api/heroes')
+@flaskrouter.route('/api/heroes/')
 def api_heroes(hero_id=None):
     if hero_id != None:
         return api(models.Hero.query.get(hero_id))
@@ -29,6 +30,7 @@ def api_heroes(hero_id=None):
         return apis(models.Hero.query,1,25)
 @flaskrouter.route('/api/players/<int:player_id>')
 @flaskrouter.route('/api/players')
+@flaskrouter.route('/api/players/')
 def api_players(player_id=None):
     if player_id != None:
         return api(models.TopPlayer.query.get(player_id))
@@ -36,6 +38,7 @@ def api_players(player_id=None):
         return apis(models.TopPlayer.query, 1,194)
 @flaskrouter.route('/api/achievements/<int:achievement_id>')
 @flaskrouter.route('/api/achievements')
+@flaskrouter.route('/api/achievements/')
 def api_achievements(achievement_id=None):
     if achievement_id != None:
         return api(models.Achievement.query.get(achievement_id))
@@ -45,13 +48,14 @@ def api_achievements(achievement_id=None):
 @flaskrouter.route('/api/events/<int:event_id>')
 @flaskrouter.route('/api/events')
 def api_events(event_id=None):
-    if events_id != None:
+    if event_id != None:
         return api(models.Event.query.get(event_id))
     else:
-        return apis(models.Event.query, 4)
+        return apis(models.Event.query, 1,4)
 
 @flaskrouter.route('/api/skins/<int:skin_id>')
 @flaskrouter.route('/api/skins')
+@flaskrouter.route('/api/skins/')
 def api_skins(skin_id=None):
     if skin_id != None:
         return api(models.Skin.query.get(skin_id))
@@ -60,6 +64,7 @@ def api_skins(skin_id=None):
 
 @flaskrouter.route('/api/items/<int:item_id>')
 @flaskrouter.route('/api/items')
+@flaskrouter.route('/api/items/')
 def api_items(item_id=None):
     if item_id != None:
         return api(models.Item.query.get(item_id))
@@ -113,13 +118,6 @@ def heroes(page=None, sort=None, filtering=None):
       pagination = Hero.query.filter(Hero.role == filtering).paginate(per_page=per_page, page=page)
   
     return render_template('heroes.html', output=output, pagination = pagination, page_num = page, sort=sort, filtering = filtering)
-
-@flaskrouter.route('/api/heroes', methods = ['GET'])
-def get_heroes():
-    return jsonify({'heroes': db.session.query(Hero).all()})
-@flaskrouter.route('/api/heroes/<int:hero_id>', methods = ['GET'])
-def get_hero(hero_id):
-    return jsonify({'hero': models.Hero.query.get(hero_id)})
 
 @flaskrouter.route('/heroes/<int:hero_id>')
 def hero(hero_id):
@@ -332,51 +330,176 @@ def player(top_player_id):
     data = models.TopPlayer.query.get(top_player_id)
     return render_template('player_instance.html', data=data)
 
-
 @flaskrouter.route('/search')
 @flaskrouter.route('/search?search_str=<string:search_str>')
-def search(search_str = "", current_view = 'Hero'):
-    hero_data = db.session.query(Hero).all()
-    player_data = db.session.query(TopPlayer).all()
-    achievement_data = db.session.query(Achievement).all()
-    event_data = db.session.query(Event).all()
-    skin_data = db.session.query(Skin).all()
-    item_data = db.session.query(Item).all()
-    hero_res = []
-    player_res = []
-    achievement_res = []
-    event_res = []
-    skin_res = []
-    item_res = []
-    """
-    for u in hero_data:
-        # print (u.hero_name)
-        if (search_str in u.hero_name) or (search_str in u.description) or (search_str in u.role) or (search_str in u.abilities) or (search_str in u.ulti):
-            hero_res.append(u)
-    for v in player_data:
-        if (search_str in v.top_player_name) or (search_str in v.skill_rank) or (search_str in v.tier):
-            player_res.append(v)
-    for x in achievement_data:
-        if (search_str in x.achievement_name) or (search_str in x.description) or (search_str in x.reward_name) or (search_str in x.reward_type) or (search_str in x.reward_quality):
-            achievement_res.append(x)
-    for y in event_data:
-        if (search_str in y.event_name) or (search_str in y.start_date) or (search_str in y.end_date):
-            event_res.append(y)
-    for z in skin_res:
-        if (search_str in z.skin_name) or (search_str in z.quality):
-            skin_res.append(z)
-    for a in item_res:
-        if (search_str in a.item_name) or (search_str in a.item_type):
-            item_res.append(a)"""
-    print ("<<<<<<<<<<<TEST>>>>>>>>>>>>", search_str)
-    return render_template('search.html', hero_res = hero_res, player_res = player_res, achievement_res = achievement_res, event_res = event_res, skin_res = skin_res, item_res = item_res, search_str = search_str, current_view = current_view)
+@flaskrouter.route('/search?search_str=<string:search_str>?current_view=<string:current_view>')
+@flaskrouter.route('/search?search_str=<string:search_str>?current_view=<string:current_view>?page=<int:page>')
+def search(search_str = 'No search term', current_view = 'Hero', page = None):
+    if page == None:
+        page = 1
+    if request.args.get('search_str') !=None:
+        search_str = request.args.get('search_str')
+    # filt = '%'+search_str +'%'
+    filt = '%' + search_str  + '%'
+    per_page = 10
+    hero_query = None
+    player_query = None
+    achievement_query = None
+    event_query = None
+    skin_query = None
+    item_query = None
+    initial = True
+    for a in search_str.split(' '):
+      tmp = '%' + a + '%'
+      ok = or_(Hero.hero_name.ilike(tmp),Hero.description.ilike(tmp),Hero.role.ilike(tmp),Hero.abilities.ilike(tmp))
+      ok1 = or_(TopPlayer.top_player_name.ilike(tmp),TopPlayer.skill_rank.ilike(tmp),TopPlayer.tier.ilike(tmp))
+      ok2 = or_(Achievement.achievement_name.ilike(tmp),Achievement.description.ilike(tmp),Achievement.reward_name.ilike(tmp),Achievement.reward_type.ilike(tmp),Achievement.reward_quality.ilike(tmp))
+      ok3 = or_(Event.event_name.ilike(tmp),Event.start_date.ilike(tmp),Event.end_date.ilike(tmp))
+      ok4 = or_(Skin.skin_name.ilike(tmp),Skin.quality.ilike(tmp))
+      ok5 = or_(Item.item_name.ilike(tmp),Item.item_type.ilike(tmp))
+      if initial == True:
+        hero_query = ok
+        player_query = ok1
+        achievement_query = ok2
+        event_query = ok3
+        skin_query = ok4
+        item_query = ok5
+      else:
+        hero_query = or_(hero_query,ok)
+        player_query = or_(player_query, ok1)
+        achievement_query = or_(achievement_query,ok2)
+        event_query = or_(event_query,ok3)
+        skin_query = or_(skin_query, ok4)
+        item_query = or_(item_query, ok5)
+      initial = False
+
+    # ok = or_(Hero.hero_name.ilike(filt),Hero.description.ilike(filt),Hero.role.ilike(filt),Hero.abilities.ilike(filt),Hero.ulti.ilike(filt))
+    # ok2 = or_(ok,Hero.hero_name.ilike('%bas%'))
+    hero_r = Hero.query.filter(hero_query)
+    player_r = TopPlayer.query.filter(player_query)
+    achievement_r = Achievement.query.filter(achievement_query)
+    event_r = Event.query.filter(event_query)
+    skin_r = Skin.query.filter(skin_query)
+    item_r = Item.query.filter(item_query)
+    
+
+    search_hit = []
+    pagination = None
+    if(current_view == 'Hero'):
+      pagination = hero_r.paginate(page = page, per_page = per_page)
+      for h in hero_r:
+        temp = ""
+        for s in search_str.split(' '):
+          if s.lower() in h.description.lower():
+            temp= 'Description: ' + h.description
+            break 
+          elif s.lower() in h.abilities.lower():
+            temp = 'Abilities: ' + h.abilities
+            break
+          elif s.lower() in h.role.lower():
+            temp = 'Role: ' + h.role
+            break
+          elif s.lower() in h.hero_name.lower():
+            temp = 'Name: ' + h.hero_name
+            break 
+        search_hit.append(temp)
+        print temp
+    elif(current_view == 'Top Player'):
+      pagination = player_r.paginate(page = page, per_page = per_page)
+      for h in player_r:
+        temp = ""
+        for s in search_str.split(' '):
+          if s.lower() in h.top_player_name.lower():
+            temp=  'Nametag: ' + h.top_player_name 
+          elif s.lower() in h.skill_rank.lower():
+            temp =  'Skill: ' + h.abilities
+          elif s.lower() in h.tier.lower():
+            temp =  'Tier: ' + h.tier
+        search_hit.append(temp)
+    elif(current_view == 'Achievement'):
+      pagination = achievement_r.paginate(page = page, per_page = per_page)
+      for h in achievement_r:
+        temp = ""
+        for s in search_str.split(' '):
+          if s.lower() in h.description.lower():
+            temp= temp + 'Description: ' + h.description 
+          elif s.lower() in h.reward_type.lower():
+            temp = temp + 'Type: ' + h.reward_type
+          elif s.lower() in h.achievement_name.lower():
+            temp = temp + 'Name: ' + h.achievement_name
+          elif s.lower() in h.reward_name.lower():
+            temp = temp + 'Reward Name: ' + h.reward_name
+          elif s.lower() in h.reward_quality.lower():
+            temp =  'Reward Quality: ' + h.reward_quality
+        search_hit.append(temp)
+    elif(current_view == 'Event'):
+      pagination = event_r.paginate(page = page, per_page = per_page)
+      for h in event_r:
+        temp = ""
+        for s in search_str.split(' '):
+          if s.lower() in h.event_name.lower():
+            temp= temp + 'Name: ' + h.event_name 
+          elif s.lower() in h.start_date.lower():
+            temp = temp + 'Start: ' + h.start_date
+          elif s.lower() in h.end_date.lower():
+            temp = temp + 'End: ' + h.end_date
+        search_hit.append(temp)
+    elif(current_view == 'Skin'):
+      pagination = skin_r.paginate(page = page, per_page = per_page)
+      for h in skin_r:
+        temp = ""
+        for s in search_str.split(' '):
+          if s.lower() in h.skin_name.lower():
+            temp= temp + 'Name: ' + h.skin_name
+          elif s.lower() in h.quality.lower():
+            temp = temp + 'Type: ' + h.quality
+        search_hit.append(temp)
+    elif(current_view == 'Item'):
+      pagination = item_r.paginate(page = page, per_page = per_page)
+      for h in item_r:
+        temp = ""
+        for s in search_str.split(' '):
+          if s.lower() in h.item_name.lower():
+            temp= temp + 'Description: ' + h.item_name 
+          elif s.lower() in h.item_type.lower():
+            temp = temp + 'Type: ' + h.item_type
+        search_hit.append(temp)
+
+    s = []
+    for se in search_hit:
+      tmp = []
+      for w in se.lower().split(' '):
+        a = 1
+        for st in search_str.lower().split(' '):
+          if ':' in w:
+            break
+          if st in w:
+            ind = w.find(st)
+            tmp1 = [0,w[0:ind]]
+            tmp.append(tmp1)
+            tmp2 = [1,w[ind:ind+len(st)]]
+            tmp.append(tmp2)
+            tmp3 = [0,w[ind+len(st):]]
+            tmp.append(tmp3)
+            a = 0
+            break
+        if a == 1:
+          tmp1 = [0,w]
+          tmp.append(tmp1)
+      s.append(tmp)
 
 
-@flaskrouter.route('/api/heroes', methods = ['GET'])
-def get_heroes():
-    return jsonify({'heroes': db.session.query(Hero).all()})
+    set(hero_r)
+    set(player_r)
+    set(achievement_r)
+    set(event_r)
+    set(skin_r)
+    set(item_r)
+    hero_res = hero_r[per_page*(page-1) : per_page*page]
+    player_res = player_r[per_page*(page-1) : per_page*page]
+    achievement_res = achievement_r[per_page*(page-1) : per_page*page]
+    event_res = event_r[per_page*(page-1) : per_page*page]
+    skin_res = skin_r[per_page*(page-1) : per_page*page]
+    item_res = item_r[per_page*(page-1) : per_page*page]
 
-@flaskrouter.route('/api/heroes/<int:hero_id>', methods = ['GET'])
-def get_hero(hero_id):
-    return jsonify({'hero': models.Hero.query.get(hero_id)})
-
+    return render_template('search.html', hero_res = hero_res, player_res = player_res, achievement_res = achievement_res, event_res = event_res, skin_res = skin_res, item_res = item_res, search_str = search_str, current_view = current_view, pagination = pagination, search_hit = s)
