@@ -1,9 +1,9 @@
 @title[Title]
-#### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Overwatch</span>glamour.me</span>
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Overwatch</span>glamour.me</span>
 Group 4
 ---
 
-### Introduction
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Introduction</span></span>
 
 ![profile](static/media/akhil.png)
 ![profile](static/media/allen.png)
@@ -11,14 +11,14 @@ Group 4
 ![profile](static/media/sangwon.png)
 
 ---
-### Demonstration
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Demonstration</span></span>
+
  
-*[Navigate](https://overwatchglamour.me)
-<a target="_blank" href="https://overwatchglamour.me">Navigate</a>
+<span style="color:white"> <a target="_blank" href="https://overwatchglamour.me">Navigate</a></span>
 
-Search
+<span style="color:white"> <a target="_blank" href="https://overwatchglamour.me">Search</a></span>
 
-Unit tests
+<span style="color:white"> <a target="_blank" href="https://overwatchglamour.me">Unit Tests</a></span>
  
 ---
 ### Self Critique
@@ -32,4 +32,4 @@ betterreads.me
  
 ---
 ### Visualization
- 
+
