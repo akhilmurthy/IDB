@@ -6,9 +6,9 @@ Group 4
 ### Introduction
 
 !(static/media/akhil.png)
-![profile](static/media/allen.png)
-!image=static/media/peter.png
-![profile]image=static/media/sangwon.png
+!(static/media/allen.png)
+!(static/media/peter.png)
+!(static/media/sangwon.png)
 
 
 ---
