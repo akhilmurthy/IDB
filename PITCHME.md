@@ -21,15 +21,15 @@ Group 4
 <a target="_blank" href="https://overwatchglamour.me" style="color:white">Unit Tests</a></span>
  
 ---
-### Self Critique
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Self Critique</span></span>
 -bleh
  
 ---
-### Other Critique
-betterreads.me
- 
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Other Critique</span></span>
+#### <a target="_blank" href="https://betterreads.me" style="color:#f99e1a">Search</a></span>
+
 -bleh
  
 ---
-### Visualization
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Visualization</span></span>
 
