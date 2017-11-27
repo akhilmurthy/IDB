@@ -7,6 +7,7 @@ Group 4
 
 ![profile](static/media/akhil.png)
 ![profile](static/media/allen.png)
+
 ![profile](static/media/peter.png)
 ![profile](static/media/sangwon.png)
 
