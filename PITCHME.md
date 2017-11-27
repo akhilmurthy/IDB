@@ -6,21 +6,19 @@ Group 4
 ### Introduction
 
 ![profile](static/media/akhil.png)
-
 ![profile](static/media/allen.png)
-
 ![profile](static/media/peter.png)
-
 ![profile](static/media/sangwon.png)
 
 ---
 ### Demonstration
  
---[Navigate](https://overwatchglam.me)
+*[Navigate](https://overwatchglamour.me)
+<a target="_blank" href="https://overwatchglamour.me">Navigate</a>
 
---Search
+Search
 
--Unit tests
+Unit tests
  
 ---
 ### Self Critique
