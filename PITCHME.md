@@ -14,11 +14,11 @@ Group 4
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Demonstration</span></span>
 
  
-<span style="color:white"> <a target="_blank" href="https://overwatchglamour.me">Navigate</a></span>
+<a target="_blank" href="https://overwatchglamour.me" style="color:white">Navigate</a></span>
 
-<span style="color:white"> <a target="_blank" href="https://overwatchglamour.me">Search</a></span>
+<a target="_blank" href="https://overwatchglamour.me" style="color:white">Search</a></span>
 
-<span style="color:white"> <a target="_blank" href="https://overwatchglamour.me">Unit Tests</a></span>
+<a target="_blank" href="https://overwatchglamour.me" style="color:white">Unit Tests</a></span>
  
 ---
 ### Self Critique
