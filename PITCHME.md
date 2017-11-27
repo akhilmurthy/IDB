@@ -5,13 +5,10 @@ Group 4
 
 ### Introduction
 
-!(static/media/akhil.png)
-
-!(static/media/allen.png)
----
-!(static/media/peter.png)
----
-!(static/media/sangwon.png)
+![profile](static/media/akhil.png)
+![profile](static/media/allen.png)
+![profile](static/media/peter.png)
+![profile](static/media/sangwon.png)
 
 
 ---
