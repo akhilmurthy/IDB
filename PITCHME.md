@@ -1,5 +1,5 @@
-# Overwatchglamour.me
-
+@title[Title]
+# <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Overwatch</span>glamour.me</span>
 Group 4
 ---
 
@@ -10,5 +10,25 @@ Group 4
 ![profile](static/media/peter.png)
 ![profile](static/media/sangwon.png)
 
-
 ---
+ ### Demonstration
+ 
+ -Navigate
+ 
+ -Search
+ -Unit tests
+ 
+ ---
+ ### Self Critique
+ 
+ -bleh
+ 
+ ---
+ ### Other Critique
+ betterreads.me
+ 
+ -bleh
+ 
+ ---
+ ### Visualization
+ 
