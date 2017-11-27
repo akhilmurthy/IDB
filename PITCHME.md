@@ -1,15 +1,14 @@
-# Flux 
+# Overwatchglamour.me
 
-An application architecture for React
-
+Group 4
 ---
 
-### Flux Design
+### Introduction
 
-- Dispatcher: Manages Data Flow
-- Stores: Handle State & Logic
-- Views: Render Data via React
+![profile](static/media/akhil.png)
+![profile](static/media/allen.png)
+![profile](static/media/peter.png)
+![profile](static/media/sangwon.png)
+
 
 ---
-
-![Flux Explained](https://facebook.github.io/flux/img/flux-simple-f8-diagram-explained-1300w.png)
