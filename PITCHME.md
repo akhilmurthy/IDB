@@ -5,8 +5,10 @@ Group 4
 
 ### Introduction
 
----?image=static/media/allen.png
+!(static/media/akhil.png)
+![profile](static/media/allen.png)
+!image=static/media/peter.png
+![profile]image=static/media/sangwon.png
 
-- Dispatcher: Manages Data Flow
 
 ---
