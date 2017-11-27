@@ -11,24 +11,22 @@ Group 4
 ![profile](static/media/sangwon.png)
 
 ---
- ### Demonstration
+### Demonstration
  
- -Navigate
+-[Navigate](overwatchglam.me)
+-Search
+-Unit tests
  
- -Search
- -Unit tests
+---
+### Self Critique
+-bleh
  
- ---
- ### Self Critique
+---
+### Other Critique
+betterreads.me
  
- -bleh
+-bleh
  
- ---
- ### Other Critique
- betterreads.me
- 
- -bleh
- 
- ---
- ### Visualization
+---
+### Visualization
  
