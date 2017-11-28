@@ -11,6 +11,40 @@ Group 4
 ![profile](static/media/gitpitch/peter.png)
 ![profile](static/media/gitpitch/sangwon.png)
 
++++
+@title[Akhil]
+![profile](static/media/gitpitch/akhil.png)
+
+![profile](static/media/gitpitch/akhil uml.png)
+![profile](static/media/gitpitch/akhil report.png)
+![profile](static/media/gitpitch/akhil planitpoker.png)
+![profile](static/media/gitpitch/akhil db.png)
+
++++
+@title[Allen]
+![profile](static/media/gitpitch/allen.png)
+
+![profile](static/media/gitpitch/allen apiary.png)
+![profile](static/media/gitpitch/allen unit tests.png)
+![profile](static/media/gitpitch/allen search.png)
+
++++
+@title[Peter]
+![profile](static/media/gitpitch/peter.png)
+
+![profile](static/media/gitpitch/peter scraping.png)
+![profile](static/media/gitpitch/peter parsing.png)
+![profile](static/media/gitpitch/peter bot.png)
+![profile](static/media/gitpitch/peter populate.png)
+
++++
+@title[Sangwon]
+![profile](static/media/gitpitch/sangwon.png)
+
+![profile](static/media/gitpitch/sangwon front.png)
+![profile](static/media/gitpitch/sangwon sortfilter.png)
+![profile](static/media/gitpitch/sangwon api.png)
+
 ---
 @title[Demonstration]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Demonstration</span></span>
@@ -50,12 +84,6 @@ Group 4
 *Rectangular skin images are slightly warped in square image boxes.*
 
 <span style="color:#f99e1a">Solution: </span>Pre-crop the centered images of skins into squares, or define the image property to cover instead of contain.
-
-+++
-@title[Chrome's "www."]
-*Chrome sometimes adds "www." to the url, while Mozilla does not, resulting in a dead end.*
-
-<span style="color:#f99e1a">Solution: </span>Make both forms of the url direct to the website.
 
 ---
 @title[Other Critique]
