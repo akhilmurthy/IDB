@@ -1,6 +1,7 @@
 from flask import Flask 
 from flaskrouter import flaskrouter
 
+
 import models
 
 def create_app():
