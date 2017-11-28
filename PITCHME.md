@@ -55,7 +55,7 @@ Group 4
 
 <a target="_blank" href="https://overwatchglamour.me/search%3Fsearch_str%3Dthe%3Fcurrent_view%3DHero" style="color:white">Search</a></span>
 
-<a target="_blank" href="https://overwatchglamour.me" style="color:white">Unit Tests</a></span>
+<a style="color:white">Unit Tests</a>
  
 ---
 @title[Self Critique]
@@ -130,5 +130,4 @@ Group 4
 @title[Visualization]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Visualization</span></span>
 
-![profile](static/media/gitpitch/sangwon.png)
-
+<a target="_blank" href="http://overwatchglamour.me/visualization" style="color:white">Link</a></span>
