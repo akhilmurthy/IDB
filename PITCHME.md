@@ -16,10 +16,10 @@ Group 4
 
 ![profile](static/media/gitpitch/akhil.png)
 
-![](static/media/gitpitch/akhil uml.png =250x250)
-![](static/media/gitpitch/akhil report.png =250x250)
-![](static/media/gitpitch/akhil planitpoker.png =250x250)
-![](static/media/gitpitch/akhil db.png =250x250)
+![](static/media/gitpitch/akhil uml.png)
+![](static/media/gitpitch/akhil report.png)
+![](static/media/gitpitch/akhil planitpoker.png)
+![](static/media/gitpitch/akhil db.png)
 
 +++
 @title[Allen]
