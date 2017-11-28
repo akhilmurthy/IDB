@@ -29,8 +29,34 @@ Group 4
 
 +++
 
-bleh
- 
+*Instance pages could have been more user friendly.*
+
+<span style="color:#f99e1a">Solution: </span>Overlay data on the image instead of having to scroll past the image.
+
++++
+
+*Finding things relating to a specific Hero could be easier. Currently filters by whether it is associated with a hero or not.*
+
+<span style="color:#f99e1a">Solution: </span>Add a drop down menu filter by a specific hero option to items, skins, and achievements models.
+
++++
+
+*Search bar could be centered or more aesthetically placed.*
+
+<span style="color:#f99e1a">Solution: </span>Nest the search bar into the nav bar.
+
++++
+
+*Rectangular skin images are slightly warped in square image boxes.*
+
+<span style="color:#f99e1a">Solution: </span>Pre-crop the centered images of skins into squares, or define the image property to cover instead of contain.
+
++++
+
+*Chrome sometimes adds "www." to the url, while Mozilla does not, resulting in a dead end.*
+
+<span style="color:#f99e1a">Solution: </span>Make both forms of the url direct to the website.
+
 ---
 @title[Other Critique]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Other Critique</span></span>
