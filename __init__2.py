@@ -1,10 +1,13 @@
 from flask import Flask 
 from flaskrouter import flaskrouter
+from flask_cors import CORS, cross_origin
+
 
 import models
 
 def create_app():
     app = Flask(__name__)
+    CORS(app)
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://postgres:groupPassword@35.193.209.24:5432/postgres'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     models.db.init_app(app)
