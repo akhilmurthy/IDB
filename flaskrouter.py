@@ -330,6 +330,10 @@ def player(top_player_id):
     data = models.TopPlayer.query.get(top_player_id)
     return render_template('player_instance.html', data=data)
 
+@flaskrouter.route('/visualization')
+def visualization():
+    return render_template('visualization.html')
+
 @flaskrouter.route('/search')
 @flaskrouter.route('/search?search_str=<string:search_str>')
 @flaskrouter.route('/search?search_str=<string:search_str>?current_view=<string:current_view>')
@@ -403,7 +407,7 @@ def search(search_str = 'No search term', current_view = 'Hero', page = None):
             temp = 'Name: ' + h.hero_name
             break 
         search_hit.append(temp)
-        print temp
+
     elif(current_view == 'Top Player'):
       pagination = player_r.paginate(page = page, per_page = per_page)
       for h in player_r:
