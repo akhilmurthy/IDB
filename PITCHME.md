@@ -16,7 +16,7 @@ Group 4
  
 <a target="_blank" href="https://overwatchglamour.me" style="color:white">Navigate</a></span>
 
-<a target="_blank" href="https://overwatchglamour.me" style="color:white">Search</a></span>
+<a target="_blank" href="https://overwatchglamour.me/search%3Fsearch_str%3Dthe%3Fcurrent_view%3DHero" style="color:white">Search</a></span>
 
 <a target="_blank" href="https://overwatchglamour.me" style="color:white">Unit Tests</a></span>
  
@@ -68,5 +68,5 @@ Group 4
 ---
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Visualization</span></span>
 
-![profile](static/media/sangwon.png)
+![profile](static/media/gitpitch/sangwon.png)
 
