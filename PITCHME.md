@@ -3,6 +3,7 @@
 Group 4
 
 ---
+@title[Introduction]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Introduction</span></span>
 
 ![profile](static/media/gitpitch/akhil.png)
@@ -11,6 +12,7 @@ Group 4
 ![profile](static/media/gitpitch/sangwon.png)
 
 ---
+@title[Demonstration]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Demonstration</span></span>
 
  
@@ -21,14 +23,18 @@ Group 4
 <a target="_blank" href="https://overwatchglamour.me" style="color:white">Unit Tests</a></span>
  
 ---
+@title[Self Critique]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Self Critique</span></span>
-#### <a target="_blank" href="https://overwatchglamour.me" style="color:#f99e1a">overwatchglamour.me</a></span>
+#### <a target="_blank" href="https://overwatchglamour.me" style="color:white">overwatchglamour.me</a></span>
 
--bleh
++++
+
+bleh
  
 ---
+@title[Other Critique]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Other Critique</span></span>
-#### <a target="_blank" href="https://betterreads.me" style="color:#f99e1a">betterreads.me</a></span>
+#### <a target="_blank" href="https://betterreads.me" style="color:white">betterreads.me</a></span>
 
 +++
 @title[Wrong Author Wrong Series]
@@ -66,6 +72,7 @@ Group 4
 ![pic](static/media/gitpitch/searchdoesnotremoveperiods.png)
 
 ---
+@title[Visualization]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Visualization</span></span>
 
 ![profile](static/media/gitpitch/sangwon.png)
