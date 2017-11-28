@@ -51,6 +51,11 @@
           <li>
             <a href="{{ url_for('flaskrouter.about') }}" style="font-family: 'Roboto Condensed'">ABOUT</a>
           </li>
+          <li>
+            <form action ="{{ url_for('flaskrouter.search')}}" method = "get">
+                 <input type="text" name="search_str" placeholder="search" value = "{{search_str}}">
+            </form>
+          </li> 
         </ul> 
       </div>
     </nav>
