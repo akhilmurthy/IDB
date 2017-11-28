@@ -16,8 +16,9 @@ Group 4
 
 ![profile](static/media/gitpitch/akhil.png)
 
-![profile](static/media/gitpitch/akhil uml.png | 250x250)
-![profile](static/media/gitpitch/akhil report.png | 250x250)
+---?image=static/media/gitpitch/akhil uml.png&size=auto
+![](static/media/gitpitch/akhil uml.png)
+![profile](static/media/gitpitch/akhil report.png)
 ![profile](static/media/gitpitch/akhil planitpoker.png | 250x250)
 ![profile](static/media/gitpitch/akhil db.png | 250x250)
 
