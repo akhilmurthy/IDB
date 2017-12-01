@@ -92,39 +92,30 @@ Group 4
 #### <a target="_blank" href="https://betterreads.me" style="color:white">betterreads.me</a></span>
 
 +++
-@title[Wrong Author Wrong Series]
-### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Wrong Author Wrong Series</span></span>
-![pic](static/media/gitpitch/wrongauthorwrongseries.png)
+@title[Missing Author and or Series]
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Database connection issues</span></span>
+Some books will have "No Series" and/or "No Author when not appropriate".
 
 +++
-@title[Right Author Wrong Series]
+@title[Review of a book lists incorrect author]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Right Author Wrong Series</span></span>
-![pic](static/media/gitpitch/rightauthorwrongseriesstill.png)
-
-+++
-@title[API has right Series]
-### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">API returns correct series ID</span></span>
-![pic](static/media/gitpitch/seriesiscorrectbyapi.png)
-
-+++
-@title[Mismatched Reviews]
-### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Mismatched Reviews</span></span>
-![pic](static/media/gitpitch/mismatchedreviewbcstill6th.png)
-
-+++
-@title[Broken HTML in text]
-### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Broken HTML in text</span></span>
-![pic](static/media/gitpitch/htmlcodeintextalsowrongtags.png)
-
-+++
-@title[HTML in search results]
-### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">HTML in search results</span></span>
-![pic](static/media/gitpitch/searchstillhashtml.png)
+Some reviews have the incorrect book being reviewed, but also the incorrect author of the incorrect book displayed. (Otis Chandler on Harry Potter #6)
 
 +++
 @title[Exact Search]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Exact Search</span></span>
-![pic](static/media/gitpitch/searchdoesnotremoveperiods.png)
+The search finds exact matches by not omitting periods from the search. (J.K. Rowling)
+
++++
+@title[Unclear/Incorrect Filters]
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Filters unclear or wrong</span></span>
+When filtering by "Top Rated Books", the criteria seems to be to filter out books with ratings lower than 4.2. 
+The other two filters, "Series" and "Most Recent", are not actual filters, since they seem to still include books that are not in a series or just sort by how recent instead of filtering.
+
++++
+@title[Filter and Sorting is disjoint]
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Disjoint Filter and Sort</span></span>
+It is not possible to sort and filter at the same time. Choosing one, overrides the other.
 
 ---
 @title[Visualization]
