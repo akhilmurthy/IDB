@@ -98,7 +98,7 @@ Some books will have "No Series" and/or "No Author when not appropriate".
 
 +++
 @title[Review of a book lists incorrect author]
-### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Right Author Wrong Series</span></span>
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Reviews wrong book with wrong author</span></span>
 Some reviews have the incorrect book being reviewed, but also the incorrect author of the incorrect book displayed. (Otis Chandler on Harry Potter #6)
 
 +++
@@ -110,6 +110,7 @@ The search finds exact matches by not omitting periods from the search. (J.K. Ro
 @title[Unclear/Incorrect Filters]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Filters unclear or wrong</span></span>
 When filtering by "Top Rated Books", the criteria seems to be to filter out books with ratings lower than 4.2. 
+
 The other two filters, "Series" and "Most Recent", are not actual filters, since they seem to still include books that are not in a series or just sort by how recent instead of filtering.
 
 +++
