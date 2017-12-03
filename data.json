@@ -1,1621 +1,1863 @@
 {
    "children":[
       {
-         "children":[
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"Hatchet Jobs: Writings on Contemporary Fiction",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"Law of Enclosures",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"Sprout",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"Visions and Revisions: Coming of Age in the Age of AIDS",
-               "color":"yellow"
-            }
-         ],
+         "color":"orange",
+         "level":"1",
          "author_id":"20",
-         "name":"Dale Peck",
-         "color":"orange"
-      },
-      {
          "children":[
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"Changeling (Changeling, #1)",
-               "color":"yellow"
+               "name":"Hatchet Jobs: Writings on Contemporary Fiction"
             },
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"Interfictions 2: An Anthology of Interstitial Writing",
-               "color":"yellow"
+               "name":"Law of Enclosures"
             },
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"The Freedom Maze",
-               "color":"yellow"
+               "name":"Sprout"
             },
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"Young Woman in a Garden: Stories",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"The Great Detective",
-               "color":"yellow"
+               "name":"Visions and Revisions: Coming of Age in the Age of AIDS"
             }
          ],
+         "name":"Dale Peck"
+      },
+      {
+         "color":"orange",
+         "level":"1",
          "author_id":"24",
-         "name":"Delia Sherman",
-         "color":"orange"
-      },
-      {
          "children":[
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"The Changeling Sea",
-               "color":"yellow"
+               "name":"Changeling (Changeling, #1)"
             },
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"The Book of Atrix Wolfe",
-               "color":"yellow"
+               "name":"Interfictions 2: An Anthology of Interstitial Writing"
             },
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"The Forgotten Beasts of Eld",
-               "color":"yellow"
+               "name":"The Freedom Maze"
             },
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"Alphabet of Thorn",
-               "color":"yellow"
+               "name":"Young Woman in a Garden: Stories"
             },
             {
-               "series_id":44605,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Riddle-Master",
-                     "color":"white"
-                  }
-               ],
-               "name":"Harpist in the Wind (Riddle-Master, #3)",
-               "color":"yellow"
-            },
-            {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"Ombria in Shadow",
-               "color":"yellow"
+               "name":"The Great Detective"
             }
          ],
+         "name":"Delia Sherman"
+      },
+      {
+         "color":"orange",
+         "level":"1",
          "author_id":"25",
-         "name":"Patricia A. McKillip",
-         "color":"orange"
-      },
-      {
          "children":[
             {
-               "series_id":43987,
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
                "children":[
-                  {
-                     "children":"",
-                     "name":"Harper Hall of Pern",
-                     "color":"white"
-                  }
+
                ],
-               "name":"Dragonsinger (Harper Hall, #2)",
-               "color":"yellow"
+               "name":"The Changeling Sea"
             },
             {
-               "series_id":43987,
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
                "children":[
-                  {
-                     "children":"",
-                     "name":"Harper Hall of Pern",
-                     "color":"white"
-                  }
+
                ],
-               "name":"Dragondrums (Harper Hall, #3)",
-               "color":"yellow"
+               "name":"The Book of Atrix Wolfe"
             },
             {
-               "series_id":40323,
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
                "children":[
-                  {
-                     "children":"",
-                     "name":"Dragonriders of Pern",
-                     "color":"white"
-                  }
+
                ],
-               "name":"Dragonquest (Pern, #2)",
-               "color":"yellow"
+               "name":"The Forgotten Beasts of Eld"
             },
             {
-               "series_id":43987,
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
                "children":[
-                  {
-                     "children":"",
-                     "name":"Harper Hall of Pern",
-                     "color":"white"
-                  }
+
                ],
-               "name":"A Cantora dos Drag\u00f5es - 1 (Pern: Harper Hall #2A)",
-               "color":"yellow"
+               "name":"Alphabet of Thorn"
             },
             {
-               "series_id":43987,
+               "color":"yellow",
+               "series_id":44605,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"Harper Hall of Pern",
-                     "color":"white"
+                     "name":"Riddle-Master"
                   }
                ],
-               "name":"A Cantora dos Drag\u00f5es - 2 (Pern: Harper Hall #2B)",
-               "color":"yellow"
+               "name":"Harpist in the Wind (Riddle-Master, #3)"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"Ombria in Shadow"
             }
          ],
+         "name":"Patricia A. McKillip"
+      },
+      {
+         "color":"orange",
+         "level":"1",
          "author_id":"26",
-         "name":"Anne McCaffrey",
-         "color":"orange"
-      },
-      {
          "children":[
             {
-               "series_id":null,
+               "color":"yellow",
+               "series_id":43987,
+               "level":"2",
                "children":[
-
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Harper Hall of Pern"
+                  }
                ],
-               "name":"The Headless Cupid (Stanley Family, #1)",
-               "color":"yellow"
+               "name":"Dragonsinger (Harper Hall, #2)"
             },
             {
-               "series_id":null,
+               "color":"yellow",
+               "series_id":43987,
+               "level":"2",
                "children":[
-
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Harper Hall of Pern"
+                  }
                ],
-               "name":"The Velvet Room",
-               "color":"yellow"
+               "name":"Dragondrums (Harper Hall, #3)"
+            },
+            {
+               "color":"yellow",
+               "series_id":40323,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Dragonriders of Pern"
+                  }
+               ],
+               "name":"Dragonquest (Pern, #2)"
+            },
+            {
+               "color":"yellow",
+               "series_id":43987,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Harper Hall of Pern"
+                  }
+               ],
+               "name":"A Cantora dos Drag\u00f5es - 1 (Pern: Harper Hall #2A)"
+            },
+            {
+               "color":"yellow",
+               "series_id":43987,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Harper Hall of Pern"
+                  }
+               ],
+               "name":"A Cantora dos Drag\u00f5es - 2 (Pern: Harper Hall #2B)"
             }
          ],
+         "name":"Anne McCaffrey"
+      },
+      {
+         "color":"orange",
+         "level":"1",
          "author_id":"27",
-         "name":"Zilpha Keatley Snyder",
-         "color":"orange"
-      },
-      {
          "children":[
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"Careless Love: Or the Land of Promise",
-               "color":"yellow"
+               "name":"The Headless Cupid (Stanley Family, #1)"
             },
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"X & O",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"Between the Legs",
-               "color":"yellow"
+               "name":"The Velvet Room"
             }
          ],
+         "name":"Zilpha Keatley Snyder"
+      },
+      {
+         "color":"orange",
+         "level":"1",
          "author_id":"29",
-         "name":"Kate Horsley",
-         "color":"orange"
-      },
-      {
          "children":[
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"The Miracle at St. Bruno's (Daughters of England, #1)",
-               "color":"yellow"
+               "name":"Careless Love: Or the Land of Promise"
             },
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"The Witch from the Sea (Daughters of England, #3)",
-               "color":"yellow"
+               "name":"X & O"
             },
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"Saraband for Two Sisters (Daughters of England, #4)",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"The Love Child (Daughters of England #6)",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"The Return of the Gypsy (Daughters of England, #12)",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"The Black Swan (Daughters of England, #16)",
-               "color":"yellow"
+               "name":"Between the Legs"
             }
          ],
+         "name":"Kate Horsley"
+      },
+      {
+         "color":"orange",
+         "level":"1",
          "author_id":"32",
-         "name":"Philippa Carr",
-         "color":"orange"
-      },
-      {
          "children":[
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"New Stories from the South: The Year's Best, 2007",
-               "color":"yellow"
+               "name":"The Miracle at St. Bruno's (Daughters of England, #1)"
             },
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"The New Granta Book of the American Short Story",
-               "color":"yellow"
+               "name":"The Witch from the Sea (Daughters of England, #3)"
             },
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"The Ecco Anthology of Contemporary American Short Fiction",
-               "color":"yellow"
+               "name":"Saraband for Two Sisters (Daughters of England, #4)"
             },
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"Black Boy",
-               "color":"yellow"
+               "name":"The Love Child (Daughters of England #6)"
             },
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"The World Split Open",
-               "color":"yellow"
+               "name":"The Return of the Gypsy (Daughters of England, #12)"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"The Black Swan (Daughters of England, #16)"
             }
          ],
+         "name":"Philippa Carr"
+      },
+      {
+         "color":"orange",
+         "level":"1",
          "author_id":"33",
-         "name":"Edward P. Jones",
-         "color":"orange"
+         "children":[
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"New Stories from the South: The Year's Best, 2007"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"The New Granta Book of the American Short Story"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"The Ecco Anthology of Contemporary American Short Fiction"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"Black Boy"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"The World Split Open"
+            }
+         ],
+         "name":"Edward P. Jones"
       },
       {
-         "children":[
-
-         ],
+         "color":"orange",
+         "level":"1",
          "author_id":"36",
-         "name":"Satyajit Das",
-         "color":"orange"
+         "children":[
+
+         ],
+         "name":"Satyajit Das"
       },
       {
-         "children":[
-            {
-               "series_id":161488,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Annals of the Former World",
-                     "color":"white"
-                  }
-               ],
-               "name":"In Suspect Terrain",
-               "color":"yellow"
-            }
-         ],
+         "color":"orange",
+         "level":"1",
          "author_id":"40",
-         "name":"John McPhee",
-         "color":"orange"
-      },
-      {
          "children":[
             {
-               "series_id":null,
+               "color":"yellow",
+               "series_id":161488,
+               "level":"2",
                "children":[
-
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Annals of the Former World"
+                  }
                ],
-               "name":"The Heidi Chronicles: Uncommon Women and Others & Isn't It Romantic",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"The Sisters Rosensweig",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"Bachelor Girls",
-               "color":"yellow"
+               "name":"In Suspect Terrain"
             }
          ],
+         "name":"John McPhee"
+      },
+      {
+         "color":"orange",
+         "level":"1",
          "author_id":"42",
-         "name":"Wendy Wasserstein",
-         "color":"orange"
-      },
-      {
          "children":[
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"Heidi Klum's Body of Knowledge: 8 Rules of Model Behavior (to Help You Take Off on the Runway of Life)",
-               "color":"yellow"
+               "name":"The Heidi Chronicles: Uncommon Women and Others & Isn't It Romantic"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"The Sisters Rosensweig"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"Bachelor Girls"
             }
          ],
+         "name":"Wendy Wasserstein"
+      },
+      {
+         "color":"orange",
+         "level":"1",
          "author_id":"43",
-         "name":"Heidi Klum",
-         "color":"orange"
+         "children":[
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"Heidi Klum's Body of Knowledge: 8 Rules of Model Behavior (to Help You Take Off on the Runway of Life)"
+            }
+         ],
+         "name":"Heidi Klum"
       },
       {
-         "children":[
-
-         ],
+         "color":"orange",
+         "level":"1",
          "author_id":"44",
-         "name":"Heidi Fleiss",
-         "color":"orange"
+         "children":[
+
+         ],
+         "name":"Heidi Fleiss"
       },
       {
-         "children":[
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"Angels & Demons  (Robert Langdon, #1)",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"The Da Vinci Code (Robert Langdon, #2)",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"Digital Fortress",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"The Lost Symbol (Robert Langdon, #3)",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"Inferno (Robert Langdon, #4)",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"Le indagini di Robert Langdon: Angeli e Demoni - Il codice da Vinci - Il simbolo perduto",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"Origin (Robert Langdon, #5)",
-               "color":"yellow"
-            }
-         ],
+         "color":"orange",
+         "level":"1",
          "author_id":"630",
-         "name":"Dan Brown",
-         "color":"orange"
-      },
-      {
          "children":[
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"The Testament",
-               "color":"yellow"
+               "name":"Angels & Demons  (Robert Langdon, #1)"
             },
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"The Rooster Bar",
-               "color":"yellow"
+               "name":"The Da Vinci Code (Robert Langdon, #2)"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"Digital Fortress"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"The Lost Symbol (Robert Langdon, #3)"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"Inferno (Robert Langdon, #4)"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"Le indagini di Robert Langdon: Angeli e Demoni - Il codice da Vinci - Il simbolo perduto"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"Origin (Robert Langdon, #5)"
             }
          ],
+         "name":"Dan Brown"
+      },
+      {
+         "color":"orange",
+         "level":"1",
          "author_id":"721",
-         "name":"John Grisham",
-         "color":"orange"
-      },
-      {
          "children":[
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"The Handmaid's Tale",
-               "color":"yellow"
+               "name":"The Testament"
             },
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"Oryx and Crake (MaddAddam, #1)",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"Alias Grace",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"The Blind Assassin",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"The Year of the Flood  (MaddAddam, #2)",
-               "color":"yellow"
-            },
-            {
-               "series_id":86295,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Positron",
-                     "color":"white"
-                  }
-               ],
-               "name":"I'm Starved for You (Positron, #1)",
-               "color":"yellow"
-            },
-            {
-               "series_id":86295,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Positron",
-                     "color":"white"
-                  }
-               ],
-               "name":"Erase Me (Positron, #3)",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"MaddAddam (MaddAddam, #3)",
-               "color":"yellow"
+               "name":"The Rooster Bar"
             }
          ],
+         "name":"John Grisham"
+      },
+      {
+         "color":"orange",
+         "level":"1",
          "author_id":"3472",
-         "name":"Margaret Atwood",
-         "color":"orange"
-      },
-      {
          "children":[
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"We Were the Mulvaneys",
-               "color":"yellow"
+               "name":"The Handmaid's Tale"
             },
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"Blonde",
-               "color":"yellow"
+               "name":"Oryx and Crake (MaddAddam, #1)"
             },
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"Where Are You Going, Where Have You Been?: Selected Early Stories",
-               "color":"yellow"
+               "name":"Alias Grace"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"The Blind Assassin"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"The Year of the Flood  (MaddAddam, #2)"
+            },
+            {
+               "color":"yellow",
+               "series_id":86295,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Positron"
+                  }
+               ],
+               "name":"I'm Starved for You (Positron, #1)"
+            },
+            {
+               "color":"yellow",
+               "series_id":86295,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Positron"
+                  }
+               ],
+               "name":"Erase Me (Positron, #3)"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"MaddAddam (MaddAddam, #3)"
             }
          ],
+         "name":"Margaret Atwood"
+      },
+      {
+         "color":"orange",
+         "level":"1",
          "author_id":"3524",
-         "name":"Joyce Carol Oates",
-         "color":"orange"
-      },
-      {
          "children":[
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"The Sportswriter",
-               "color":"yellow"
+               "name":"We Were the Mulvaneys"
             },
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"Canada",
-               "color":"yellow"
+               "name":"Blonde"
             },
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"Let Me Be Frank With You",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"Between Them: Remembering My Parents",
-               "color":"yellow"
+               "name":"Where Are You Going, Where Have You Been?: Selected Early Stories"
             }
          ],
+         "name":"Joyce Carol Oates"
+      },
+      {
+         "color":"orange",
+         "level":"1",
          "author_id":"7849",
-         "name":"Richard Ford",
-         "color":"orange"
-      },
-      {
          "children":[
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"Absolute Power",
-               "color":"yellow"
+               "name":"The Sportswriter"
             },
             {
-               "series_id":43037,
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
                "children":[
-                  {
-                     "children":"",
-                     "name":"Camel Club",
-                     "color":"white"
-                  }
+
                ],
-               "name":"The Camel Club / The Collectors / Stone Cold (Camel Club, #1, #2, #3)",
-               "color":"yellow"
+               "name":"Canada"
             },
             {
-               "series_id":43037,
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
                "children":[
-                  {
-                     "children":"",
-                     "name":"Camel Club",
-                     "color":"white"
-                  }
+
                ],
-               "name":"Hell's Corner (Camel Club, #5)",
-               "color":"yellow"
+               "name":"Let Me Be Frank With You"
             },
             {
-               "series_id":98398,
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
                "children":[
-                  {
-                     "children":"",
-                     "name":"Will Robie",
-                     "color":"white"
-                  }
+
                ],
-               "name":"The Hit (Will Robie, #2)",
-               "color":"yellow"
-            },
-            {
-               "series_id":98398,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Will Robie",
-                     "color":"white"
-                  }
-               ],
-               "name":"The Target (Will Robie, #3)",
-               "color":"yellow"
-            },
-            {
-               "series_id":43037,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Camel Club",
-                     "color":"white"
-                  }
-               ],
-               "name":"Bullseye (Will Robie, #2.5)",
-               "color":"yellow"
-            },
-            {
-               "series_id":98398,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Will Robie",
-                     "color":"white"
-                  }
-               ],
-               "name":"The Guilty (Will Robie, #4)",
-               "color":"yellow"
-            },
-            {
-               "series_id":150209,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Amos Decker",
-                     "color":"white"
-                  }
-               ],
-               "name":"The Last Mile (Amos Decker, #2)",
-               "color":"yellow"
-            },
-            {
-               "series_id":98398,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Will Robie",
-                     "color":"white"
-                  }
-               ],
-               "name":"End Game (Will Robie, #5)",
-               "color":"yellow"
+               "name":"Between Them: Remembering My Parents"
             }
          ],
+         "name":"Richard Ford"
+      },
+      {
+         "color":"orange",
+         "level":"1",
          "author_id":"9291",
-         "name":"David Baldacci",
-         "color":"orange"
-      },
-      {
          "children":[
             {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"Strangers",
-               "color":"yellow"
+               "name":"Absolute Power"
             },
             {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"Lightning",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"Intensity",
-               "color":"yellow"
-            },
-            {
-               "series_id":190418,
+               "color":"yellow",
+               "series_id":43037,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"Jane Hawk",
-                     "color":"white"
+                     "name":"Camel Club"
                   }
                ],
-               "name":"The Whispering Room (Jane Hawk #2)",
-               "color":"yellow"
+               "name":"The Camel Club / The Collectors / Stone Cold (Camel Club, #1, #2, #3)"
             },
             {
-               "series_id":190418,
+               "color":"yellow",
+               "series_id":43037,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"Jane Hawk",
-                     "color":"white"
+                     "name":"Camel Club"
                   }
                ],
-               "name":"The Silent Corner",
-               "color":"yellow"
+               "name":"Hell's Corner (Camel Club, #5)"
+            },
+            {
+               "color":"yellow",
+               "series_id":98398,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Will Robie"
+                  }
+               ],
+               "name":"The Hit (Will Robie, #2)"
+            },
+            {
+               "color":"yellow",
+               "series_id":98398,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Will Robie"
+                  }
+               ],
+               "name":"The Target (Will Robie, #3)"
+            },
+            {
+               "color":"yellow",
+               "series_id":43037,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Camel Club"
+                  }
+               ],
+               "name":"Bullseye (Will Robie, #2.5)"
+            },
+            {
+               "color":"yellow",
+               "series_id":98398,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Will Robie"
+                  }
+               ],
+               "name":"The Guilty (Will Robie, #4)"
+            },
+            {
+               "color":"yellow",
+               "series_id":150209,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Amos Decker"
+                  }
+               ],
+               "name":"The Last Mile (Amos Decker, #2)"
+            },
+            {
+               "color":"yellow",
+               "series_id":98398,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Will Robie"
+                  }
+               ],
+               "name":"End Game (Will Robie, #5)"
             }
          ],
+         "name":"David Baldacci"
+      },
+      {
+         "color":"orange",
+         "level":"1",
          "author_id":"9355",
-         "name":"Dean Koontz",
-         "color":"orange"
+         "children":[
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"Strangers"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"Lightning"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"Intensity"
+            },
+            {
+               "color":"yellow",
+               "series_id":190418,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Jane Hawk"
+                  }
+               ],
+               "name":"The Whispering Room (Jane Hawk #2)"
+            },
+            {
+               "color":"yellow",
+               "series_id":190418,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Jane Hawk"
+                  }
+               ],
+               "name":"The Silent Corner"
+            }
+         ],
+         "name":"Dean Koontz"
       },
       {
-         "children":[
-
-         ],
+         "color":"orange",
+         "level":"1",
          "author_id":"9657",
-         "name":"Richard Wright",
-         "color":"orange"
+         "children":[
+
+         ],
+         "name":"Richard Wright"
       },
       {
-         "children":[
-            {
-               "series_id":40653,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Dirk Pitt",
-                     "color":"white"
-                  }
-               ],
-               "name":"Trojan Odyssey (Dirk Pitt, #17)",
-               "color":"yellow"
-            },
-            {
-               "series_id":40653,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Dirk Pitt",
-                     "color":"white"
-                  }
-               ],
-               "name":"Dragon (Dirk Pitt, #10)",
-               "color":"yellow"
-            },
-            {
-               "series_id":40653,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Dirk Pitt",
-                     "color":"white"
-                  }
-               ],
-               "name":"Black Wind (Dirk Pitt, #18)",
-               "color":"yellow"
-            },
-            {
-               "series_id":40653,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Dirk Pitt",
-                     "color":"white"
-                  }
-               ],
-               "name":"Cyclops (Dirk Pitt, #8)",
-               "color":"yellow"
-            },
-            {
-               "series_id":40653,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Dirk Pitt",
-                     "color":"white"
-                  }
-               ],
-               "name":"Deep Six (Dirk Pitt, #7)",
-               "color":"yellow"
-            },
-            {
-               "series_id":40653,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Dirk Pitt",
-                     "color":"white"
-                  }
-               ],
-               "name":"Vixen 03 (Dirk Pitt, #5)",
-               "color":"yellow"
-            },
-            {
-               "series_id":40715,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"The Oregon Files",
-                     "color":"white"
-                  }
-               ],
-               "name":"Golden Buddha (The Oregon Files, #1)",
-               "color":"yellow"
-            },
-            {
-               "series_id":40653,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Dirk Pitt",
-                     "color":"white"
-                  }
-               ],
-               "name":"Treasure (Dirk Pitt, #9)",
-               "color":"yellow"
-            },
-            {
-               "series_id":40715,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"The Oregon Files",
-                     "color":"white"
-                  }
-               ],
-               "name":"Plague Ship (The Oregon Files, #5)",
-               "color":"yellow"
-            },
-            {
-               "series_id":40715,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"The Oregon Files",
-                     "color":"white"
-                  }
-               ],
-               "name":"Corsair (The Oregon Files, #6)",
-               "color":"yellow"
-            },
-            {
-               "series_id":40715,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"The Oregon Files",
-                     "color":"white"
-                  }
-               ],
-               "name":"The Silent Sea (The Oregon Files, #7)",
-               "color":"yellow"
-            },
-            {
-               "series_id":40653,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Dirk Pitt",
-                     "color":"white"
-                  }
-               ],
-               "name":"Poseidon's Arrow (Dirk Pitt, #22)",
-               "color":"yellow"
-            },
-            {
-               "series_id":40653,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Dirk Pitt",
-                     "color":"white"
-                  }
-               ],
-               "name":"Havana Storm (Dirk Pitt, #23)",
-               "color":"yellow"
-            },
-            {
-               "series_id":40715,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"The Oregon Files",
-                     "color":"white"
-                  }
-               ],
-               "name":"Piranha (The Oregon Files, #10)",
-               "color":"yellow"
-            },
-            {
-               "series_id":40653,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Dirk Pitt",
-                     "color":"white"
-                  }
-               ],
-               "name":"Odessa Sea (Dirk Pitt, #24)",
-               "color":"yellow"
-            },
-            {
-               "series_id":40715,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"The Oregon Files",
-                     "color":"white"
-                  }
-               ],
-               "name":"Typhoon Fury (The Oregon Files, #12)",
-               "color":"yellow"
-            }
-         ],
+         "color":"orange",
+         "level":"1",
          "author_id":"18411",
-         "name":"Clive Cussler",
-         "color":"orange"
-      },
-      {
          "children":[
             {
-               "series_id":40910,
+               "color":"yellow",
+               "series_id":40653,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"Mistborn",
-                     "color":"white"
+                     "name":"Dirk Pitt"
                   }
                ],
-               "name":"The Well of Ascension (Mistborn, #2)",
-               "color":"yellow"
+               "name":"Trojan Odyssey (Dirk Pitt, #17)"
             },
             {
-               "series_id":40910,
+               "color":"yellow",
+               "series_id":40653,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"Mistborn",
-                     "color":"white"
+                     "name":"Dirk Pitt"
                   }
                ],
-               "name":"The Hero of Ages (Mistborn, #3)",
-               "color":"yellow"
+               "name":"Dragon (Dirk Pitt, #10)"
             },
             {
-               "series_id":40910,
+               "color":"yellow",
+               "series_id":40653,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"Mistborn",
-                     "color":"white"
+                     "name":"Dirk Pitt"
                   }
                ],
-               "name":"Mistborn Trilogy Boxed Set (Mistborn, #1-3)",
-               "color":"yellow"
+               "name":"Black Wind (Dirk Pitt, #18)"
             },
             {
-               "series_id":87970,
+               "color":"yellow",
+               "series_id":40653,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"Elantris",
-                     "color":"white"
+                     "name":"Dirk Pitt"
                   }
                ],
-               "name":"Elantris, Part 1 of 3",
-               "color":"yellow"
+               "name":"Cyclops (Dirk Pitt, #8)"
             },
             {
-               "series_id":87970,
+               "color":"yellow",
+               "series_id":40653,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"Elantris",
-                     "color":"white"
+                     "name":"Dirk Pitt"
                   }
                ],
-               "name":"Elantris, Part 2 of 3",
-               "color":"yellow"
+               "name":"Deep Six (Dirk Pitt, #7)"
             },
             {
-               "series_id":87970,
+               "color":"yellow",
+               "series_id":40653,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"Elantris",
-                     "color":"white"
+                     "name":"Dirk Pitt"
                   }
                ],
-               "name":"Elantris, Part 3 of 3",
-               "color":"yellow"
+               "name":"Vixen 03 (Dirk Pitt, #5)"
             },
             {
-               "series_id":87970,
+               "color":"yellow",
+               "series_id":40715,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"Elantris",
-                     "color":"white"
+                     "name":"The Oregon Files"
                   }
                ],
-               "name":"R\u00e9demption (Elantris, #1, Part 2)",
-               "color":"yellow"
+               "name":"Golden Buddha (The Oregon Files, #1)"
             },
             {
-               "series_id":49075,
+               "color":"yellow",
+               "series_id":40653,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"The Stormlight Archive",
-                     "color":"white"
+                     "name":"Dirk Pitt"
                   }
                ],
-               "name":"The Way of Kings, Part 1 (The Stormlight Archive #1, Part 1 of 2)",
-               "color":"yellow"
+               "name":"Treasure (Dirk Pitt, #9)"
             },
             {
-               "series_id":49075,
+               "color":"yellow",
+               "series_id":40715,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"The Stormlight Archive",
-                     "color":"white"
+                     "name":"The Oregon Files"
                   }
                ],
-               "name":"The Way of Kings, Part 2 (The Stormlight Archive #1, Part 2 of 2)",
-               "color":"yellow"
+               "name":"Plague Ship (The Oregon Files, #5)"
             },
             {
-               "series_id":87970,
+               "color":"yellow",
+               "series_id":40715,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"Elantris",
-                     "color":"white"
+                     "name":"The Oregon Files"
                   }
                ],
-               "name":"The Emperor's Soul",
-               "color":"yellow"
+               "name":"Corsair (The Oregon Files, #6)"
             },
             {
-               "series_id":93010,
+               "color":"yellow",
+               "series_id":40715,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"The Reckoners",
-                     "color":"white"
+                     "name":"The Oregon Files"
                   }
                ],
-               "name":"Firefight (The Reckoners, #2)",
-               "color":"yellow"
+               "name":"The Silent Sea (The Oregon Files, #7)"
             },
             {
-               "series_id":93010,
+               "color":"yellow",
+               "series_id":40653,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"The Reckoners",
-                     "color":"white"
+                     "name":"Dirk Pitt"
                   }
                ],
-               "name":"Calamity (The Reckoners, #3)",
-               "color":"yellow"
+               "name":"Poseidon's Arrow (Dirk Pitt, #22)"
             },
             {
-               "series_id":49075,
+               "color":"yellow",
+               "series_id":40653,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"The Stormlight Archive",
-                     "color":"white"
+                     "name":"Dirk Pitt"
                   }
                ],
-               "name":"Words of Radiance (The Stormlight Archive, #2)",
-               "color":"yellow"
+               "name":"Havana Storm (Dirk Pitt, #23)"
             },
             {
-               "series_id":93010,
+               "color":"yellow",
+               "series_id":40715,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"The Reckoners",
-                     "color":"white"
+                     "name":"The Oregon Files"
                   }
                ],
-               "name":"Mitosis (The Reckoners, #1.5)",
-               "color":"yellow"
+               "name":"Piranha (The Oregon Files, #10)"
             },
             {
-               "series_id":49075,
+               "color":"yellow",
+               "series_id":40653,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"The Stormlight Archive",
-                     "color":"white"
+                     "name":"Dirk Pitt"
                   }
                ],
-               "name":"Words of Radiance, Part 1 (The Stormlight Archive #2, Part 1 of 2)",
-               "color":"yellow"
+               "name":"Odessa Sea (Dirk Pitt, #24)"
             },
             {
-               "series_id":49075,
+               "color":"yellow",
+               "series_id":40715,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"The Stormlight Archive",
-                     "color":"white"
+                     "name":"The Oregon Files"
                   }
                ],
-               "name":"Words of Radiance, Part 2 (The Stormlight Archive #2, Part 2 of 2)",
-               "color":"yellow"
-            },
-            {
-               "series_id":49075,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"The Stormlight Archive",
-                     "color":"white"
-                  }
-               ],
-               "name":"Arcanum Unbounded: The Cosmere Collection",
-               "color":"yellow"
-            },
-            {
-               "series_id":49075,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"The Stormlight Archive",
-                     "color":"white"
-                  }
-               ],
-               "name":"Oathbringer (The Stormlight Archive, #3)",
-               "color":"yellow"
-            },
-            {
-               "series_id":49075,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"The Stormlight Archive",
-                     "color":"white"
-                  }
-               ],
-               "name":"Edgedancer (The Stormlight Archive #2.5)",
-               "color":"yellow"
+               "name":"Typhoon Fury (The Oregon Files, #12)"
             }
          ],
+         "name":"Clive Cussler"
+      },
+      {
+         "color":"orange",
+         "level":"1",
          "author_id":"38550",
-         "name":"Brandon Sanderson",
-         "color":"orange"
-      },
-      {
          "children":[
             {
-               "series_id":49252,
+               "color":"yellow",
+               "series_id":40910,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"D.C. Quartet",
-                     "color":"white"
+                     "name":"Mistborn"
                   }
                ],
-               "name":"King Suckerman",
-               "color":"yellow"
+               "name":"The Well of Ascension (Mistborn, #2)"
             },
             {
-               "series_id":49252,
+               "color":"yellow",
+               "series_id":40910,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"D.C. Quartet",
-                     "color":"white"
+                     "name":"Mistborn"
                   }
                ],
-               "name":"The Sweet Forever",
-               "color":"yellow"
+               "name":"The Hero of Ages (Mistborn, #3)"
             },
             {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"Drama City",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"The Way Home",
-               "color":"yellow"
-            },
-            {
-               "series_id":49255,
+               "color":"yellow",
+               "series_id":40910,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"Derek Strange & Terry Quinn",
-                     "color":"white"
+                     "name":"Mistborn"
                   }
                ],
-               "name":"What It Was",
-               "color":"yellow"
+               "name":"Mistborn Trilogy Boxed Set (Mistborn, #1-3)"
             },
             {
-               "series_id":65344,
+               "color":"yellow",
+               "series_id":87970,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"Spero Lucas",
-                     "color":"white"
+                     "name":"Elantris"
                   }
                ],
-               "name":"The Double",
-               "color":"yellow"
+               "name":"Elantris, Part 1 of 3"
+            },
+            {
+               "color":"yellow",
+               "series_id":87970,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Elantris"
+                  }
+               ],
+               "name":"Elantris, Part 2 of 3"
+            },
+            {
+               "color":"yellow",
+               "series_id":87970,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Elantris"
+                  }
+               ],
+               "name":"Elantris, Part 3 of 3"
+            },
+            {
+               "color":"yellow",
+               "series_id":87970,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Elantris"
+                  }
+               ],
+               "name":"R\u00e9demption (Elantris, #1, Part 2)"
+            },
+            {
+               "color":"yellow",
+               "series_id":49075,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"The Stormlight Archive"
+                  }
+               ],
+               "name":"The Way of Kings, Part 1 (The Stormlight Archive #1, Part 1 of 2)"
+            },
+            {
+               "color":"yellow",
+               "series_id":49075,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"The Stormlight Archive"
+                  }
+               ],
+               "name":"The Way of Kings, Part 2 (The Stormlight Archive #1, Part 2 of 2)"
+            },
+            {
+               "color":"yellow",
+               "series_id":87970,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Elantris"
+                  }
+               ],
+               "name":"The Emperor's Soul"
+            },
+            {
+               "color":"yellow",
+               "series_id":93010,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"The Reckoners"
+                  }
+               ],
+               "name":"Firefight (The Reckoners, #2)"
+            },
+            {
+               "color":"yellow",
+               "series_id":93010,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"The Reckoners"
+                  }
+               ],
+               "name":"Calamity (The Reckoners, #3)"
+            },
+            {
+               "color":"yellow",
+               "series_id":49075,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"The Stormlight Archive"
+                  }
+               ],
+               "name":"Words of Radiance (The Stormlight Archive, #2)"
+            },
+            {
+               "color":"yellow",
+               "series_id":93010,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"The Reckoners"
+                  }
+               ],
+               "name":"Mitosis (The Reckoners, #1.5)"
+            },
+            {
+               "color":"yellow",
+               "series_id":49075,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"The Stormlight Archive"
+                  }
+               ],
+               "name":"Words of Radiance, Part 1 (The Stormlight Archive #2, Part 1 of 2)"
+            },
+            {
+               "color":"yellow",
+               "series_id":49075,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"The Stormlight Archive"
+                  }
+               ],
+               "name":"Words of Radiance, Part 2 (The Stormlight Archive #2, Part 2 of 2)"
+            },
+            {
+               "color":"yellow",
+               "series_id":49075,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"The Stormlight Archive"
+                  }
+               ],
+               "name":"Arcanum Unbounded: The Cosmere Collection"
+            },
+            {
+               "color":"yellow",
+               "series_id":49075,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"The Stormlight Archive"
+                  }
+               ],
+               "name":"Oathbringer (The Stormlight Archive, #3)"
+            },
+            {
+               "color":"yellow",
+               "series_id":49075,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"The Stormlight Archive"
+                  }
+               ],
+               "name":"Edgedancer (The Stormlight Archive #2.5)"
             }
          ],
+         "name":"Brandon Sanderson"
+      },
+      {
+         "color":"orange",
+         "level":"1",
          "author_id":"47387",
-         "name":"George P. Pelecanos",
-         "color":"orange"
-      },
-      {
          "children":[
             {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"On the Street Where You Live",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"All Around the Town",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"Let Me Call You Sweetheart",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"Loves Music, Loves to Dance",
-               "color":"yellow"
-            },
-            {
-               "series_id":null,
-               "children":[
-
-               ],
-               "name":"While My Pretty One Sleeps",
-               "color":"yellow"
-            },
-            {
-               "series_id":137840,
+               "color":"yellow",
+               "series_id":49252,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"Under Suspicion",
-                     "color":"white"
+                     "name":"D.C. Quartet"
                   }
                ],
-               "name":"I've Got You Under My Skin (Under Suspicion, #1)",
-               "color":"yellow"
+               "name":"King Suckerman"
             },
             {
-               "series_id":137840,
+               "color":"yellow",
+               "series_id":49252,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"Under Suspicion",
-                     "color":"white"
+                     "name":"D.C. Quartet"
                   }
                ],
-               "name":"The Cinderella Murder (Under Suspicion, #2)",
-               "color":"yellow"
+               "name":"The Sweet Forever"
             },
             {
-               "series_id":137840,
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"Drama City"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"The Way Home"
+            },
+            {
+               "color":"yellow",
+               "series_id":49255,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"Under Suspicion",
-                     "color":"white"
+                     "name":"Derek Strange & Terry Quinn"
                   }
                ],
-               "name":"All Dressed in White (Under Suspicion, #3)",
-               "color":"yellow"
+               "name":"What It Was"
+            },
+            {
+               "color":"yellow",
+               "series_id":65344,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Spero Lucas"
+                  }
+               ],
+               "name":"The Double"
             }
          ],
+         "name":"George P. Pelecanos"
+      },
+      {
+         "color":"orange",
+         "level":"1",
          "author_id":"99044",
-         "name":"Mary Higgins Clark",
-         "color":"orange"
-      },
-      {
          "children":[
             {
-               "series_id":45175,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Harry Potter",
-                     "color":"white"
-                  }
-               ],
-               "name":"Harry Potter and the Half-Blood Prince (Harry Potter, #6)",
-               "color":"yellow"
-            },
-            {
-               "series_id":45175,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Harry Potter",
-                     "color":"white"
-                  }
-               ],
-               "name":"Harry Potter and the Order of the Phoenix (Harry Potter, #5)",
-               "color":"yellow"
-            },
-            {
-               "series_id":45175,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Harry Potter",
-                     "color":"white"
-                  }
-               ],
-               "name":"Harry Potter and the Sorcerer's Stone (Harry Potter, #1)",
-               "color":"yellow"
-            },
-            {
-               "series_id":45175,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Harry Potter",
-                     "color":"white"
-                  }
-               ],
-               "name":"Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)",
-               "color":"yellow"
-            },
-            {
-               "series_id":45175,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Harry Potter",
-                     "color":"white"
-                  }
-               ],
-               "name":"Harry Potter and the Goblet of Fire (Harry Potter, #4)",
-               "color":"yellow"
-            },
-            {
-               "series_id":45175,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Harry Potter",
-                     "color":"white"
-                  }
-               ],
-               "name":"Harry Potter Collection (Harry Potter, #1-6)",
-               "color":"yellow"
-            },
-            {
-               "series_id":82851,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Hogwarts Library",
-                     "color":"white"
-                  }
-               ],
-               "name":"Harry Potter Schoolbooks Box Set: Two Classic Books from the Library of Hogwarts School of Witchcraft and Wizardry",
-               "color":"yellow"
-            },
-            {
-               "series_id":45175,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Harry Potter",
-                     "color":"white"
-                  }
-               ],
-               "name":"Harry Potter and the Chamber of Secrets (Harry Potter, #2)",
-               "color":"yellow"
-            },
-            {
-               "series_id":45175,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Harry Potter",
-                     "color":"white"
-                  }
-               ],
-               "name":"Harry Potter and the Deathly Hallows (Harry Potter, #7)",
-               "color":"yellow"
-            },
-            {
-               "series_id":45175,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Harry Potter",
-                     "color":"white"
-                  }
-               ],
-               "name":"Harry Potter Boxset (Harry Potter, #1-7)",
-               "color":"yellow"
-            },
-            {
-               "series_id":45175,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Harry Potter",
-                     "color":"white"
-                  }
-               ],
-               "name":"The Harry Potter trilogy (Harry Potter, #1-3)",
-               "color":"yellow"
-            },
-            {
-               "series_id":45175,
-               "children":[
-                  {
-                     "children":"",
-                     "name":"Harry Potter",
-                     "color":"white"
-                  }
-               ],
-               "name":"Harry Potter: The Prequel (Harry Potter, #0.5)",
-               "color":"yellow"
-            },
-            {
+               "color":"yellow",
                "series_id":null,
+               "level":"2",
                "children":[
 
                ],
-               "name":"The Casual Vacancy",
-               "color":"yellow"
+               "name":"On the Street Where You Live"
             },
             {
-               "series_id":82851,
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"All Around the Town"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"Let Me Call You Sweetheart"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"Loves Music, Loves to Dance"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"While My Pretty One Sleeps"
+            },
+            {
+               "color":"yellow",
+               "series_id":137840,
+               "level":"2",
                "children":[
                   {
+                     "color":"white",
+                     "level":"3",
                      "children":"",
-                     "name":"Hogwarts Library",
-                     "color":"white"
+                     "name":"Under Suspicion"
                   }
                ],
-               "name":"The Hogwarts Library",
-               "color":"yellow"
+               "name":"I've Got You Under My Skin (Under Suspicion, #1)"
+            },
+            {
+               "color":"yellow",
+               "series_id":137840,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Under Suspicion"
+                  }
+               ],
+               "name":"The Cinderella Murder (Under Suspicion, #2)"
+            },
+            {
+               "color":"yellow",
+               "series_id":137840,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Under Suspicion"
+                  }
+               ],
+               "name":"All Dressed in White (Under Suspicion, #3)"
             }
          ],
+         "name":"Mary Higgins Clark"
+      },
+      {
+         "color":"orange",
+         "level":"1",
          "author_id":"1077326",
-         "name":"J.K. Rowling",
-         "color":"orange"
+         "children":[
+            {
+               "color":"yellow",
+               "series_id":45175,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Harry Potter"
+                  }
+               ],
+               "name":"Harry Potter and the Half-Blood Prince (Harry Potter, #6)"
+            },
+            {
+               "color":"yellow",
+               "series_id":45175,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Harry Potter"
+                  }
+               ],
+               "name":"Harry Potter and the Order of the Phoenix (Harry Potter, #5)"
+            },
+            {
+               "color":"yellow",
+               "series_id":45175,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Harry Potter"
+                  }
+               ],
+               "name":"Harry Potter and the Sorcerer's Stone (Harry Potter, #1)"
+            },
+            {
+               "color":"yellow",
+               "series_id":45175,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Harry Potter"
+                  }
+               ],
+               "name":"Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)"
+            },
+            {
+               "color":"yellow",
+               "series_id":45175,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Harry Potter"
+                  }
+               ],
+               "name":"Harry Potter and the Goblet of Fire (Harry Potter, #4)"
+            },
+            {
+               "color":"yellow",
+               "series_id":45175,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Harry Potter"
+                  }
+               ],
+               "name":"Harry Potter Collection (Harry Potter, #1-6)"
+            },
+            {
+               "color":"yellow",
+               "series_id":82851,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Hogwarts Library"
+                  }
+               ],
+               "name":"Harry Potter Schoolbooks Box Set: Two Classic Books from the Library of Hogwarts School of Witchcraft and Wizardry"
+            },
+            {
+               "color":"yellow",
+               "series_id":45175,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Harry Potter"
+                  }
+               ],
+               "name":"Harry Potter and the Chamber of Secrets (Harry Potter, #2)"
+            },
+            {
+               "color":"yellow",
+               "series_id":45175,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Harry Potter"
+                  }
+               ],
+               "name":"Harry Potter and the Deathly Hallows (Harry Potter, #7)"
+            },
+            {
+               "color":"yellow",
+               "series_id":45175,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Harry Potter"
+                  }
+               ],
+               "name":"Harry Potter Boxset (Harry Potter, #1-7)"
+            },
+            {
+               "color":"yellow",
+               "series_id":45175,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Harry Potter"
+                  }
+               ],
+               "name":"The Harry Potter trilogy (Harry Potter, #1-3)"
+            },
+            {
+               "color":"yellow",
+               "series_id":45175,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Harry Potter"
+                  }
+               ],
+               "name":"Harry Potter: The Prequel (Harry Potter, #0.5)"
+            },
+            {
+               "color":"yellow",
+               "series_id":null,
+               "level":"2",
+               "children":[
+
+               ],
+               "name":"The Casual Vacancy"
+            },
+            {
+               "color":"yellow",
+               "series_id":82851,
+               "level":"2",
+               "children":[
+                  {
+                     "color":"white",
+                     "level":"3",
+                     "children":"",
+                     "name":"Hogwarts Library"
+                  }
+               ],
+               "name":"The Hogwarts Library"
+            }
+         ],
+         "name":"J.K. Rowling"
       }
    ],
    "name":"root"
