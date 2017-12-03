@@ -1,1158 +1,1158 @@
 {
    "name":"root",
-   "connected":[
+   "children":[
       {
          "name":"Dale Peck",
-         "author_id":"20",
-         "connected":[
+         "children":[
             {
-               "name":"Hatchet Jobs: Writings on Contemporary Fiction",
                "id":"55",
-               "connected":[
+               "name":"Hatchet Jobs: Writings on Contemporary Fiction",
+               "children":[
 
                ]
             },
             {
-               "name":"Law of Enclosures",
                "id":"19981",
-               "connected":[
+               "name":"Law of Enclosures",
+               "children":[
 
                ]
             },
             {
-               "name":"Sprout",
                "id":"6217775",
-               "connected":[
+               "name":"Sprout",
+               "children":[
 
                ]
             },
             {
-               "name":"Visions and Revisions: Coming of Age in the Age of AIDS",
                "id":"22716606",
-               "connected":[
+               "name":"Visions and Revisions: Coming of Age in the Age of AIDS",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"20"
       },
       {
          "name":"Delia Sherman",
-         "author_id":"24",
-         "connected":[
+         "children":[
             {
-               "name":"Changeling (Changeling, #1)",
                "id":"58",
-               "connected":[
+               "name":"Changeling (Changeling, #1)",
+               "children":[
 
                ]
             },
             {
-               "name":"Interfictions 2: An Anthology of Interstitial Writing",
                "id":"6463979",
-               "connected":[
+               "name":"Interfictions 2: An Anthology of Interstitial Writing",
+               "children":[
 
                ]
             },
             {
-               "name":"The Freedom Maze",
                "id":"11013228",
-               "connected":[
+               "name":"The Freedom Maze",
+               "children":[
 
                ]
             },
             {
-               "name":"Young Woman in a Garden: Stories",
                "id":"21535640",
-               "connected":[
+               "name":"Young Woman in a Garden: Stories",
+               "children":[
 
                ]
             },
             {
-               "name":"The Great Detective",
                "id":"28696531",
-               "connected":[
+               "name":"The Great Detective",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"24"
       },
       {
          "name":"Patricia A. McKillip",
-         "author_id":"25",
-         "connected":[
+         "children":[
             {
-               "name":"The Changeling Sea",
                "id":"59",
-               "connected":[
+               "name":"The Changeling Sea",
+               "children":[
 
                ]
             },
             {
-               "name":"The Book of Atrix Wolfe",
                "id":"77353",
-               "connected":[
+               "name":"The Book of Atrix Wolfe",
+               "children":[
 
                ]
             },
             {
-               "name":"The Forgotten Beasts of Eld",
                "id":"81069",
-               "connected":[
+               "name":"The Forgotten Beasts of Eld",
+               "children":[
 
                ]
             },
             {
-               "name":"Alphabet of Thorn",
                "id":"81075",
-               "connected":[
+               "name":"Alphabet of Thorn",
+               "children":[
 
                ]
             },
             {
-               "name":"Harpist in the Wind (Riddle-Master, #3)",
                "id":"92762",
-               "connected":[
+               "name":"Harpist in the Wind (Riddle-Master, #3)",
+               "children":[
 
                ]
             },
             {
-               "name":"Ombria in Shadow",
                "id":"781124",
-               "connected":[
+               "name":"Ombria in Shadow",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"25"
       },
       {
          "name":"Anne McCaffrey",
-         "author_id":"26",
-         "connected":[
+         "children":[
             {
-               "name":"Dragonsinger (Harper Hall, #2)",
                "id":"28547",
-               "connected":[
+               "name":"Dragonsinger (Harper Hall, #2)",
+               "children":[
 
                ]
             },
             {
-               "name":"Dragondrums (Harper Hall, #3)",
                "id":"28553",
-               "connected":[
+               "name":"Dragondrums (Harper Hall, #3)",
+               "children":[
 
                ]
             },
             {
-               "name":"Dragonquest (Pern, #2)",
                "id":"127584",
-               "connected":[
+               "name":"Dragonquest (Pern, #2)",
+               "children":[
 
                ]
             },
             {
-               "name":"A Cantora dos Drag\u00f5es - 1 (Pern: Harper Hall #2A)",
                "id":"15995765",
-               "connected":[
+               "name":"A Cantora dos Drag\u00f5es - 1 (Pern: Harper Hall #2A)",
+               "children":[
 
                ]
             },
             {
-               "name":"A Cantora dos Drag\u00f5es - 2 (Pern: Harper Hall #2B)",
                "id":"15995767",
-               "connected":[
+               "name":"A Cantora dos Drag\u00f5es - 2 (Pern: Harper Hall #2B)",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"26"
       },
       {
          "name":"Zilpha Keatley Snyder",
-         "author_id":"27",
-         "connected":[
+         "children":[
             {
-               "name":"The Headless Cupid (Stanley Family, #1)",
                "id":"2316",
-               "connected":[
+               "name":"The Headless Cupid (Stanley Family, #1)",
+               "children":[
 
                ]
             },
             {
-               "name":"The Velvet Room",
                "id":"81010",
-               "connected":[
+               "name":"The Velvet Room",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"27"
       },
       {
          "name":"Kate Horsley",
-         "author_id":"29",
-         "connected":[
+         "children":[
             {
-               "name":"Careless Love: Or the Land of Promise",
                "id":"20057",
-               "connected":[
+               "name":"Careless Love: Or the Land of Promise",
+               "children":[
 
                ]
             },
             {
-               "name":"X & O",
                "id":"16196757",
-               "connected":[
+               "name":"X & O",
+               "children":[
 
                ]
             },
             {
-               "name":"Between the Legs",
                "id":"28047350",
-               "connected":[
+               "name":"Between the Legs",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"29"
       },
       {
          "name":"Philippa Carr",
-         "author_id":"32",
-         "connected":[
+         "children":[
             {
-               "name":"The Miracle at St. Bruno's (Daughters of England, #1)",
                "id":"349272",
-               "connected":[
+               "name":"The Miracle at St. Bruno's (Daughters of England, #1)",
+               "children":[
 
                ]
             },
             {
-               "name":"The Witch from the Sea (Daughters of England, #3)",
                "id":"817214",
-               "connected":[
+               "name":"The Witch from the Sea (Daughters of England, #3)",
+               "children":[
 
                ]
             },
             {
-               "name":"Saraband for Two Sisters (Daughters of England, #4)",
                "id":"817235",
-               "connected":[
+               "name":"Saraband for Two Sisters (Daughters of England, #4)",
+               "children":[
 
                ]
             },
             {
-               "name":"The Love Child (Daughters of England #6)",
                "id":"1251001",
-               "connected":[
+               "name":"The Love Child (Daughters of England #6)",
+               "children":[
 
                ]
             },
             {
-               "name":"The Return of the Gypsy (Daughters of England, #12)",
                "id":"1327608",
-               "connected":[
+               "name":"The Return of the Gypsy (Daughters of England, #12)",
+               "children":[
 
                ]
             },
             {
-               "name":"The Black Swan (Daughters of England, #16)",
                "id":"2493336",
-               "connected":[
+               "name":"The Black Swan (Daughters of England, #16)",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"32"
       },
       {
          "name":"Edward P. Jones",
-         "author_id":"33",
-         "connected":[
+         "children":[
             {
-               "name":"New Stories from the South: The Year's Best, 2007",
                "id":"551906",
-               "connected":[
+               "name":"New Stories from the South: The Year's Best, 2007",
+               "children":[
 
                ]
             },
             {
-               "name":"The New Granta Book of the American Short Story",
                "id":"1451067",
-               "connected":[
+               "name":"The New Granta Book of the American Short Story",
+               "children":[
 
                ]
             },
             {
-               "name":"The Ecco Anthology of Contemporary American Short Fiction",
                "id":"3039131",
-               "connected":[
+               "name":"The Ecco Anthology of Contemporary American Short Fiction",
+               "children":[
 
                ]
             },
             {
-               "name":"Black Boy",
                "id":"3319095",
-               "connected":[
+               "name":"Black Boy",
+               "children":[
 
                ]
             },
             {
-               "name":"The World Split Open",
                "id":"20893910",
-               "connected":[
+               "name":"The World Split Open",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"33"
       },
       {
          "name":"Satyajit Das",
-         "author_id":"36",
-         "connected":[
+         "children":[
 
-         ]
+         ],
+         "author_id":"36"
       },
       {
          "name":"John McPhee",
-         "author_id":"40",
-         "connected":[
+         "children":[
             {
-               "name":"In Suspect Terrain",
                "id":"54972",
-               "connected":[
+               "name":"In Suspect Terrain",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"40"
       },
       {
          "name":"Wendy Wasserstein",
-         "author_id":"42",
-         "connected":[
+         "children":[
             {
-               "name":"The Heidi Chronicles: Uncommon Women and Others & Isn't It Romantic",
                "id":"86",
-               "connected":[
+               "name":"The Heidi Chronicles: Uncommon Women and Others & Isn't It Romantic",
+               "children":[
 
                ]
             },
             {
-               "name":"The Sisters Rosensweig",
                "id":"19831",
-               "connected":[
+               "name":"The Sisters Rosensweig",
+               "children":[
 
                ]
             },
             {
-               "name":"Bachelor Girls",
                "id":"936187",
-               "connected":[
+               "name":"Bachelor Girls",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"42"
       },
       {
          "name":"Heidi Klum",
-         "author_id":"43",
-         "connected":[
+         "children":[
             {
-               "name":"Heidi Klum's Body of Knowledge: 8 Rules of Model Behavior (to Help You Take Off on the Runway of Life)",
                "id":"160236",
-               "connected":[
+               "name":"Heidi Klum's Body of Knowledge: 8 Rules of Model Behavior (to Help You Take Off on the Runway of Life)",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"43"
       },
       {
          "name":"Heidi Fleiss",
-         "author_id":"44",
-         "connected":[
+         "children":[
 
-         ]
+         ],
+         "author_id":"44"
       },
       {
          "name":"Dan Brown",
-         "author_id":"630",
-         "connected":[
+         "children":[
             {
-               "name":"Angels & Demons  (Robert Langdon, #1)",
                "id":"960",
-               "connected":[
+               "name":"Angels & Demons  (Robert Langdon, #1)",
+               "children":[
 
                ]
             },
             {
-               "name":"The Da Vinci Code (Robert Langdon, #2)",
                "id":"968",
-               "connected":[
+               "name":"The Da Vinci Code (Robert Langdon, #2)",
+               "children":[
 
                ]
             },
             {
-               "name":"Digital Fortress",
                "id":"11125",
-               "connected":[
+               "name":"Digital Fortress",
+               "children":[
 
                ]
             },
             {
-               "name":"The Lost Symbol (Robert Langdon, #3)",
                "id":"6411961",
-               "connected":[
+               "name":"The Lost Symbol (Robert Langdon, #3)",
+               "children":[
 
                ]
             },
             {
-               "name":"Inferno (Robert Langdon, #4)",
                "id":"17212231",
-               "connected":[
+               "name":"Inferno (Robert Langdon, #4)",
+               "children":[
 
                ]
             },
             {
-               "name":"Le indagini di Robert Langdon: Angeli e Demoni - Il codice da Vinci - Il simbolo perduto",
                "id":"17609793",
-               "connected":[
+               "name":"Le indagini di Robert Langdon: Angeli e Demoni - Il codice da Vinci - Il simbolo perduto",
+               "children":[
 
                ]
             },
             {
-               "name":"Origin (Robert Langdon, #5)",
                "id":"32283133",
-               "connected":[
+               "name":"Origin (Robert Langdon, #5)",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"630"
       },
       {
          "name":"John Grisham",
-         "author_id":"721",
-         "connected":[
+         "children":[
             {
-               "name":"The Testament",
                "id":"5348",
-               "connected":[
+               "name":"The Testament",
+               "children":[
 
                ]
             },
             {
-               "name":"The Rooster Bar",
                "id":"34201164",
-               "connected":[
+               "name":"The Rooster Bar",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"721"
       },
       {
          "name":"Margaret Atwood",
-         "author_id":"3472",
-         "connected":[
+         "children":[
             {
-               "name":"The Handmaid's Tale",
                "id":"38447",
-               "connected":[
+               "name":"The Handmaid's Tale",
+               "children":[
 
                ]
             },
             {
-               "name":"Oryx and Crake (MaddAddam, #1)",
                "id":"46756",
-               "connected":[
+               "name":"Oryx and Crake (MaddAddam, #1)",
+               "children":[
 
                ]
             },
             {
-               "name":"Alias Grace",
                "id":"72579",
-               "connected":[
+               "name":"Alias Grace",
+               "children":[
 
                ]
             },
             {
-               "name":"The Blind Assassin",
                "id":"78433",
-               "connected":[
+               "name":"The Blind Assassin",
+               "children":[
 
                ]
             },
             {
-               "name":"The Year of the Flood  (MaddAddam, #2)",
                "id":"6080337",
-               "connected":[
+               "name":"The Year of the Flood  (MaddAddam, #2)",
+               "children":[
 
                ]
             },
             {
-               "name":"I'm Starved for You (Positron, #1)",
                "id":"13515663",
-               "connected":[
+               "name":"I'm Starved for You (Positron, #1)",
+               "children":[
 
                ]
             },
             {
-               "name":"Erase Me (Positron, #3)",
                "id":"17164350",
-               "connected":[
+               "name":"Erase Me (Positron, #3)",
+               "children":[
 
                ]
             },
             {
-               "name":"MaddAddam (MaddAddam, #3)",
                "id":"17262203",
-               "connected":[
+               "name":"MaddAddam (MaddAddam, #3)",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"3472"
       },
       {
          "name":"Joyce Carol Oates",
-         "author_id":"3524",
-         "connected":[
+         "children":[
             {
-               "name":"We Were the Mulvaneys",
                "id":"5204",
-               "connected":[
+               "name":"We Were the Mulvaneys",
+               "children":[
 
                ]
             },
             {
-               "name":"Blonde",
                "id":"15975",
-               "connected":[
+               "name":"Blonde",
+               "children":[
 
                ]
             },
             {
-               "name":"Where Are You Going, Where Have You Been?: Selected Early Stories",
                "id":"397334",
-               "connected":[
+               "name":"Where Are You Going, Where Have You Been?: Selected Early Stories",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"3524"
       },
       {
          "name":"Richard Ford",
-         "author_id":"7849",
-         "connected":[
+         "children":[
             {
-               "name":"The Sportswriter",
                "id":"40722",
-               "connected":[
+               "name":"The Sportswriter",
+               "children":[
 
                ]
             },
             {
-               "name":"Canada",
                "id":"12872236",
-               "connected":[
+               "name":"Canada",
+               "children":[
 
                ]
             },
             {
-               "name":"Let Me Be Frank With You",
                "id":"20828358",
-               "connected":[
+               "name":"Let Me Be Frank With You",
+               "children":[
 
                ]
             },
             {
-               "name":"Between Them: Remembering My Parents",
                "id":"31371286",
-               "connected":[
+               "name":"Between Them: Remembering My Parents",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"7849"
       },
       {
          "name":"David Baldacci",
-         "author_id":"9291",
-         "connected":[
+         "children":[
             {
-               "name":"Absolute Power",
                "id":"15159",
-               "connected":[
+               "name":"Absolute Power",
+               "children":[
 
                ]
             },
             {
-               "name":"The Camel Club / The Collectors / Stone Cold (Camel Club, #1, #2, #3)",
                "id":"3386613",
-               "connected":[
+               "name":"The Camel Club / The Collectors / Stone Cold (Camel Club, #1, #2, #3)",
+               "children":[
 
                ]
             },
             {
-               "name":"Hell's Corner (Camel Club, #5)",
                "id":"8045080",
-               "connected":[
+               "name":"Hell's Corner (Camel Club, #5)",
+               "children":[
 
                ]
             },
             {
-               "name":"The Hit (Will Robie, #2)",
                "id":"15791154",
-               "connected":[
+               "name":"The Hit (Will Robie, #2)",
+               "children":[
 
                ]
             },
             {
-               "name":"The Target (Will Robie, #3)",
                "id":"18353714",
-               "connected":[
+               "name":"The Target (Will Robie, #3)",
+               "children":[
 
                ]
             },
             {
-               "name":"Bullseye (Will Robie, #2.5)",
                "id":"18709246",
-               "connected":[
+               "name":"Bullseye (Will Robie, #2.5)",
+               "children":[
 
                ]
             },
             {
-               "name":"The Guilty (Will Robie, #4)",
                "id":"25066991",
-               "connected":[
+               "name":"The Guilty (Will Robie, #4)",
+               "children":[
 
                ]
             },
             {
-               "name":"The Last Mile (Amos Decker, #2)",
                "id":"26245853",
-               "connected":[
+               "name":"The Last Mile (Amos Decker, #2)",
+               "children":[
 
                ]
             },
             {
-               "name":"End Game (Will Robie, #5)",
                "id":"34368113",
-               "connected":[
+               "name":"End Game (Will Robie, #5)",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"9291"
       },
       {
          "name":"Dean Koontz",
-         "author_id":"9355",
-         "connected":[
+         "children":[
             {
-               "name":"Strangers",
                "id":"15676",
-               "connected":[
+               "name":"Strangers",
+               "children":[
 
                ]
             },
             {
-               "name":"Lightning",
                "id":"32424",
-               "connected":[
+               "name":"Lightning",
+               "children":[
 
                ]
             },
             {
-               "name":"Intensity",
                "id":"32439",
-               "connected":[
+               "name":"Intensity",
+               "children":[
 
                ]
             },
             {
-               "name":"The Whispering Room (Jane Hawk #2)",
                "id":"34962255",
-               "connected":[
+               "name":"The Whispering Room (Jane Hawk #2)",
+               "children":[
 
                ]
             },
             {
-               "name":"The Silent Corner",
                "id":"34997705",
-               "connected":[
+               "name":"The Silent Corner",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"9355"
       },
       {
          "name":"Richard Wright",
-         "author_id":"9657",
-         "connected":[
+         "children":[
 
-         ]
+         ],
+         "author_id":"9657"
       },
       {
          "name":"Clive Cussler",
-         "author_id":"18411",
-         "connected":[
+         "children":[
             {
-               "name":"Trojan Odyssey (Dirk Pitt, #17)",
                "id":"32807",
-               "connected":[
+               "name":"Trojan Odyssey (Dirk Pitt, #17)",
+               "children":[
 
                ]
             },
             {
-               "name":"Dragon (Dirk Pitt, #10)",
                "id":"41694",
-               "connected":[
+               "name":"Dragon (Dirk Pitt, #10)",
+               "children":[
 
                ]
             },
             {
-               "name":"Black Wind (Dirk Pitt, #18)",
                "id":"41696",
-               "connected":[
+               "name":"Black Wind (Dirk Pitt, #18)",
+               "children":[
 
                ]
             },
             {
-               "name":"Cyclops (Dirk Pitt, #8)",
                "id":"41697",
-               "connected":[
+               "name":"Cyclops (Dirk Pitt, #8)",
+               "children":[
 
                ]
             },
             {
-               "name":"Deep Six (Dirk Pitt, #7)",
                "id":"41698",
-               "connected":[
+               "name":"Deep Six (Dirk Pitt, #7)",
+               "children":[
 
                ]
             },
             {
-               "name":"Vixen 03 (Dirk Pitt, #5)",
                "id":"41700",
-               "connected":[
+               "name":"Vixen 03 (Dirk Pitt, #5)",
+               "children":[
 
                ]
             },
             {
-               "name":"Golden Buddha (The Oregon Files, #1)",
                "id":"41703",
-               "connected":[
+               "name":"Golden Buddha (The Oregon Files, #1)",
+               "children":[
 
                ]
             },
             {
-               "name":"Treasure (Dirk Pitt, #9)",
                "id":"85737",
-               "connected":[
+               "name":"Treasure (Dirk Pitt, #9)",
+               "children":[
 
                ]
             },
             {
-               "name":"Plague Ship (The Oregon Files, #5)",
                "id":"2055151",
-               "connected":[
+               "name":"Plague Ship (The Oregon Files, #5)",
+               "children":[
 
                ]
             },
             {
-               "name":"Corsair (The Oregon Files, #6)",
                "id":"3755222",
-               "connected":[
+               "name":"Corsair (The Oregon Files, #6)",
+               "children":[
 
                ]
             },
             {
-               "name":"The Silent Sea (The Oregon Files, #7)",
                "id":"6580475",
-               "connected":[
+               "name":"The Silent Sea (The Oregon Files, #7)",
+               "children":[
 
                ]
             },
             {
-               "name":"Poseidon's Arrow (Dirk Pitt, #22)",
                "id":"15712052",
-               "connected":[
+               "name":"Poseidon's Arrow (Dirk Pitt, #22)",
+               "children":[
 
                ]
             },
             {
-               "name":"Havana Storm (Dirk Pitt, #23)",
                "id":"21413809",
-               "connected":[
+               "name":"Havana Storm (Dirk Pitt, #23)",
+               "children":[
 
                ]
             },
             {
-               "name":"Piranha (The Oregon Files, #10)",
                "id":"23281922",
-               "connected":[
+               "name":"Piranha (The Oregon Files, #10)",
+               "children":[
 
                ]
             },
             {
-               "name":"Odessa Sea (Dirk Pitt, #24)",
                "id":"29429954",
-               "connected":[
+               "name":"Odessa Sea (Dirk Pitt, #24)",
+               "children":[
 
                ]
             },
             {
-               "name":"Typhoon Fury (The Oregon Files, #12)",
                "id":"34346498",
-               "connected":[
+               "name":"Typhoon Fury (The Oregon Files, #12)",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"18411"
       },
       {
          "name":"Brandon Sanderson",
-         "author_id":"38550",
-         "connected":[
+         "children":[
             {
-               "name":"The Well of Ascension (Mistborn, #2)",
                "id":"68429",
-               "connected":[
+               "name":"The Well of Ascension (Mistborn, #2)",
+               "children":[
 
                ]
             },
             {
-               "name":"The Hero of Ages (Mistborn, #3)",
                "id":"2767793",
-               "connected":[
+               "name":"The Hero of Ages (Mistborn, #3)",
+               "children":[
 
                ]
             },
             {
-               "name":"Mistborn Trilogy Boxed Set (Mistborn, #1-3)",
                "id":"6604209",
-               "connected":[
+               "name":"Mistborn Trilogy Boxed Set (Mistborn, #1-3)",
+               "children":[
 
                ]
             },
             {
-               "name":"Elantris, Part 1 of 3",
                "id":"6646849",
-               "connected":[
+               "name":"Elantris, Part 1 of 3",
+               "children":[
 
                ]
             },
             {
-               "name":"Elantris, Part 2 of 3",
                "id":"6646851",
-               "connected":[
+               "name":"Elantris, Part 2 of 3",
+               "children":[
 
                ]
             },
             {
-               "name":"Elantris, Part 3 of 3",
                "id":"6646852",
-               "connected":[
+               "name":"Elantris, Part 3 of 3",
+               "children":[
 
                ]
             },
             {
-               "name":"R\u00e9demption (Elantris, #1, Part 2)",
                "id":"7944814",
-               "connected":[
+               "name":"R\u00e9demption (Elantris, #1, Part 2)",
+               "children":[
 
                ]
             },
             {
-               "name":"The Way of Kings, Part 1 (The Stormlight Archive #1, Part 1 of 2)",
                "id":"9329354",
-               "connected":[
+               "name":"The Way of Kings, Part 1 (The Stormlight Archive #1, Part 1 of 2)",
+               "children":[
 
                ]
             },
             {
-               "name":"The Way of Kings, Part 2 (The Stormlight Archive #1, Part 2 of 2)",
                "id":"11221285",
-               "connected":[
+               "name":"The Way of Kings, Part 2 (The Stormlight Archive #1, Part 2 of 2)",
+               "children":[
 
                ]
             },
             {
-               "name":"The Emperor's Soul",
                "id":"13578175",
-               "connected":[
+               "name":"The Emperor's Soul",
+               "children":[
 
                ]
             },
             {
-               "name":"Firefight (The Reckoners, #2)",
                "id":"15704459",
-               "connected":[
+               "name":"Firefight (The Reckoners, #2)",
+               "children":[
 
                ]
             },
             {
-               "name":"Calamity (The Reckoners, #3)",
                "id":"15704486",
-               "connected":[
+               "name":"Calamity (The Reckoners, #3)",
+               "children":[
 
                ]
             },
             {
-               "name":"Words of Radiance (The Stormlight Archive, #2)",
                "id":"17332218",
-               "connected":[
+               "name":"Words of Radiance (The Stormlight Archive, #2)",
+               "children":[
 
                ]
             },
             {
-               "name":"Mitosis (The Reckoners, #1.5)",
                "id":"18966322",
-               "connected":[
+               "name":"Mitosis (The Reckoners, #1.5)",
+               "children":[
 
                ]
             },
             {
-               "name":"Words of Radiance, Part 1 (The Stormlight Archive #2, Part 1 of 2)",
                "id":"21098320",
-               "connected":[
+               "name":"Words of Radiance, Part 1 (The Stormlight Archive #2, Part 1 of 2)",
+               "children":[
 
                ]
             },
             {
-               "name":"Words of Radiance, Part 2 (The Stormlight Archive #2, Part 2 of 2)",
                "id":"21100112",
-               "connected":[
+               "name":"Words of Radiance, Part 2 (The Stormlight Archive #2, Part 2 of 2)",
+               "children":[
 
                ]
             },
             {
-               "name":"Arcanum Unbounded: The Cosmere Collection",
                "id":"28595941",
-               "connected":[
+               "name":"Arcanum Unbounded: The Cosmere Collection",
+               "children":[
 
                ]
             },
             {
-               "name":"Oathbringer (The Stormlight Archive, #3)",
                "id":"34002132",
-               "connected":[
+               "name":"Oathbringer (The Stormlight Archive, #3)",
+               "children":[
 
                ]
             },
             {
-               "name":"Edgedancer (The Stormlight Archive #2.5)",
                "id":"34703445",
-               "connected":[
+               "name":"Edgedancer (The Stormlight Archive #2.5)",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"38550"
       },
       {
          "name":"George P. Pelecanos",
-         "author_id":"47387",
-         "connected":[
+         "children":[
             {
-               "name":"King Suckerman",
                "id":"307443",
-               "connected":[
+               "name":"King Suckerman",
+               "children":[
 
                ]
             },
             {
-               "name":"The Sweet Forever",
                "id":"320247",
-               "connected":[
+               "name":"The Sweet Forever",
+               "children":[
 
                ]
             },
             {
-               "name":"Drama City",
                "id":"346176",
-               "connected":[
+               "name":"Drama City",
+               "children":[
 
                ]
             },
             {
-               "name":"The Way Home",
                "id":"6004660",
-               "connected":[
+               "name":"The Way Home",
+               "children":[
 
                ]
             },
             {
-               "name":"What It Was",
                "id":"13138596",
-               "connected":[
+               "name":"What It Was",
+               "children":[
 
                ]
             },
             {
-               "name":"The Double",
                "id":"17333232",
-               "connected":[
+               "name":"The Double",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"47387"
       },
       {
          "name":"Mary Higgins Clark",
-         "author_id":"99044",
-         "connected":[
+         "children":[
             {
-               "name":"On the Street Where You Live",
                "id":"41490",
-               "connected":[
+               "name":"On the Street Where You Live",
+               "children":[
 
                ]
             },
             {
-               "name":"All Around the Town",
                "id":"170619",
-               "connected":[
+               "name":"All Around the Town",
+               "children":[
 
                ]
             },
             {
-               "name":"Let Me Call You Sweetheart",
                "id":"170632",
-               "connected":[
+               "name":"Let Me Call You Sweetheart",
+               "children":[
 
                ]
             },
             {
-               "name":"Loves Music, Loves to Dance",
                "id":"170650",
-               "connected":[
+               "name":"Loves Music, Loves to Dance",
+               "children":[
 
                ]
             },
             {
-               "name":"While My Pretty One Sleeps",
                "id":"571555",
-               "connected":[
+               "name":"While My Pretty One Sleeps",
+               "children":[
 
                ]
             },
             {
-               "name":"I've Got You Under My Skin (Under Suspicion, #1)",
                "id":"18143968",
-               "connected":[
+               "name":"I've Got You Under My Skin (Under Suspicion, #1)",
+               "children":[
 
                ]
             },
             {
-               "name":"The Cinderella Murder (Under Suspicion, #2)",
                "id":"21535784",
-               "connected":[
+               "name":"The Cinderella Murder (Under Suspicion, #2)",
+               "children":[
 
                ]
             },
             {
-               "name":"All Dressed in White (Under Suspicion, #3)",
                "id":"25111011",
-               "connected":[
+               "name":"All Dressed in White (Under Suspicion, #3)",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"99044"
       },
       {
          "name":"J.K. Rowling",
-         "author_id":"1077326",
-         "connected":[
+         "children":[
             {
-               "name":"Harry Potter and the Half-Blood Prince (Harry Potter, #6)",
                "id":"1",
-               "connected":[
+               "name":"Harry Potter and the Half-Blood Prince (Harry Potter, #6)",
+               "children":[
 
                ]
             },
             {
-               "name":"Harry Potter and the Order of the Phoenix (Harry Potter, #5)",
                "id":"2",
-               "connected":[
+               "name":"Harry Potter and the Order of the Phoenix (Harry Potter, #5)",
+               "children":[
 
                ]
             },
             {
-               "name":"Harry Potter and the Sorcerer's Stone (Harry Potter, #1)",
                "id":"3",
-               "connected":[
+               "name":"Harry Potter and the Sorcerer's Stone (Harry Potter, #1)",
+               "children":[
 
                ]
             },
             {
-               "name":"Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)",
                "id":"5",
-               "connected":[
+               "name":"Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)",
+               "children":[
 
                ]
             },
             {
-               "name":"Harry Potter and the Goblet of Fire (Harry Potter, #4)",
                "id":"6",
-               "connected":[
+               "name":"Harry Potter and the Goblet of Fire (Harry Potter, #4)",
+               "children":[
 
                ]
             },
             {
-               "name":"Harry Potter Collection (Harry Potter, #1-6)",
                "id":"10",
-               "connected":[
+               "name":"Harry Potter Collection (Harry Potter, #1-6)",
+               "children":[
 
                ]
             },
             {
-               "name":"Harry Potter Schoolbooks Box Set: Two Classic Books from the Library of Hogwarts School of Witchcraft and Wizardry",
                "id":"2002",
-               "connected":[
+               "name":"Harry Potter Schoolbooks Box Set: Two Classic Books from the Library of Hogwarts School of Witchcraft and Wizardry",
+               "children":[
 
                ]
             },
             {
-               "name":"Harry Potter and the Chamber of Secrets (Harry Potter, #2)",
                "id":"15881",
-               "connected":[
+               "name":"Harry Potter and the Chamber of Secrets (Harry Potter, #2)",
+               "children":[
 
                ]
             },
             {
-               "name":"Harry Potter and the Deathly Hallows (Harry Potter, #7)",
                "id":"136251",
-               "connected":[
+               "name":"Harry Potter and the Deathly Hallows (Harry Potter, #7)",
+               "children":[
 
                ]
             },
             {
-               "name":"Harry Potter Boxset (Harry Potter, #1-7)",
                "id":"862041",
-               "connected":[
+               "name":"Harry Potter Boxset (Harry Potter, #1-7)",
+               "children":[
 
                ]
             },
             {
-               "name":"The Harry Potter trilogy (Harry Potter, #1-3)",
                "id":"2337379",
-               "connected":[
+               "name":"The Harry Potter trilogy (Harry Potter, #1-3)",
+               "children":[
 
                ]
             },
             {
-               "name":"Harry Potter: The Prequel (Harry Potter, #0.5)",
                "id":"8933944",
-               "connected":[
+               "name":"Harry Potter: The Prequel (Harry Potter, #0.5)",
+               "children":[
 
                ]
             },
             {
-               "name":"The Casual Vacancy",
                "id":"13497818",
-               "connected":[
+               "name":"The Casual Vacancy",
+               "children":[
 
                ]
             },
             {
-               "name":"The Hogwarts Library",
                "id":"16177185",
-               "connected":[
+               "name":"The Hogwarts Library",
+               "children":[
 
                ]
             }
-         ]
+         ],
+         "author_id":"1077326"
       }
    ]
 }
