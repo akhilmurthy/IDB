@@ -68,14 +68,21 @@ Group 4
 
 - Asset Collection and Database Population
  - No Official API or asset sources
- -- No Official API or asset sources
--- No Official API or asset sources
-- Responsiveness of media assets
-
+ - Multiple APIs and scrapers to gather, combine, reformat, and organize
+- Responsiveness
+- Team Cohesion and Organization
+- Design
+ - Minimal & Media-Focused
+- test
 
 +++
 @title[What did we learn?]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What did we do learn?</span></span>
+
+- Being resourceful and adaptive to scrape for resources
+- Task and issue tracking with Trello
+- Teamwork when working on seperate things
+- test
 
 +++
 @title[What can we do better?]
@@ -109,12 +116,33 @@ Group 4
 @title[What puzzles us?]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What puzzles us?</span></span>
 
-
+- test
+- Why database hosting is so expensive on GCP
 
 ---
 @title[Other Critique]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Other Critique</span></span>
 #### <a target="_blank" href="https://betterreads.me" style="color:white">betterreads.me</a></span>
+
++++
+@title[What did they do well?]
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What did they do well?</span></span>
+
+- Aesthetic landing page and about page
+- Nav bar highlights
+- Page loads quickly and all at once
+- test
+
++++
+@title[What did we learn from their website?]
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What can we learn from their website?</span></span>
+
+- The layout of the website could be much more interactive without sacrificing clarity and minimalism.
+- test
+
++++
+@title[What can they do better?]
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What can they do better?</span></span>
 
 +++
 @title[Missing Author and or Series]
@@ -134,7 +162,7 @@ The search finds exact matches by not omitting periods from the search. (J.K. Ro
 +++
 @title[Unclear/Incorrect Filters]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Filters unclear or wrong</span></span>
-When filtering by "Top Rated Books", the criteria seems to be to filter out books with ratings lower than 4.2. 
+When filtering by "Top Rated-",e.g. "Top Rated Books", the criteria seems to be to filter out books with ratings lower than 4.2. 
 
 The other two filters, "Series" and "Most Recent", are not actual filters, since they seem to still include books that are not in a series or just sort by how recent instead of filtering.
 
@@ -142,6 +170,19 @@ The other two filters, "Series" and "Most Recent", are not actual filters, since
 @title[Filter and Sorting is disjoint]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Disjoint Filter and Sort</span></span>
 It is not possible to sort and filter at the same time. Choosing one, overrides the other.
+
++++
+@title[Images for Reviews]
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Images in Reviews</span></span>
+While the image of how many stars the review rates is important to see at a glance, it would be nice to display the cover of the book being reviewed as well.
+
++++
+@title[What puzzles us about their website?]
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What puzzles us about their website?</span></span>
+
+- The landing page carousel displays books can not be clicked.
+- How the shifting and why the shifting of the grid occurs when the page of a model is loaded.
+- Why not have the first book's cover be the image for the Series Model instead of all placeholder images?
 
 ---
 @title[Visualization]
