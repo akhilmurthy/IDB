@@ -175,10 +175,6 @@ It is not possible to sort and filter at the same time. Choosing one, overrides 
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Images in Reviews</span></span>
 While the reviews tab has information on ratings, the reviewer's name, and date, it does not give information on the book being reviewed which would be very ueful for a user to know.
 
-+++
-@title[Messy Instance Pages]
-### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Cluttered Instance Pages</span></span>
-The pages for each instance have information in a somewhat disorganized manner. Also each instance page has a completely different layout to every other instance page for other models.
 
 +++
 @title[What puzzles us about their website?]
