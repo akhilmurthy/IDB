@@ -63,6 +63,25 @@ Group 4
 #### <a target="_blank" href="https://overwatchglamour.me" style="color:white">overwatchglamour.me</a></span>
 
 +++
+@title[What did we do well?]
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What did we do well?</span></span>
+
+- Asset Collection
+-- test
+- - testing
+- Populating Database
+- Responsiveness of media assets
+
+
++++
+@title[What did we learn?]
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What did we do well?</span></span>
+
++++
+@title[What can we do better?]
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What did we do well?</span></span>
+
++++
 @title[Instance Pages]
 *Instance pages could have been more user friendly.*
 
@@ -70,9 +89,9 @@ Group 4
 
 +++
 @title[Hero Specific Filter]
-*Finding things relating to a specific Hero could be easier. Currently filters by whether it is associated with a hero or not.*
+*Finding things relating to a specific Hero could be easier for Achievements. Currently, hero-specific filters exist for all other models, but Achievements can only filter for hero association or no hero association*
 
-<span style="color:#f99e1a">Solution: </span>Add a drop down menu filter by a specific hero option to items, skins, and achievements models.
+<span style="color:#f99e1a">Solution: </span>Add the same drop down menu filter in the other models to Achievements, but include the existing options in the drop down menu as well.
 
 +++
 @title[Search bar UI]
@@ -81,10 +100,16 @@ Group 4
 <span style="color:#f99e1a">Solution: </span>Nest the search bar into the nav bar.
 
 +++
-@title[Warped Skins]
-*Rectangular skin images are slightly warped in square image boxes.*
+@title[Placeholder image]
+*Items without a media asset will not have an image divider*
 
-<span style="color:#f99e1a">Solution: </span>Pre-crop the centered images of skins into squares, or define the image property to cover instead of contain.
+<span style="color:#f99e1a">Solution: </span>Have items without media assets display a default placeholder image instead, keeping the layout more uniform.
+
++++
+@title[What puzzles us?]
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What did we do well?</span></span>
+
+
 
 ---
 @title[Other Critique]
