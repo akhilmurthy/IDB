@@ -77,7 +77,7 @@ Group 4
 
 +++
 @title[What did we learn?]
-### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What did we do learn?</span></span>
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What did we learn?</span></span>
 
 - Being resourceful and adaptive to scrape for resources
 - Task and issue tracking with Trello
