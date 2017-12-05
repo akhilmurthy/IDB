@@ -106,7 +106,7 @@ Group 4
 
 +++
 @title[Placeholder image]
-*Website is slow*
+*Website is slow.*
 
 <span style="color:#f99e1a">Solution: </span>Add caching to the website.
 
@@ -127,7 +127,7 @@ Group 4
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What did they do well?</span></span>
 
 - Aesthetic landing page and about page
-- Nav bar highlights, 
+- Nav bar highlights
 - Page loads quickly and all at once
 - They have a cool loading icon
 - They implemented a search for each model
@@ -137,7 +137,7 @@ Group 4
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What can we learn from their website?</span></span>
 
 - The layout of the website could be much more interactive without sacrificing clarity and minimalism.
-- J.K. Rowling has written other books apperently?
+- J.K. Rowling has written other books apparently?
 
 +++
 @title[What can they do better?]
