@@ -187,8 +187,8 @@ The pages for each instance have information in a somewhat disorganized manner. 
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What puzzles us about their website?</span></span>
 
 - The landing page carousel displays books can not be clicked.
-- How the shifting and why the shifting of the grid occurs when the page of a model is loaded.
 - Why not have the first book's cover be the image for the Series Model instead of all placeholder images?
+- Why their website has weird mistakes in their data, even though their API seems to have accurate data?
 
 
 
