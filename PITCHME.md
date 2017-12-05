@@ -69,20 +69,18 @@ Group 4
 - Asset Collection and Database Population
  - No Official API or asset sources
  - Multiple APIs and scrapers to gather, combine, reformat, and organize
-- Responsiveness
+- Models are well connected
 - Team Cohesion and Organization
-- Design
- - Minimal & Media-Focused
-- test
 
 +++
 @title[What did we learn?]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What did we learn?</span></span>
 
+- Overwatch
 - Being resourceful and adaptive to scrape for resources
 - Task and issue tracking with Trello
-- Teamwork when working on seperate things
-- test
+- Github version control
+- GCP is expensive
 
 +++
 @title[What can we do better?]
@@ -102,22 +100,22 @@ Group 4
 
 +++
 @title[Search bar UI]
-*Search bar could be centered or more aesthetically placed.*
+*Search bar could be centered or more aesthetically placed.  Search algorithm could be improved*
 
 <span style="color:#f99e1a">Solution: </span>Nest the search bar into the nav bar.
 
 +++
 @title[Placeholder image]
-*Items without a media asset will not have an image divider*
+*Website is slow*
 
-<span style="color:#f99e1a">Solution: </span>Have items without media assets display a default placeholder image instead, keeping the layout more uniform.
+<span style="color:#f99e1a">Solution: </span>Add caching to the website.
 
 +++
 @title[What puzzles us?]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What puzzles us?</span></span>
 
-- test
-- Why database hosting is so expensive on GCP
+- Database connection
+- React
 
 ---
 @title[Other Critique]
