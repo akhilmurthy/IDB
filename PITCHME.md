@@ -66,20 +66,20 @@ Group 4
 @title[What did we do well?]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What did we do well?</span></span>
 
-- Asset Collection
--- test
-- - testing
-- Populating Database
+- Asset Collection and Database Population
+ - No Official API or asset sources
+ -- No Official API or asset sources
+-- No Official API or asset sources
 - Responsiveness of media assets
 
 
 +++
 @title[What did we learn?]
-### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What did we do well?</span></span>
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What did we do learn?</span></span>
 
 +++
 @title[What can we do better?]
-### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What did we do well?</span></span>
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What can we do better?</span></span>
 
 +++
 @title[Instance Pages]
@@ -107,7 +107,7 @@ Group 4
 
 +++
 @title[What puzzles us?]
-### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What did we do well?</span></span>
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What puzzles us?</span></span>
 
 
 
