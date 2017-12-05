@@ -69,18 +69,20 @@ Group 4
 - Asset Collection and Database Population
  - No Official API or asset sources
  - Multiple APIs and scrapers to gather, combine, reformat, and organize
-- Models are well connected
+- Responsiveness
 - Team Cohesion and Organization
+- Design
+ - Minimal & Media-Focused
+- test
 
 +++
 @title[What did we learn?]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What did we learn?</span></span>
 
-- Overwatch
 - Being resourceful and adaptive to scrape for resources
 - Task and issue tracking with Trello
-- Github version control
-- GCP is expensive
+- Teamwork when working on seperate things
+- test
 
 +++
 @title[What can we do better?]
@@ -100,22 +102,22 @@ Group 4
 
 +++
 @title[Search bar UI]
-*Search bar could be centered or more aesthetically placed.  Search algorithm could be improved*
+*Search bar could be centered or more aesthetically placed.*
 
 <span style="color:#f99e1a">Solution: </span>Nest the search bar into the nav bar.
 
 +++
 @title[Placeholder image]
-*Website is slow*
+*Items without a media asset will not have an image divider*
 
-<span style="color:#f99e1a">Solution: </span>Add caching to the website.
+<span style="color:#f99e1a">Solution: </span>Have items without media assets display a default placeholder image instead, keeping the layout more uniform.
 
 +++
 @title[What puzzles us?]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What puzzles us?</span></span>
 
-- Database connection
-- React
+- test
+- Why database hosting is so expensive on GCP
 
 ---
 @title[Other Critique]
@@ -127,16 +129,17 @@ Group 4
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What did they do well?</span></span>
 
 - Aesthetic landing page and about page
-- Nav bar highlights
+- Nav bar highlights, 
 - Page loads quickly and all at once
-- test
+- They have a cool loading icon
+- They implemented a search for each model
 
 +++
 @title[What did we learn from their website?]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What can we learn from their website?</span></span>
 
 - The layout of the website could be much more interactive without sacrificing clarity and minimalism.
-- test
+- J.K. Rowling has written other books apperently?
 
 +++
 @title[What can they do better?]
@@ -150,7 +153,7 @@ Some books will have "No Series" and/or "No Author when not appropriate".
 +++
 @title[Review of a book lists incorrect author]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Reviews wrong book with wrong author</span></span>
-Some reviews have the incorrect book being reviewed, but also the incorrect author of the incorrect book displayed. (Otis Chandler on Harry Potter #6)
+Some reviews have the incorrect book being reviewed, but also the incorrect author of the incorrect book displayed. (Otis Chandler on Harry Potter #6; Author is Dale Peck)
 
 +++
 @title[Exact Search]
@@ -158,9 +161,9 @@ Some reviews have the incorrect book being reviewed, but also the incorrect auth
 The search finds exact matches by not omitting periods from the search. (J.K. Rowling)
 
 +++
-@title[Unclear/Incorrect Filters]
+@title[Unclear/Inaccurate Filter Conditions]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Filters unclear or wrong</span></span>
-When filtering by "Top Rated-",e.g. "Top Rated Books", the criteria seems to be to filter out books with ratings lower than 4.2. 
+When filtering by "Top Rated-",e.g. "Top Rated Books" , the criteria seems to be to filter out books with ratings lower than 4.2. 
 
 The other two filters, "Series" and "Most Recent", are not actual filters, since they seem to still include books that are not in a series or just sort by how recent instead of filtering.
 
@@ -170,9 +173,14 @@ The other two filters, "Series" and "Most Recent", are not actual filters, since
 It is not possible to sort and filter at the same time. Choosing one, overrides the other.
 
 +++
-@title[Images for Reviews]
+@title[Book information on Reviews page]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Images in Reviews</span></span>
-While the image of how many stars the review rates is important to see at a glance, it would be nice to display the cover of the book being reviewed as well.
+While the reviews tab has information on ratings, the reviewer's name, and date, it does not give information on the book being reviewed which would be very ueful for a user to know.
+
++++
+@title[Messy Instance Pages]
+### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Cluttered Instance Pages</span></span>
+The pages for each instance have information in a somewhat disorganized manner. Also each instance page has a completely different layout to every other instance page for other models.
 
 +++
 @title[What puzzles us about their website?]
@@ -181,6 +189,8 @@ While the image of how many stars the review rates is important to see at a glan
 - The landing page carousel displays books can not be clicked.
 - How the shifting and why the shifting of the grid occurs when the page of a model is loaded.
 - Why not have the first book's cover be the image for the Series Model instead of all placeholder images?
+
+
 
 ---
 @title[Visualization]
