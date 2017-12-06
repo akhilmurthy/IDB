@@ -170,7 +170,7 @@ The search finds exact matches by not omitting periods from the search. (J.K. Ro
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">Filters unclear or incorrect</span></span>
 When filtering by "Top Rated-",e.g. "Top Rated Books" , the criteria seems to be to filter out books with ratings lower than 4.2. 
 
-The other two filters, "Series" and "Most Recent", are not actual filters, since they seem to still include books that are not in a series or just sort by how recent instead of filtering.
+The other filter, "Most Recent" seem to be more appropriate as a sort by than a filter, since the requirement ot be filtered as not recent is unclear/arbitrary.
 
 +++
 @title[Filter and Sorting is disjoint]
