@@ -71,6 +71,7 @@ Group 4
  - Multiple APIs and scrapers to gather, combine, reformat, and organize
 - Team Cohesion and Organization
 - Models are well connected
+- Website is fast
 
 +++
 @title[What did we learn?]
@@ -106,16 +107,22 @@ Group 4
 
 +++
 @title[Placeholder image]
-*Website is slow.*
+*Drop down filter is not scrollable and drops down ALL the way currently.*
 
-<span style="color:#f99e1a">Solution: </span>Add caching to the website.
+<span style="color:#f99e1a">Solution: </span>Make it scrollable.
+
++++
+@title[Multimedia]
+*Add more multimedia.*
+
+<span style="color:#f99e1a">Solution: </span>Add more multimedia.
 
 +++
 @title[What puzzles us?]
 ### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#f99e1a">What puzzles us?</span></span>
 
 - Database connection
-- React
+- GCP
 
 ---
 @title[Other Critique]
